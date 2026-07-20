@@ -17,7 +17,7 @@
   --font-mono:   'DM Mono',monospace;
   --max:1200px;
   --max-narrow:740px;
-  --pad:32px;
+  --pad:5%;
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
