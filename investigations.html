@@ -132,5 +132,25 @@
   </div>
 </footer>
 <script src="scramble.js"></script>
+
+<div class="mobile-overlay" id="mobile-overlay">
+  <div class="mobile-overlay-header">
+    <div class="mobile-overlay-logo">
+      <img src="logo.png" alt="Regent Intel">
+      <span>Regent <em>Intel</em></span>
+    </div>
+    <button class="mobile-close" onclick="document.getElementById('mobile-overlay').classList.remove('open')" aria-label="Close">&#x2715;</button>
+  </div>
+  <nav class="mobile-overlay-nav">
+    <a href="services.html">Services</a>
+    <a href="methodology.html">Methodology</a>
+    <a href="standards.html">Standards &amp; Discretion</a>
+    <a href="partners.html">Professional Partners</a>
+    <a href="consultation.html" class="highlight">Confidential Consultation</a>
+  </nav>
+  <div class="mobile-overlay-cta">
+    <a href="consultation.html">Request a Consultation</a>
+  </div>
+</div>
 </body>
 </html>
