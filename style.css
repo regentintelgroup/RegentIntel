@@ -26,12 +26,12 @@ a{color:inherit;text-decoration:none}
 img{max-width:100%;display:block}
 
 /* UTILITY */
-.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--pad)}
+.wrap{width:90%;max-width:var(--max);margin:0 auto;padding:0}
 .wrap-narrow{max-width:var(--max-narrow);margin:0 auto;padding:0 var(--pad)}
 
 /* HEADER */
 header{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(13,27,42,0.97);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-.nav-inner{max-width:var(--max);margin:0 auto;padding:0 var(--pad);height:68px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.nav-inner{width:90%;max-width:var(--max);margin:0 auto;padding:0;height:68px;display:flex;align-items:center;justify-content:space-between;gap:24px}
 .logo{display:flex;align-items:center;gap:10px;flex-shrink:0}
 .logo img{width:34px;height:34px;object-fit:contain}
 .logo-text{display:flex;flex-direction:column;gap:1px}
