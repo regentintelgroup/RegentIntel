@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Confidential Consultation | Regent Intel</title>
+<meta name="description" content="Request a confidential consultation with Regent Intelligence Group. All inquiries handled with complete discretion.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="nav-inner">
+    <a href="index.html" class="logo">
+      <img src="logo.png" alt="Regent Intel">
+      <div class="logo-text">
+        <div class="logo-name">Regent <span>Intel</span></div>
+        <div class="logo-tag">Protection · Intelligence · Results</div>
+      </div>
+    </a>
+    <nav class="links" id="main-nav">
+      <li>
+        <a href="services.html">Services</a>
+        <div class="dropdown">
+          <a href="ep.html">Executive Protection</a>
+          <a href="tscm.html">TSCM &amp; Technical Assurance</a>
+          <a href="intel.html">Protective Intelligence</a>
+          <a href="travel.html">Travel Security &amp; Country Risk</a>
+          <a href="osint.html">Due Diligence &amp; OSINT</a>
+          <a href="investigations.html">Investigations &amp; Asset Verification</a>
+          <a href="section132.html">IRC §132 Security Study</a>
+          <a href="training.html">Training &amp; Certification</a>
+        </div>
+      </li>
+      <li><a href="methodology.html">Methodology</a></li>
+      <li><a href="standards.html">Standards &amp; Discretion</a></li>
+      <li><a href="partners.html">Professional Partners</a></li>
+      <li><a href="consultation.html" class="current">Confidential Consultation</a></li>
+    </nav>
+    <a href="consultation.html" class="nav-cta">Request Consultation</a>
+    <button class="menu-toggle" aria-label="Menu" onclick="document.getElementById('main-nav').classList.toggle('mobile-nav-open')">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<section class="service-hero" style="min-height:50vh;padding-bottom:60px;">
+  <div class="hero-scan-line"></div>
+  <div class="wrap">
+    <div class="eyebrow">Confidential Consultation</div>
+    <h1><span data-decode>Tell us what you are facing.</span></h1>
+    <p class="lede">All inquiries are handled with complete confidentiality. No obligation. A conversation about what you are facing and what Regent Intel can do about it.</p>
+  </div>
+</section>
+<section class="contact-section" id="contact" style="padding-top:0;">
+  <div class="wrap contact-grid" style="padding-top:80px;">
+    <div class="contact-info">
+      <div class="eyebrow">Get in Touch</div>
+      <h2>We solve difficult problems.</h2>
+      <p>Senior practitioners respond to all inquiries directly. You will not be transferred to a sales team.</p>
+      <div class="contact-detail"><div class="k">Phone</div><div class="v"><a href="tel:9415297479">(941) 529-7479</a></div></div>
+      <div class="contact-detail"><div class="k">Operations</div><div class="v">Nationwide · Global Deployment</div></div>
+      <div class="contact-detail"><div class="k">License</div><div class="v">FDACS #A 3600152</div></div>
+    </div>
+    <form class="briefing" name="briefing" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="briefing">
+      <div><label>First Name</label><input name="first_name" type="text" required></div>
+      <div><label>Last Name</label><input name="last_name" type="text" required></div>
+      <div><label>Organization</label><input name="organization" type="text"></div>
+      <div><label>Email</label><input name="email" type="email" required></div>
+      <div><label>Phone</label><input name="phone" type="tel"></div>
+      <div>
+        <label>Service Area</label>
+        <select name="service_area">
+          <option>Executive Protection</option>
+          <option>TSCM &amp; Technical Assurance</option>
+          <option>Protective Intelligence</option>
+          <option>Travel Security &amp; Country Risk</option>
+          <option>Due Diligence &amp; OSINT</option>
+          <option>Investigations &amp; Asset Verification</option>
+          <option>IRC §132 Security Study</option>
+          <option>Training &amp; Certification</option>
+          <option>Professional Partnership Inquiry</option>
+          <option>Multiple / General Inquiry</option>
+        </select>
+      </div>
+      <div class="full"><label>Brief Description</label><textarea name="message"></textarea></div>
+      <div class="submit-row">
+        <button type="submit" class="btn-primary" style="border:none;cursor:pointer;">Submit Inquiry</button>
+        <span class="form-note">All submissions are handled with strict confidentiality.</span>
+      </div>
+    </form>
+  </div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-logo">
+        <img src="logo.png" alt="Regent Intel">
+        <div class="footer-wordmark">Regent <span>Intel</span></div>
+      </div>
+      <div class="footer-links">
+        <a href="services.html">Services</a>
+        <a href="methodology.html">Methodology</a>
+        <a href="standards.html">Standards</a>
+        <a href="partners.html">Professional Partners</a>
+        <a href="training.html">Training</a>
+        <a href="consultation.html">Consultation</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Regent Intelligence Group LLC. Licensed &amp; Insured. FDACS #A 3600152.</span>
+      <span>PROTECTIVE INTELLIGENCE</span>
+    </div>
+  </div>
+</footer>
+<script src="scramble.js"></script>
+</body>
+</html>
