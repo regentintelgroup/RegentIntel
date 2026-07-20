@@ -259,3 +259,180 @@ footer{background:#07111A;border-top:1px solid var(--line);padding:44px 0 28px}
   nav.links{flex:0}
   .menu-toggle{margin-left:auto}
 }
+
+/* ── MOBILE OVERLAY NAV ── */
+.mobile-overlay {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: #0D1B2A;
+  z-index: 9999;
+  flex-direction: column;
+}
+.mobile-overlay.active { display: flex; }
+.mobile-overlay-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  height: 68px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  flex-shrink: 0;
+}
+.mobile-overlay-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.mobile-overlay-logo img { width: 30px; height: 30px; object-fit: contain; }
+.mobile-overlay-logo span {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #fff;
+}
+.mobile-overlay-logo span em {
+  color: #1E8FAD;
+  font-style: normal;
+}
+.mobile-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1;
+  padding: 8px;
+}
+.mobile-overlay-nav {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow-y: auto;
+}
+.mobile-overlay-nav a {
+  display: block;
+  text-align: center;
+  font-family: 'DM Mono', monospace;
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.75);
+  padding: 26px 24px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+.mobile-overlay-nav a:first-child { border-top: 1px solid rgba(255,255,255,0.08); }
+.mobile-overlay-nav a.highlight { color: #1E8FAD; }
+.mobile-overlay-nav a:hover { color: #fff; }
+.mobile-overlay-cta {
+  padding: 24px;
+  flex-shrink: 0;
+}
+.mobile-overlay-cta a {
+  display: block;
+  text-align: center;
+  font-family: 'DM Mono', monospace;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #fff;
+  background: #146E87;
+  padding: 18px 24px;
+  text-decoration: none;
+}
+
+/* ── MOBILE OVERLAY MENU ── */
+.mobile-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: #0D1B2A;
+  z-index: 9999;
+  flex-direction: column;
+}
+.mobile-overlay.open { display: flex; }
+.mobile-overlay-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  height: 68px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  flex-shrink: 0;
+}
+.mobile-overlay-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.mobile-overlay-logo img { width: 32px; height: 32px; object-fit: contain; }
+.mobile-overlay-logo span {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 17px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #fff;
+}
+.mobile-overlay-logo span em {
+  color: var(--teal-bright);
+  font-style: normal;
+}
+.mobile-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: 24px;
+  line-height: 1;
+  padding: 8px;
+  font-weight: 300;
+}
+.mobile-overlay-nav {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 40px;
+  overflow-y: auto;
+}
+.mobile-overlay-nav a {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.65);
+  padding: 22px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  text-align: center;
+  text-decoration: none;
+  transition: color 0.15s;
+}
+.mobile-overlay-nav a:first-child { border-top: 1px solid rgba(255,255,255,0.08); }
+.mobile-overlay-nav a:hover,
+.mobile-overlay-nav a.highlight { color: var(--teal-bright); }
+.mobile-overlay-cta {
+  padding: 24px 40px;
+  flex-shrink: 0;
+}
+.mobile-overlay-cta a {
+  display: block;
+  background: var(--teal);
+  color: #fff;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 18px;
+  text-decoration: none;
+  transition: background 0.15s;
+}
+.mobile-overlay-cta a:hover { background: var(--teal-bright); }
