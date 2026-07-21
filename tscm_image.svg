@@ -1,0 +1,78 @@
+<svg viewBox="0 0 1400 680" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="grid" width="56" height="56" patternUnits="userSpaceOnUse">
+      <path d="M 56 0 L 0 0 0 56" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+    </pattern>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#1E8FAD"/>
+    </marker>
+  </defs>
+
+  <rect width="1400" height="680" fill="#0D1B2A"/>
+  <rect width="1400" height="680" fill="url(#grid)"/>
+  <rect x="1" y="1" width="1398" height="678" fill="none" stroke="rgba(30,143,173,0.35)" stroke-width="1.5"/>
+
+  <text x="60" y="72" font-family="Arial Narrow, Arial, sans-serif" font-weight="700" font-size="36" letter-spacing="1" fill="#FFFFFF">REGENT <tspan fill="#1E8FAD">INTEL</tspan></text>
+  <text x="61" y="98" font-family="Courier New, monospace" font-size="13" letter-spacing="3" fill="rgba(255,255,255,0.45)">TSCM &amp; TECHNICAL ASSURANCE</text>
+
+  <line x1="150" y1="430" x2="1250" y2="430" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  <text x="150" y="452" font-family="Courier New, monospace" font-size="11" letter-spacing="1" fill="rgba(255,255,255,0.35)">0 MHZ</text>
+  <text x="1250" y="452" text-anchor="end" font-family="Courier New, monospace" font-size="11" letter-spacing="1" fill="rgba(255,255,255,0.35)">6 GHZ</text>
+
+  <!-- Steady rhythmic signal, EKG-style repeating heartbeat pattern. One beat, mid-cycle, is missing its normal spike here; the anomaly is drawn separately, animated, so it can grow tall against the rhythm and then correct back to match -->
+  <path d="M 150 410 L 162 410 L 170 402 L 178 410 L 184 410 L 188 416 L 193 340 L 198 424 L 203 410 L 212 410 L 222 394 L 234 410 L 260 410
+           L 272 410 L 280 402 L 288 410 L 294 410 L 298 416 L 303 340 L 308 424 L 313 410 L 322 410 L 332 394 L 344 410 L 370 410
+           L 382 410 L 390 402 L 398 410 L 404 410 L 408 416 L 413 340 L 418 424 L 423 410 L 432 410 L 442 394 L 454 410 L 480 410
+           L 492 410 L 500 402 L 508 410 L 514 410 L 518 416 L 523 340 L 528 424 L 533 410 L 542 410 L 552 394 L 564 410 L 590 410
+           L 602 410 L 610 402 L 618 410 L 624 410 L 628 416 L 633 340 L 638 424 L 643 410 L 652 410 L 662 394 L 674 410 L 700 410
+           L 712 410 L 720 402 L 728 410 L 734 410 L 738 416 L 748 424 L 753 410 L 762 410 L 772 394 L 784 410 L 810 410
+           L 822 410 L 830 402 L 838 410 L 844 410 L 848 416 L 858 424 L 863 410 L 872 410 L 882 394 L 894 410 L 920 410
+           L 932 410 L 940 402 L 948 410 L 954 410 L 958 416 L 963 340 L 968 424 L 973 410 L 982 410 L 992 394 L 1004 410 L 1030 410
+           L 1042 410 L 1050 402 L 1058 410 L 1064 410 L 1068 416 L 1073 340 L 1078 424 L 1083 410 L 1092 410 L 1102 394 L 1114 410 L 1140 410
+           L 1152 410 L 1160 402 L 1168 410 L 1174 410 L 1178 416 L 1183 340 L 1188 424 L 1193 410 L 1202 410 L 1212 394 L 1224 410 L 1250 410"
+        fill="none" stroke="#1E8FAD" stroke-width="1.5" opacity="0.7"/>
+
+  <!-- The anomalous beat: normally would match its neighbors (peak at y=340), instead grows abnormally tall, gets isolated, then corrects back to match the rhythm -->
+  <line x1="853" y1="418" x2="853" y2="340" stroke="#1E8FAD" stroke-width="2">
+    <animate attributeName="y2" values="340;340;150;150;340;340" keyTimes="0;0.08;0.24;0.52;0.68;1" dur="8s" repeatCount="indefinite"/>
+  </line>
+  <circle cx="853" cy="150" r="10" fill="none" stroke="#1E8FAD" stroke-width="1.5" opacity="0">
+    <animate attributeName="opacity" values="0;0;0.8;0.8;0;0" keyTimes="0;0.2;0.28;0.5;0.58;1" dur="8s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="340;340;150;150;340;340" keyTimes="0;0.08;0.24;0.52;0.68;1" dur="8s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="10;10;18;18;10;10" keyTimes="0;0.2;0.28;0.5;0.58;1" dur="8s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Sweeping scan line, continuous, left to right and back, looping -->
+  <line x1="150" y1="150" x2="150" y2="480" stroke="#1E8FAD" stroke-width="1.5" opacity="0.85">
+    <animate attributeName="x1" values="150;1250;150" keyTimes="0;0.5;1" dur="8s" repeatCount="indefinite"/>
+    <animate attributeName="x2" values="150;1250;150" keyTimes="0;0.5;1" dur="8s" repeatCount="indefinite"/>
+  </line>
+  <circle cx="150" cy="150" r="4" fill="#1E8FAD">
+    <animate attributeName="cx" values="150;1250;150" keyTimes="0;0.5;1" dur="8s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Leader lines: touch the waveform, elbow down, terminate at underlined label -->
+  <g stroke="#1E8FAD" stroke-width="1" fill="none" opacity="0.8">
+    <circle cx="260" cy="410" r="2.5" fill="#1E8FAD" stroke="none"/>
+    <path d="M 260 410 L 260 500 L 260 500"/>
+
+    <circle cx="853" cy="150" r="2.5" fill="#1E8FAD" stroke="none"/>
+    <path d="M 853 150 L 853 500 L 853 500"/>
+
+    <circle cx="1140" cy="410" r="2.5" fill="#1E8FAD" stroke="none"/>
+    <path d="M 1140 410 L 1140 500 L 1140 500"/>
+  </g>
+
+  <g font-family="Arial Narrow, Arial, sans-serif">
+    <text x="260" y="525" text-anchor="middle" font-weight="700" font-size="16" letter-spacing="1" fill="#FFFFFF" text-decoration="underline">ENVIRONMENT SCANNED</text>
+    <text x="260" y="546" text-anchor="middle" font-family="Courier New, monospace" font-size="11.5" fill="rgba(255,255,255,0.4)">Spectrum, physical, and digital, continuous</text>
+
+    <text x="853" y="525" text-anchor="middle" font-weight="700" font-size="16" letter-spacing="1" fill="#FFFFFF" text-decoration="underline">ANOMALY DETECTED, THEN ISOLATED</text>
+    <text x="853" y="546" text-anchor="middle" font-family="Courier New, monospace" font-size="11.5" fill="rgba(255,255,255,0.4)">Flagged, verified, resolved</text>
+
+    <text x="1140" y="525" text-anchor="middle" font-weight="700" font-size="16" letter-spacing="1" fill="#FFFFFF" text-decoration="underline">ENVIRONMENT CONFIRMED CLEAN</text>
+    <text x="1140" y="546" text-anchor="middle" font-family="Courier New, monospace" font-size="11.5" fill="rgba(255,255,255,0.4)">Documented, sworn findings</text>
+  </g>
+
+  <text x="700" y="610" text-anchor="middle" font-family="Courier New, monospace" font-size="12.5" letter-spacing="0.5" fill="rgba(255,255,255,0.35)">Spectrum, physical, and digital review conducted concurrently, not in sequence.</text>
+</svg>

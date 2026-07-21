@@ -1,0 +1,81 @@
+<svg viewBox="0 0 1400 680" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="grid" width="56" height="56" patternUnits="userSpaceOnUse">
+      <path d="M 56 0 L 0 0 0 56" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+    </pattern>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#1E8FAD"/>
+    </marker>
+  </defs>
+
+  <rect width="1400" height="680" fill="#0D1B2A"/>
+  <rect width="1400" height="680" fill="url(#grid)"/>
+  <rect x="1" y="1" width="1398" height="678" fill="none" stroke="rgba(30,143,173,0.35)" stroke-width="1.5"/>
+
+  <text x="60" y="72" font-family="Arial Narrow, Arial, sans-serif" font-weight="700" font-size="36" letter-spacing="1" fill="#FFFFFF">REGENT <tspan fill="#1E8FAD">INTEL</tspan></text>
+  <text x="61" y="98" font-family="Courier New, monospace" font-size="13" letter-spacing="3" fill="rgba(255,255,255,0.45)">EXECUTIVE PROTECTION</text>
+
+  <!-- Principal, centered in the ring stack -->
+  <!-- cx=400 cy=380 for every ring below: single shared center, nothing off-axis -->
+
+  <!-- Movement path, extends right from the shared center -->
+  <line x1="400" y1="380" x2="1290" y2="380" stroke="#1E8FAD" stroke-width="1.5" marker-end="url(#arrowhead)" opacity="0.9"/>
+  <text x="1190" y="365" font-family="Arial Narrow, Arial, sans-serif" font-weight="700" font-size="16" letter-spacing="1" fill="rgba(255,255,255,0.55)">LIFE</text>
+  <line x1="430" y1="380" x2="1180" y2="380" stroke="#1E8FAD" stroke-width="2" stroke-dasharray="4 14" opacity="0.6">
+    <animate attributeName="stroke-dashoffset" from="0" to="-36" dur="1.4s" repeatCount="indefinite"/>
+  </line>
+
+  <!-- Contingency: fixed outer boundary, shared center -->
+  <circle cx="400" cy="380" r="180" fill="none" stroke="#1E8FAD" stroke-width="1.5" stroke-dasharray="6 8" opacity="0.35">
+    <animateTransform attributeName="transform" type="rotate" from="0 400 380" to="360 400 380" dur="22s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Presence: swings across the full range, same shared center -->
+  <circle cx="400" cy="380" r="30" fill="none" stroke="#1E8FAD" stroke-width="1.5" opacity="0.75">
+    <animate attributeName="r" values="30;70;115;155;115;70;30" keyTimes="0;0.16;0.33;0.5;0.66;0.83;1" dur="11s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.8;0.65;0.5;0.35;0.5;0.65;0.8" keyTimes="0;0.16;0.33;0.5;0.66;0.83;1" dur="11s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Intelligence: innermost, same shared center -->
+  <circle cx="400" cy="380" r="20" fill="none" stroke="#1E8FAD" stroke-width="1.5" opacity="0.9">
+    <animate attributeName="r" values="18;22;18" dur="2s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Principal dot, exact shared center -->
+  <circle cx="400" cy="380" r="9" fill="#1E8FAD"/>
+  <text x="400" y="330" text-anchor="middle" font-family="Arial Narrow, Arial, sans-serif" font-weight="700" font-size="16" letter-spacing="1" fill="#FFFFFF" text-decoration="underline">PRINCIPAL</text>
+  <line x1="400" y1="340" x2="400" y2="371" stroke="#1E8FAD" stroke-width="1"/>
+
+  <!-- Leader lines: touch the ring, elbow out, terminate at the underlined label -->
+  <g stroke="#1E8FAD" stroke-width="1" fill="none" opacity="0.8">
+    <!-- Intelligence leader -->
+    <circle cx="406.8" cy="361.2" r="2.5" fill="#1E8FAD" stroke="none"/>
+    <path d="M 406.8 361.2 L 650 140 L 680 140"/>
+    <!-- Presence leader, tracks the ring's radius live -->
+    <circle cx="429.5" cy="374.8" r="2.5" fill="#1E8FAD" stroke="none">
+      <animate attributeName="cx" values="429.5;468.9;513.3;552.6;513.3;468.9;429.5" keyTimes="0;0.16;0.33;0.5;0.66;0.83;1" dur="11s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="374.8;367.8;360.0;353.1;360.0;367.8;374.8" keyTimes="0;0.16;0.33;0.5;0.66;0.83;1" dur="11s" repeatCount="indefinite"/>
+    </circle>
+    <path d="M 429.5 374.8 L 650 225 L 680 225">
+      <animate attributeName="d" values="M 429.5 374.8 L 650 225 L 680 225;M 468.9 367.8 L 650 225 L 680 225;M 513.3 360.0 L 650 225 L 680 225;M 552.6 353.1 L 650 225 L 680 225;M 513.3 360.0 L 650 225 L 680 225;M 468.9 367.8 L 650 225 L 680 225;M 429.5 374.8 L 650 225 L 680 225" keyTimes="0;0.16;0.33;0.5;0.66;0.83;1" dur="11s" repeatCount="indefinite"/>
+    </path>
+    <!-- Contingency leader -->
+    <circle cx="563.1" cy="456.1" r="2.5" fill="#1E8FAD" stroke="none"/>
+    <path d="M 563.1 456.1 L 650 550 L 680 550"/>
+  </g>
+
+  <g font-family="Arial Narrow, Arial, sans-serif">
+    <text x="685" y="145" font-weight="700" font-size="17" letter-spacing="1" fill="#FFFFFF" text-decoration="underline">INTELLIGENCE</text>
+    <text x="685" y="166" font-family="Courier New, monospace" font-size="12" letter-spacing="0.5" fill="rgba(255,255,255,0.4)">Innermost ring. Always on.</text>
+
+    <text x="685" y="230" font-weight="700" font-size="17" letter-spacing="1" fill="#FFFFFF" text-decoration="underline">PRESENCE</text>
+    <text x="685" y="250" font-family="Courier New, monospace" font-size="12" letter-spacing="0.5" fill="rgba(255,255,255,0.4)">Middle ring. Swings wide:</text>
+    <text x="695" y="270" font-family="Courier New, monospace" font-size="11.5" fill="rgba(255,255,255,0.55)">OVERT &#8212; close, like a bodyguard at the elbow</text>
+    <text x="695" y="288" font-family="Courier New, monospace" font-size="11.5" fill="rgba(255,255,255,0.55)">LOW PROFILE &#8212; nearby, blended in</text>
+    <text x="695" y="306" font-family="Courier New, monospace" font-size="11.5" fill="rgba(255,255,255,0.55)">COVERT &#8212; present, unseen</text>
+    <text x="695" y="324" font-family="Courier New, monospace" font-size="11.5" fill="rgba(255,255,255,0.55)">REMOTE &#8212; monitoring from a distance</text>
+
+    <text x="685" y="555" font-weight="700" font-size="17" letter-spacing="1" fill="#FFFFFF" text-decoration="underline">CONTINGENCY</text>
+    <text x="685" y="575" font-family="Courier New, monospace" font-size="12" letter-spacing="0.5" fill="rgba(255,255,255,0.4)">Outer limit. Standing by.</text>
+  </g>
+</svg>
