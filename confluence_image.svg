@@ -10,16 +10,15 @@
 
   <rect width="1400" height="680" fill="#0D1B2A"/>
   <rect width="1400" height="680" fill="url(#grid)"/>
-  <rect x="1" y="1" width="1398" height="678" fill="none" stroke="rgba(30,143,173,0.35)" stroke-width="1.5"/>
 
   <!-- Three input paths -->
-  <path id="safetyPath" d="M 100 150 C 380 150, 520 230, 610 340" fill="none" stroke="#1E8FAD" stroke-width="1.5" opacity="0.55"/>
-  <path id="intelPath" d="M 100 340 L 610 340" fill="none" stroke="#1E8FAD" stroke-width="1.5" opacity="0.55"/>
-  <path id="docPath" d="M 100 530 C 380 530, 520 450, 610 340" fill="none" stroke="#1E8FAD" stroke-width="1.5" opacity="0.55"/>
+  <path id="safetyPath" d="M 220 150 C 420 150, 530 230, 610 340" fill="none" stroke="#1E8FAD" stroke-width="1.5" opacity="0.55"/>
+  <path id="intelPath" d="M 220 340 L 610 340" fill="none" stroke="#1E8FAD" stroke-width="1.5" opacity="0.55"/>
+  <path id="docPath" d="M 220 530 C 420 530, 530 450, 610 340" fill="none" stroke="#1E8FAD" stroke-width="1.5" opacity="0.55"/>
 
-  <text x="70" y="145" text-anchor="end" font-family="Arial Narrow, Arial, sans-serif" font-weight="700" font-size="16" letter-spacing="1.5" fill="rgba(255,255,255,0.65)">SAFETY</text>
-  <text x="70" y="345" text-anchor="end" font-family="Arial Narrow, Arial, sans-serif" font-weight="700" font-size="16" letter-spacing="1.5" fill="rgba(255,255,255,0.65)">INTELLIGENCE</text>
-  <text x="70" y="535" text-anchor="end" font-family="Arial Narrow, Arial, sans-serif" font-weight="700" font-size="16" letter-spacing="1.5" fill="rgba(255,255,255,0.65)">DOCUMENTATION</text>
+  <text x="190" y="145" text-anchor="end" font-family="Arial Narrow, Arial, sans-serif" font-weight="700" font-size="16" letter-spacing="1.5" fill="rgba(255,255,255,0.65)">SAFETY</text>
+  <text x="190" y="345" text-anchor="end" font-family="Arial Narrow, Arial, sans-serif" font-weight="700" font-size="16" letter-spacing="1.5" fill="rgba(255,255,255,0.65)">INTELLIGENCE</text>
+  <text x="190" y="535" text-anchor="end" font-family="Arial Narrow, Arial, sans-serif" font-weight="700" font-size="16" letter-spacing="1.5" fill="rgba(255,255,255,0.65)">DOCUMENTATION</text>
 
   <!-- Continuous streams of dots, each line feeding in at its own rate -->
   <circle r="4" fill="#1E8FAD">

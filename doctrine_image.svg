@@ -13,7 +13,6 @@
 
   <rect width="1400" height="680" fill="#0D1B2A"/>
   <rect width="1400" height="680" fill="url(#grid)"/>
-  <rect x="1" y="1" width="1398" height="678" fill="none" stroke="rgba(30,143,173,0.35)" stroke-width="1.5"/>
 
   <text x="700" y="120" text-anchor="middle" font-family="Arial Narrow, Arial, sans-serif" font-weight="700" font-size="40" letter-spacing="1" fill="#FFFFFF">REGENT <tspan fill="#1E8FAD">INTEL</tspan></text>
   <text x="700" y="150" text-anchor="middle" font-family="Courier New, monospace" font-size="14" letter-spacing="3" fill="rgba(255,255,255,0.45)">THE OPERATIONAL DOCTRINE</text>
