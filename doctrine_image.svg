@@ -11,7 +11,6 @@
     </marker>
   </defs>
 
-  <rect width="1400" height="680" fill="#0D1B2A"/>
   <rect width="1400" height="680" fill="url(#grid)"/>
 
   <text x="700" y="120" text-anchor="middle" font-family="Arial Narrow, Arial, sans-serif" font-weight="700" font-size="40" letter-spacing="1" fill="#FFFFFF">REGENT <tspan fill="#1E8FAD">INTEL</tspan></text>

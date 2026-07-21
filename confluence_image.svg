@@ -8,7 +8,6 @@
     </marker>
   </defs>
 
-  <rect width="1400" height="680" fill="#0D1B2A"/>
   <rect width="1400" height="680" fill="url(#grid)"/>
 
   <!-- Three input paths -->

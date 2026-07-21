@@ -155,7 +155,7 @@ section{padding:88px 0}
 /* STANDARDS */
 .standards-columns{display:grid;grid-template-columns:1fr 1fr;gap:48px;margin-top:40px;width:100%}
 .standards-col h3{font-family:var(--font-display);font-weight:600;font-size:16px;text-transform:uppercase;letter-spacing:0.05em;color:var(--teal-bright);margin-bottom:18px;padding-bottom:12px;border-bottom:1px solid var(--line)}
-.standard-item{display:flex;gap:0;padding:12px 0;border-bottom:1px solid var(--line);align-items:baseline}
+.standard-item{display:flex;gap:20px;padding:12px 0;border-bottom:1px solid var(--line);align-items:baseline}
 .standard-item .std-num{font-family:var(--font-mono);font-size:11.5px;letter-spacing:0.05em;color:var(--teal-bright);white-space:nowrap;min-width:155px;flex-shrink:0}
 .standard-item .std-name{font-size:15px;color:rgba(255,255,255,0.55);line-height:1.5}
 .standards-full{margin-top:44px;padding-top:32px;border-top:1px solid var(--line)}
