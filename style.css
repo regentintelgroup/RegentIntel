@@ -73,7 +73,7 @@ nav.links>li:hover .dropdown,nav.links>li:focus-within .dropdown{opacity:1;point
 /* MARQUEE */
 .marquee{background:var(--navy);border-top:1px solid var(--line);border-bottom:1px solid var(--line);overflow:hidden;white-space:nowrap;padding:14px 0}
 .marquee-track{display:inline-flex;animation:marqueeScroll 60s linear infinite}
-.marquee-track span{font-family:var(--font-mono);font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);padding:0 28px;display:inline-flex;align-items:center;gap:28px}
+.marquee-track span{font-family:var(--font-mono);font-size:11px;line-height:1;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);padding:0 28px;display:inline-flex;align-items:center;gap:28px}
 .marquee-track span::after{content:'\2022';color:var(--teal)}
 @keyframes marqueeScroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 
