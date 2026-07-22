@@ -7730,196 +7730,452 @@
 <circle cx="455.8" cy="599.0" r="1.1" fill="#1E8FAD" opacity="0.35"/>
 
   <circle cx="428.7" cy="247.1" r="4" fill="none" stroke="#1E8FAD" stroke-width="1.5" opacity="0">
-    <animate attributeName="r" values="4;4;16;16;4" keyTimes="0;0.4136;0.4291;0.5171;1" dur="14.0s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0;0;0.8;0;0" keyTimes="0;0.4136;0.4291;0.5171;1" dur="14.0s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="4;4;15;15;4" keyTimes="0;0.8381;0.8598;0.9825;1" dur="16.0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.85;0;0" keyTimes="0;0.8381;0.8598;0.9825;1" dur="16.0s" repeatCount="indefinite"/>
   </circle>
   <circle cx="428.7" cy="247.1" r="4" fill="#1E8FAD" opacity="0">
-    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.4136;0.4291;0.5171;1" dur="14.0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.8;0.8;0" keyTimes="0;0.8381;0.8598;0.9825;1" dur="16.0s" repeatCount="indefinite"/>
   </circle>
   <g opacity="0">
-    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.4136;0.4861;0.5171;1" dur="14.0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.8381;0.9392;0.9825;1" dur="16.0s" repeatCount="indefinite"/>
     <rect x="442.7" y="213.1" width="75.6" height="26" rx="3" fill="#0D1B2A" stroke="#1E8FAD" stroke-width="1"/>
-    <text x="451.7" y="230.1" font-family="Courier New, monospace" font-size="11" letter-spacing="0.5" fill="#FFFFFF">NEW YORK</text>
+    <text x="449.7" y="230.1" font-family="Courier New, monospace" font-size="11" font-weight="normal" letter-spacing="0.5" fill="#FFFFFF">NEW YORK</text>
   </g>
   <circle cx="266.6" cy="271.8" r="4" fill="none" stroke="#1E8FAD" stroke-width="1.5" opacity="0">
-    <animate attributeName="r" values="4;4;16;16;4" keyTimes="0;0.8450;0.8597;0.9429;1" dur="14.0s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0;0;0.8;0;0" keyTimes="0;0.8450;0.8597;0.9429;1" dur="14.0s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="4;4;15;15;4" keyTimes="0;0.8087;0.8166;0.8612;1" dur="16.0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.85;0;0" keyTimes="0;0.8087;0.8166;0.8612;1" dur="16.0s" repeatCount="indefinite"/>
   </circle>
   <circle cx="266.6" cy="271.8" r="4" fill="#1E8FAD" opacity="0">
-    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.8450;0.8597;0.9429;1" dur="14.0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.8;0.8;0" keyTimes="0;0.8087;0.8166;0.8612;1" dur="16.0s" repeatCount="indefinite"/>
   </circle>
   <g opacity="0">
-    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.8450;0.9135;0.9429;1" dur="14.0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.8087;0.8455;0.8612;1" dur="16.0s" repeatCount="indefinite"/>
     <rect x="280.6" y="237.8" width="97.2" height="26" rx="3" fill="#0D1B2A" stroke="#1E8FAD" stroke-width="1"/>
-    <text x="289.6" y="254.8" font-family="Courier New, monospace" font-size="11" letter-spacing="0.5" fill="#FFFFFF">LOS ANGELES</text>
+    <text x="287.6" y="254.8" font-family="Courier New, monospace" font-size="11" font-weight="normal" letter-spacing="0.5" fill="#FFFFFF">LOS ANGELES</text>
   </g>
-  <circle cx="336.6" cy="325.4" r="4" fill="none" stroke="#1E8FAD" stroke-width="1.5" opacity="0">
-    <animate attributeName="r" values="4;4;16;16;4" keyTimes="0;0.4643;0.4800;0.5693;1" dur="14.0s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0;0;0.8;0;0" keyTimes="0;0.4643;0.4800;0.5693;1" dur="14.0s" repeatCount="indefinite"/>
+  <circle cx="378.8" cy="242.7" r="4" fill="none" stroke="#1E8FAD" stroke-width="1.5" opacity="0">
+    <animate attributeName="r" values="4;4;15;15;4" keyTimes="0;0.5363;0.5496;0.6250;1" dur="16.0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.85;0;0" keyTimes="0;0.5363;0.5496;0.6250;1" dur="16.0s" repeatCount="indefinite"/>
   </circle>
-  <circle cx="336.6" cy="325.4" r="4" fill="#1E8FAD" opacity="0">
-    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.4643;0.4800;0.5693;1" dur="14.0s" repeatCount="indefinite"/>
+  <circle cx="378.8" cy="242.7" r="4" fill="#1E8FAD" opacity="0">
+    <animate attributeName="opacity" values="0;0;0.8;0.8;0" keyTimes="0;0.5363;0.5496;0.6250;1" dur="16.0s" repeatCount="indefinite"/>
   </circle>
   <g opacity="0">
-    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.4643;0.5378;0.5693;1" dur="14.0s" repeatCount="indefinite"/>
-    <rect x="350.6" y="291.4" width="97.2" height="26" rx="3" fill="#0D1B2A" stroke="#1E8FAD" stroke-width="1"/>
-    <text x="359.6" y="308.4" font-family="Courier New, monospace" font-size="11" letter-spacing="0.5" fill="#FFFFFF">MEXICO CITY</text>
+    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.5363;0.5984;0.6250;1" dur="16.0s" repeatCount="indefinite"/>
+    <rect x="392.8" y="208.7" width="68.4" height="26" rx="3" fill="#0D1B2A" stroke="#1E8FAD" stroke-width="1"/>
+    <text x="399.8" y="225.7" font-family="Courier New, monospace" font-size="11" font-weight="normal" letter-spacing="0.5" fill="#FFFFFF">CHICAGO</text>
+  </g>
+  <circle cx="408.9" cy="236.1" r="4" fill="none" stroke="#1E8FAD" stroke-width="1.5" opacity="0">
+    <animate attributeName="r" values="4;4;15;15;4" keyTimes="0;0.4806;0.4893;0.5381;1" dur="16.0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.85;0;0" keyTimes="0;0.4806;0.4893;0.5381;1" dur="16.0s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="408.9" cy="236.1" r="4" fill="#1E8FAD" opacity="0">
+    <animate attributeName="opacity" values="0;0;0.8;0.8;0" keyTimes="0;0.4806;0.4893;0.5381;1" dur="16.0s" repeatCount="indefinite"/>
+  </circle>
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.4806;0.5209;0.5381;1" dur="16.0s" repeatCount="indefinite"/>
+    <rect x="422.9" y="202.1" width="68.4" height="26" rx="3" fill="#0D1B2A" stroke="#1E8FAD" stroke-width="1"/>
+    <text x="429.9" y="219.1" font-family="Courier New, monospace" font-size="11" font-weight="normal" letter-spacing="0.5" fill="#FFFFFF">TORONTO</text>
+  </g>
+  <circle cx="336.6" cy="325.4" r="6" fill="none" stroke="#1E8FAD" stroke-width="2.2" opacity="0">
+    <animate attributeName="r" values="6;6;26;26;6" keyTimes="0;0.1737;0.2068;0.3944;1" dur="16.0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.85;0;0" keyTimes="0;0.1737;0.2068;0.3944;1" dur="16.0s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="336.6" cy="325.4" r="6" fill="none" stroke="#FFFFFF" stroke-width="1" opacity="0">
+    <animate attributeName="r" values="6;6;41.6;41.6;6" keyTimes="0;0.1737;0.2068;0.3944;1" dur="16.0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.5;0;0" keyTimes="0;0.1737;0.2068;0.3944;1" dur="16.0s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="336.6" cy="325.4" r="6" fill="#1E8FAD" opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.1737;0.2068;0.3944;1" dur="16.0s" repeatCount="indefinite"/>
+  </circle>
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.1737;0.3282;0.3944;1" dur="16.0s" repeatCount="indefinite"/>
+    <rect x="350.6" y="287.4" width="101.6" height="30" rx="3" fill="#0D1B2A" stroke="#FFFFFF" stroke-width="1.3"/>
+    <text x="359.6" y="308.4" font-family="Courier New, monospace" font-size="12.5" font-weight="bold" letter-spacing="0.5" fill="#FFFFFF">MEXICO CITY</text>
+  </g>
+  <circle cx="405.9" cy="301.9" r="4" fill="none" stroke="#1E8FAD" stroke-width="1.5" opacity="0">
+    <animate attributeName="r" values="4;4;15;15;4" keyTimes="0;0.2006;0.2144;0.2925;1" dur="16.0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.85;0;0" keyTimes="0;0.2006;0.2144;0.2925;1" dur="16.0s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="405.9" cy="301.9" r="4" fill="#1E8FAD" opacity="0">
+    <animate attributeName="opacity" values="0;0;0.8;0.8;0" keyTimes="0;0.2006;0.2144;0.2925;1" dur="16.0s" repeatCount="indefinite"/>
+  </circle>
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.2006;0.2649;0.2925;1" dur="16.0s" repeatCount="indefinite"/>
+    <rect x="419.9" y="267.9" width="54.0" height="26" rx="3" fill="#0D1B2A" stroke="#1E8FAD" stroke-width="1"/>
+    <text x="426.9" y="284.9" font-family="Courier New, monospace" font-size="11" font-weight="normal" letter-spacing="0.5" fill="#FFFFFF">MIAMI</text>
   </g>
   <circle cx="428.3" cy="379.5" r="4" fill="none" stroke="#1E8FAD" stroke-width="1.5" opacity="0">
-    <animate attributeName="r" values="4;4;16;16;4" keyTimes="0;0.1686;0.1837;0.2693;1" dur="14.0s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0;0;0.8;0;0" keyTimes="0;0.1686;0.1837;0.2693;1" dur="14.0s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="4;4;15;15;4" keyTimes="0;0.0225;0.0305;0.0756;1" dur="16.0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.85;0;0" keyTimes="0;0.0225;0.0305;0.0756;1" dur="16.0s" repeatCount="indefinite"/>
   </circle>
   <circle cx="428.3" cy="379.5" r="4" fill="#1E8FAD" opacity="0">
-    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.1686;0.1837;0.2693;1" dur="14.0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.8;0.8;0" keyTimes="0;0.0225;0.0305;0.0756;1" dur="16.0s" repeatCount="indefinite"/>
   </circle>
   <g opacity="0">
-    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.1686;0.2391;0.2693;1" dur="14.0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.0225;0.0597;0.0756;1" dur="16.0s" repeatCount="indefinite"/>
     <rect x="442.3" y="345.5" width="61.2" height="26" rx="3" fill="#0D1B2A" stroke="#1E8FAD" stroke-width="1"/>
-    <text x="451.3" y="362.5" font-family="Courier New, monospace" font-size="11" letter-spacing="0.5" fill="#FFFFFF">BOGOTA</text>
+    <text x="449.3" y="362.5" font-family="Courier New, monospace" font-size="11" font-weight="normal" letter-spacing="0.5" fill="#FFFFFF">BOGOTA</text>
   </g>
-  <circle cx="529.1" cy="483.2" r="4" fill="none" stroke="#1E8FAD" stroke-width="1.5" opacity="0">
-    <animate attributeName="r" values="4;4;16;16;4" keyTimes="0;0.5757;0.5932;0.6921;1" dur="14.0s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0;0;0.8;0;0" keyTimes="0;0.5757;0.5932;0.6921;1" dur="14.0s" repeatCount="indefinite"/>
+  <circle cx="529.1" cy="483.2" r="6" fill="none" stroke="#1E8FAD" stroke-width="2.2" opacity="0">
+    <animate attributeName="r" values="6;6;26;26;6" keyTimes="0;0.6438;0.6767;0.8631;1" dur="16.0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.85;0;0" keyTimes="0;0.6438;0.6767;0.8631;1" dur="16.0s" repeatCount="indefinite"/>
   </circle>
-  <circle cx="529.1" cy="483.2" r="4" fill="#1E8FAD" opacity="0">
-    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.5757;0.5932;0.6921;1" dur="14.0s" repeatCount="indefinite"/>
+  <circle cx="529.1" cy="483.2" r="6" fill="none" stroke="#FFFFFF" stroke-width="1" opacity="0">
+    <animate attributeName="r" values="6;6;41.6;41.6;6" keyTimes="0;0.6438;0.6767;0.8631;1" dur="16.0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.5;0;0" keyTimes="0;0.6438;0.6767;0.8631;1" dur="16.0s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="529.1" cy="483.2" r="6" fill="#1E8FAD" opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.6438;0.6767;0.8631;1" dur="16.0s" repeatCount="indefinite"/>
   </circle>
   <g opacity="0">
-    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.5757;0.6572;0.6921;1" dur="14.0s" repeatCount="indefinite"/>
-    <rect x="543.1" y="449.2" width="82.8" height="26" rx="3" fill="#0D1B2A" stroke="#1E8FAD" stroke-width="1"/>
-    <text x="552.1" y="466.2" font-family="Courier New, monospace" font-size="11" letter-spacing="0.5" fill="#FFFFFF">SAO PAULO</text>
+    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.6438;0.7973;0.8631;1" dur="16.0s" repeatCount="indefinite"/>
+    <rect x="543.1" y="445.2" width="86.4" height="30" rx="3" fill="#0D1B2A" stroke="#FFFFFF" stroke-width="1.3"/>
+    <text x="552.1" y="466.2" font-family="Courier New, monospace" font-size="12.5" font-weight="bold" letter-spacing="0.5" fill="#FFFFFF">SAO PAULO</text>
+  </g>
+  <circle cx="485.9" cy="524.0" r="4" fill="none" stroke="#1E8FAD" stroke-width="1.5" opacity="0">
+    <animate attributeName="r" values="4;4;15;15;4" keyTimes="0;0.4644;0.4827;0.5862;1" dur="16.0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.85;0;0" keyTimes="0;0.4644;0.4827;0.5862;1" dur="16.0s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="485.9" cy="524.0" r="4" fill="#1E8FAD" opacity="0">
+    <animate attributeName="opacity" values="0;0;0.8;0.8;0" keyTimes="0;0.4644;0.4827;0.5862;1" dur="16.0s" repeatCount="indefinite"/>
+  </circle>
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.4644;0.5497;0.5862;1" dur="16.0s" repeatCount="indefinite"/>
+    <rect x="499.9" y="490.0" width="104.4" height="26" rx="3" fill="#0D1B2A" stroke="#1E8FAD" stroke-width="1"/>
+    <text x="506.9" y="507.0" font-family="Courier New, monospace" font-size="11" font-weight="normal" letter-spacing="0.5" fill="#FFFFFF">BUENOS AIRES</text>
+  </g>
+  <circle cx="440.8" cy="519.6" r="4" fill="none" stroke="#1E8FAD" stroke-width="1.5" opacity="0">
+    <animate attributeName="r" values="4;4;15;15;4" keyTimes="0;0.3256;0.3331;0.3756;1" dur="16.0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.85;0;0" keyTimes="0;0.3256;0.3331;0.3756;1" dur="16.0s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="440.8" cy="519.6" r="4" fill="#1E8FAD" opacity="0">
+    <animate attributeName="opacity" values="0;0;0.8;0.8;0" keyTimes="0;0.3256;0.3331;0.3756;1" dur="16.0s" repeatCount="indefinite"/>
+  </circle>
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.3256;0.3606;0.3756;1" dur="16.0s" repeatCount="indefinite"/>
+    <rect x="454.8" y="485.6" width="75.6" height="26" rx="3" fill="#0D1B2A" stroke="#1E8FAD" stroke-width="1"/>
+    <text x="461.8" y="502.6" font-family="Courier New, monospace" font-size="11" font-weight="normal" letter-spacing="0.5" fill="#FFFFFF">SANTIAGO</text>
   </g>
   <circle cx="699.6" cy="207.4" r="4" fill="none" stroke="#1E8FAD" stroke-width="1.5" opacity="0">
-    <animate attributeName="r" values="4;4;16;16;4" keyTimes="0;0.0857;0.0990;0.1743;1" dur="14.0s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0;0;0.8;0;0" keyTimes="0;0.0857;0.0990;0.1743;1" dur="14.0s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="4;4;15;15;4" keyTimes="0;0.7094;0.7253;0.8156;1" dur="16.0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.85;0;0" keyTimes="0;0.7094;0.7253;0.8156;1" dur="16.0s" repeatCount="indefinite"/>
   </circle>
   <circle cx="699.6" cy="207.4" r="4" fill="#1E8FAD" opacity="0">
-    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.0857;0.0990;0.1743;1" dur="14.0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.8;0.8;0" keyTimes="0;0.7094;0.7253;0.8156;1" dur="16.0s" repeatCount="indefinite"/>
   </circle>
   <g opacity="0">
-    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.0857;0.1477;0.1743;1" dur="14.0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.7094;0.7837;0.8156;1" dur="16.0s" repeatCount="indefinite"/>
     <rect x="713.6" y="173.4" width="61.2" height="26" rx="3" fill="#0D1B2A" stroke="#1E8FAD" stroke-width="1"/>
-    <text x="722.6" y="190.4" font-family="Courier New, monospace" font-size="11" letter-spacing="0.5" fill="#FFFFFF">LONDON</text>
+    <text x="720.6" y="190.4" font-family="Courier New, monospace" font-size="11" font-weight="normal" letter-spacing="0.5" fill="#FFFFFF">LONDON</text>
   </g>
   <circle cx="708.4" cy="217.0" r="4" fill="none" stroke="#1E8FAD" stroke-width="1.5" opacity="0">
-    <animate attributeName="r" values="4;4;16;16;4" keyTimes="0;0.0829;0.1005;0.2007;1" dur="14.0s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0;0;0.8;0;0" keyTimes="0;0.0829;0.1005;0.2007;1" dur="14.0s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="4;4;15;15;4" keyTimes="0;0.5962;0.6127;0.7062;1" dur="16.0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.85;0;0" keyTimes="0;0.5962;0.6127;0.7062;1" dur="16.0s" repeatCount="indefinite"/>
   </circle>
   <circle cx="708.4" cy="217.0" r="4" fill="#1E8FAD" opacity="0">
-    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.0829;0.1005;0.2007;1" dur="14.0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.8;0.8;0" keyTimes="0;0.5962;0.6127;0.7062;1" dur="16.0s" repeatCount="indefinite"/>
   </circle>
   <g opacity="0">
-    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.0829;0.1654;0.2007;1" dur="14.0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.5962;0.6732;0.7062;1" dur="16.0s" repeatCount="indefinite"/>
     <rect x="722.4" y="183.0" width="54.0" height="26" rx="3" fill="#0D1B2A" stroke="#1E8FAD" stroke-width="1"/>
-    <text x="731.4" y="200.0" font-family="Courier New, monospace" font-size="11" letter-spacing="0.5" fill="#FFFFFF">PARIS</text>
+    <text x="729.4" y="200.0" font-family="Courier New, monospace" font-size="11" font-weight="normal" letter-spacing="0.5" fill="#FFFFFF">PARIS</text>
+  </g>
+  <circle cx="686.4" cy="248.2" r="4" fill="none" stroke="#1E8FAD" stroke-width="1.5" opacity="0">
+    <animate attributeName="r" values="4;4;15;15;4" keyTimes="0;0.8800;0.8924;0.9625;1" dur="16.0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.85;0;0" keyTimes="0;0.8800;0.8924;0.9625;1" dur="16.0s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="686.4" cy="248.2" r="4" fill="#1E8FAD" opacity="0">
+    <animate attributeName="opacity" values="0;0;0.8;0.8;0" keyTimes="0;0.8800;0.8924;0.9625;1" dur="16.0s" repeatCount="indefinite"/>
+  </circle>
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.8800;0.9377;0.9625;1" dur="16.0s" repeatCount="indefinite"/>
+    <rect x="700.4" y="214.2" width="61.2" height="26" rx="3" fill="#0D1B2A" stroke="#1E8FAD" stroke-width="1"/>
+    <text x="707.4" y="231.2" font-family="Courier New, monospace" font-size="11" font-weight="normal" letter-spacing="0.5" fill="#FFFFFF">MADRID</text>
+  </g>
+  <circle cx="749.1" cy="203.8" r="4" fill="none" stroke="#1E8FAD" stroke-width="1.5" opacity="0">
+    <animate attributeName="r" values="4;4;15;15;4" keyTimes="0;0.6887;0.7012;0.7719;1" dur="16.0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.85;0;0" keyTimes="0;0.6887;0.7012;0.7719;1" dur="16.0s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="749.1" cy="203.8" r="4" fill="#1E8FAD" opacity="0">
+    <animate attributeName="opacity" values="0;0;0.8;0.8;0" keyTimes="0;0.6887;0.7012;0.7719;1" dur="16.0s" repeatCount="indefinite"/>
+  </circle>
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.6887;0.7469;0.7719;1" dur="16.0s" repeatCount="indefinite"/>
+    <rect x="763.1" y="169.8" width="61.2" height="26" rx="3" fill="#0D1B2A" stroke="#1E8FAD" stroke-width="1"/>
+    <text x="770.1" y="186.8" font-family="Courier New, monospace" font-size="11" font-weight="normal" letter-spacing="0.5" fill="#FFFFFF">BERLIN</text>
+  </g>
+  <circle cx="745.8" cy="242.7" r="4" fill="none" stroke="#1E8FAD" stroke-width="1.5" opacity="0">
+    <animate attributeName="r" values="4;4;15;15;4" keyTimes="0;0.5181;0.5352;0.6319;1" dur="16.0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.85;0;0" keyTimes="0;0.5181;0.5352;0.6319;1" dur="16.0s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="745.8" cy="242.7" r="4" fill="#1E8FAD" opacity="0">
+    <animate attributeName="opacity" values="0;0;0.8;0.8;0" keyTimes="0;0.5181;0.5352;0.6319;1" dur="16.0s" repeatCount="indefinite"/>
+  </circle>
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.5181;0.5978;0.6319;1" dur="16.0s" repeatCount="indefinite"/>
+    <rect x="759.8" y="208.7" width="46.8" height="26" rx="3" fill="#0D1B2A" stroke="#1E8FAD" stroke-width="1"/>
+    <text x="766.8" y="225.7" font-family="Courier New, monospace" font-size="11" font-weight="normal" letter-spacing="0.5" fill="#FFFFFF">ROME</text>
+  </g>
+  <circle cx="837.9" cy="191.6" r="6" fill="none" stroke="#1E8FAD" stroke-width="2.2" opacity="0">
+    <animate attributeName="r" values="6;6;26;26;6" keyTimes="0;0.2850;0.3141;0.4788;1" dur="16.0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.85;0;0" keyTimes="0;0.2850;0.3141;0.4788;1" dur="16.0s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="837.9" cy="191.6" r="6" fill="none" stroke="#FFFFFF" stroke-width="1" opacity="0">
+    <animate attributeName="r" values="6;6;41.6;41.6;6" keyTimes="0;0.2850;0.3141;0.4788;1" dur="16.0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.5;0;0" keyTimes="0;0.2850;0.3141;0.4788;1" dur="16.0s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="837.9" cy="191.6" r="6" fill="#1E8FAD" opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.2850;0.3141;0.4788;1" dur="16.0s" repeatCount="indefinite"/>
+  </circle>
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.2850;0.4206;0.4788;1" dur="16.0s" repeatCount="indefinite"/>
+    <rect x="851.9" y="153.6" width="63.6" height="30" rx="3" fill="#0D1B2A" stroke="#FFFFFF" stroke-width="1.3"/>
+    <text x="860.9" y="174.6" font-family="Courier New, monospace" font-size="12.5" font-weight="bold" letter-spacing="0.5" fill="#FFFFFF">MOSCOW</text>
   </g>
   <circle cx="712.5" cy="372.9" r="4" fill="none" stroke="#1E8FAD" stroke-width="1.5" opacity="0">
-    <animate attributeName="r" values="4;4;16;16;4" keyTimes="0;0.6343;0.6453;0.7079;1" dur="14.0s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0;0;0.8;0;0" keyTimes="0;0.6343;0.6453;0.7079;1" dur="14.0s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="4;4;15;15;4" keyTimes="0;0.4294;0.4474;0.5494;1" dur="16.0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.85;0;0" keyTimes="0;0.4294;0.4474;0.5494;1" dur="16.0s" repeatCount="indefinite"/>
   </circle>
   <circle cx="712.5" cy="372.9" r="4" fill="#1E8FAD" opacity="0">
-    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.6343;0.6453;0.7079;1" dur="14.0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.8;0.8;0" keyTimes="0;0.4294;0.4474;0.5494;1" dur="16.0s" repeatCount="indefinite"/>
   </circle>
   <g opacity="0">
-    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.6343;0.6858;0.7079;1" dur="14.0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.4294;0.5134;0.5494;1" dur="16.0s" repeatCount="indefinite"/>
     <rect x="726.5" y="338.9" width="54.0" height="26" rx="3" fill="#0D1B2A" stroke="#1E8FAD" stroke-width="1"/>
-    <text x="735.5" y="355.9" font-family="Courier New, monospace" font-size="11" letter-spacing="0.5" fill="#FFFFFF">LAGOS</text>
+    <text x="733.5" y="355.9" font-family="Courier New, monospace" font-size="11" font-weight="normal" letter-spacing="0.5" fill="#FFFFFF">LAGOS</text>
+  </g>
+  <circle cx="814.4" cy="286.5" r="6" fill="none" stroke="#1E8FAD" stroke-width="2.2" opacity="0">
+    <animate attributeName="r" values="6;6;26;26;6" keyTimes="0;0.5350;0.5682;0.7563;1" dur="16.0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.85;0;0" keyTimes="0;0.5350;0.5682;0.7563;1" dur="16.0s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="814.4" cy="286.5" r="6" fill="none" stroke="#FFFFFF" stroke-width="1" opacity="0">
+    <animate attributeName="r" values="6;6;41.6;41.6;6" keyTimes="0;0.5350;0.5682;0.7563;1" dur="16.0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.5;0;0" keyTimes="0;0.5350;0.5682;0.7563;1" dur="16.0s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="814.4" cy="286.5" r="6" fill="#1E8FAD" opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.5350;0.5682;0.7563;1" dur="16.0s" repeatCount="indefinite"/>
+  </circle>
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.5350;0.6899;0.7563;1" dur="16.0s" repeatCount="indefinite"/>
+    <rect x="828.4" y="248.5" width="56.0" height="30" rx="3" fill="#0D1B2A" stroke="#FFFFFF" stroke-width="1.3"/>
+    <text x="837.4" y="269.5" font-family="Courier New, monospace" font-size="12.5" font-weight="bold" letter-spacing="0.5" fill="#FFFFFF">CAIRO</text>
+  </g>
+  <circle cx="834.9" cy="401.5" r="4" fill="none" stroke="#1E8FAD" stroke-width="1.5" opacity="0">
+    <animate attributeName="r" values="4;4;15;15;4" keyTimes="0;0.5819;0.5913;0.6450;1" dur="16.0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.85;0;0" keyTimes="0;0.5819;0.5913;0.6450;1" dur="16.0s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="834.9" cy="401.5" r="4" fill="#1E8FAD" opacity="0">
+    <animate attributeName="opacity" values="0;0;0.8;0.8;0" keyTimes="0;0.5819;0.5913;0.6450;1" dur="16.0s" repeatCount="indefinite"/>
+  </circle>
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.5819;0.6261;0.6450;1" dur="16.0s" repeatCount="indefinite"/>
+    <rect x="848.9" y="367.5" width="68.4" height="26" rx="3" fill="#0D1B2A" stroke="#1E8FAD" stroke-width="1"/>
+    <text x="855.9" y="384.5" font-family="Courier New, monospace" font-size="11" font-weight="normal" letter-spacing="0.5" fill="#FFFFFF">NAIROBI</text>
   </g>
   <circle cx="802.7" cy="493.1" r="4" fill="none" stroke="#1E8FAD" stroke-width="1.5" opacity="0">
-    <animate attributeName="r" values="4;4;16;16;4" keyTimes="0;0.8979;0.9168;1.0000;1" dur="14.0s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0;0;0.8;0;0" keyTimes="0;0.8979;0.9168;1.0000;1" dur="14.0s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="4;4;15;15;4" keyTimes="0;0.1619;0.1736;0.2400;1" dur="16.0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.85;0;0" keyTimes="0;0.1619;0.1736;0.2400;1" dur="16.0s" repeatCount="indefinite"/>
   </circle>
   <circle cx="802.7" cy="493.1" r="4" fill="#1E8FAD" opacity="0">
-    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.8979;0.9168;1.0000;1" dur="14.0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.8;0.8;0" keyTimes="0;0.1619;0.1736;0.2400;1" dur="16.0s" repeatCount="indefinite"/>
   </circle>
   <g opacity="0">
-    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.8979;0.9864;1.0000;1" dur="14.0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.1619;0.2166;0.2400;1" dur="16.0s" repeatCount="indefinite"/>
     <rect x="816.7" y="459.1" width="104.4" height="26" rx="3" fill="#0D1B2A" stroke="#1E8FAD" stroke-width="1"/>
-    <text x="825.7" y="476.1" font-family="Courier New, monospace" font-size="11" letter-spacing="0.5" fill="#FFFFFF">JOHANNESBURG</text>
+    <text x="823.7" y="476.1" font-family="Courier New, monospace" font-size="11" font-weight="normal" letter-spacing="0.5" fill="#FFFFFF">JOHANNESBURG</text>
   </g>
-  <circle cx="902.8" cy="304.1" r="4" fill="none" stroke="#1E8FAD" stroke-width="1.5" opacity="0">
-    <animate attributeName="r" values="4;4;16;16;4" keyTimes="0;0.5979;0.6138;0.7043;1" dur="14.0s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0;0;0.8;0;0" keyTimes="0;0.5979;0.6138;0.7043;1" dur="14.0s" repeatCount="indefinite"/>
+  <circle cx="871.2" cy="306.0" r="4" fill="none" stroke="#1E8FAD" stroke-width="1.5" opacity="0">
+    <animate attributeName="r" values="4;4;15;15;4" keyTimes="0;0.7394;0.7490;0.8037;1" dur="16.0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.85;0;0" keyTimes="0;0.7394;0.7490;0.8037;1" dur="16.0s" repeatCount="indefinite"/>
   </circle>
-  <circle cx="902.8" cy="304.1" r="4" fill="#1E8FAD" opacity="0">
-    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.5979;0.6138;0.7043;1" dur="14.0s" repeatCount="indefinite"/>
+  <circle cx="871.2" cy="306.0" r="4" fill="#1E8FAD" opacity="0">
+    <animate attributeName="opacity" values="0;0;0.8;0.8;0" keyTimes="0;0.7394;0.7490;0.8037;1" dur="16.0s" repeatCount="indefinite"/>
   </circle>
   <g opacity="0">
-    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.5979;0.6724;0.7043;1" dur="14.0s" repeatCount="indefinite"/>
-    <rect x="916.8" y="270.1" width="54.0" height="26" rx="3" fill="#0D1B2A" stroke="#1E8FAD" stroke-width="1"/>
-    <text x="925.8" y="287.1" font-family="Courier New, monospace" font-size="11" letter-spacing="0.5" fill="#FFFFFF">DUBAI</text>
+    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.7394;0.7844;0.8037;1" dur="16.0s" repeatCount="indefinite"/>
+    <rect x="885.2" y="272.0" width="61.2" height="26" rx="3" fill="#0D1B2A" stroke="#1E8FAD" stroke-width="1"/>
+    <text x="892.2" y="289.0" font-family="Courier New, monospace" font-size="11" font-weight="normal" letter-spacing="0.5" fill="#FFFFFF">RIYADH</text>
   </g>
-  <circle cx="806.0" cy="246.0" r="4" fill="none" stroke="#1E8FAD" stroke-width="1.5" opacity="0">
-    <animate attributeName="r" values="4;4;16;16;4" keyTimes="0;0.1443;0.1551;0.2164;1" dur="14.0s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0;0;0.8;0;0" keyTimes="0;0.1443;0.1551;0.2164;1" dur="14.0s" repeatCount="indefinite"/>
+  <circle cx="902.8" cy="304.1" r="6" fill="none" stroke="#1E8FAD" stroke-width="2.2" opacity="0">
+    <animate attributeName="r" values="6;6;26;26;6" keyTimes="0;0.1037;0.1330;0.2988;1" dur="16.0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.85;0;0" keyTimes="0;0.1037;0.1330;0.2988;1" dur="16.0s" repeatCount="indefinite"/>
   </circle>
-  <circle cx="806.0" cy="246.0" r="4" fill="#1E8FAD" opacity="0">
-    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.1443;0.1551;0.2164;1" dur="14.0s" repeatCount="indefinite"/>
+  <circle cx="902.8" cy="304.1" r="6" fill="none" stroke="#FFFFFF" stroke-width="1" opacity="0">
+    <animate attributeName="r" values="6;6;41.6;41.6;6" keyTimes="0;0.1037;0.1330;0.2988;1" dur="16.0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.5;0;0" keyTimes="0;0.1037;0.1330;0.2988;1" dur="16.0s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="902.8" cy="304.1" r="6" fill="#1E8FAD" opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.1037;0.1330;0.2988;1" dur="16.0s" repeatCount="indefinite"/>
   </circle>
   <g opacity="0">
-    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.1443;0.1948;0.2164;1" dur="14.0s" repeatCount="indefinite"/>
-    <rect x="820.0" y="212.0" width="75.6" height="26" rx="3" fill="#0D1B2A" stroke="#1E8FAD" stroke-width="1"/>
-    <text x="829.0" y="229.0" font-family="Courier New, monospace" font-size="11" letter-spacing="0.5" fill="#FFFFFF">ISTANBUL</text>
+    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.1037;0.2402;0.2988;1" dur="16.0s" repeatCount="indefinite"/>
+    <rect x="916.8" y="266.1" width="56.0" height="30" rx="3" fill="#0D1B2A" stroke="#FFFFFF" stroke-width="1.3"/>
+    <text x="925.8" y="287.1" font-family="Courier New, monospace" font-size="12.5" font-weight="bold" letter-spacing="0.5" fill="#FFFFFF">DUBAI</text>
+  </g>
+  <circle cx="806.0" cy="246.0" r="6" fill="none" stroke="#1E8FAD" stroke-width="2.2" opacity="0">
+    <animate attributeName="r" values="6;6;26;26;6" keyTimes="0;0.0350;0.0662;0.2431;1" dur="16.0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.85;0;0" keyTimes="0;0.0350;0.0662;0.2431;1" dur="16.0s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="806.0" cy="246.0" r="6" fill="none" stroke="#FFFFFF" stroke-width="1" opacity="0">
+    <animate attributeName="r" values="6;6;41.6;41.6;6" keyTimes="0;0.0350;0.0662;0.2431;1" dur="16.0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.5;0;0" keyTimes="0;0.0350;0.0662;0.2431;1" dur="16.0s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="806.0" cy="246.0" r="6" fill="#1E8FAD" opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.0350;0.0662;0.2431;1" dur="16.0s" repeatCount="indefinite"/>
+  </circle>
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.0350;0.1807;0.2431;1" dur="16.0s" repeatCount="indefinite"/>
+    <rect x="820.0" y="208.0" width="78.8" height="30" rx="3" fill="#0D1B2A" stroke="#FFFFFF" stroke-width="1.3"/>
+    <text x="829.0" y="229.0" font-family="Courier New, monospace" font-size="12.5" font-weight="bold" letter-spacing="0.5" fill="#FFFFFF">ISTANBUL</text>
+  </g>
+  <circle cx="945.7" cy="305.2" r="4" fill="none" stroke="#1E8FAD" stroke-width="1.5" opacity="0">
+    <animate attributeName="r" values="4;4;15;15;4" keyTimes="0;0.5194;0.5391;0.6506;1" dur="16.0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.85;0;0" keyTimes="0;0.5194;0.5391;0.6506;1" dur="16.0s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="945.7" cy="305.2" r="4" fill="#1E8FAD" opacity="0">
+    <animate attributeName="opacity" values="0;0;0.8;0.8;0" keyTimes="0;0.5194;0.5391;0.6506;1" dur="16.0s" repeatCount="indefinite"/>
+  </circle>
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.5194;0.6113;0.6506;1" dur="16.0s" repeatCount="indefinite"/>
+    <rect x="959.7" y="271.2" width="68.4" height="26" rx="3" fill="#0D1B2A" stroke="#1E8FAD" stroke-width="1"/>
+    <text x="966.7" y="288.2" font-family="Courier New, monospace" font-size="11" font-weight="normal" letter-spacing="0.5" fill="#FFFFFF">KARACHI</text>
   </g>
   <circle cx="967.3" cy="326.5" r="4" fill="none" stroke="#1E8FAD" stroke-width="1.5" opacity="0">
-    <animate attributeName="r" values="4;4;16;16;4" keyTimes="0;0.4829;0.4941;0.5579;1" dur="14.0s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0;0;0.8;0;0" keyTimes="0;0.4829;0.4941;0.5579;1" dur="14.0s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="4;4;15;15;4" keyTimes="0;0.3000;0.3125;0.3831;1" dur="16.0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.85;0;0" keyTimes="0;0.3000;0.3125;0.3831;1" dur="16.0s" repeatCount="indefinite"/>
   </circle>
   <circle cx="967.3" cy="326.5" r="4" fill="#1E8FAD" opacity="0">
-    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.4829;0.4941;0.5579;1" dur="14.0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.8;0.8;0" keyTimes="0;0.3000;0.3125;0.3831;1" dur="16.0s" repeatCount="indefinite"/>
   </circle>
   <g opacity="0">
-    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.4829;0.5354;0.5579;1" dur="14.0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.3000;0.3582;0.3831;1" dur="16.0s" repeatCount="indefinite"/>
     <rect x="981.3" y="292.5" width="61.2" height="26" rx="3" fill="#0D1B2A" stroke="#1E8FAD" stroke-width="1"/>
-    <text x="990.3" y="309.5" font-family="Courier New, monospace" font-size="11" letter-spacing="0.5" fill="#FFFFFF">MUMBAI</text>
+    <text x="988.3" y="309.5" font-family="Courier New, monospace" font-size="11" font-weight="normal" letter-spacing="0.5" fill="#FFFFFF">MUMBAI</text>
+  </g>
+  <circle cx="1068.5" cy="346.0" r="4" fill="none" stroke="#1E8FAD" stroke-width="1.5" opacity="0">
+    <animate attributeName="r" values="4;4;15;15;4" keyTimes="0;0.2612;0.2727;0.3375;1" dur="16.0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.85;0;0" keyTimes="0;0.2612;0.2727;0.3375;1" dur="16.0s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1068.5" cy="346.0" r="4" fill="#1E8FAD" opacity="0">
+    <animate attributeName="opacity" values="0;0;0.8;0.8;0" keyTimes="0;0.2612;0.2727;0.3375;1" dur="16.0s" repeatCount="indefinite"/>
+  </circle>
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.2612;0.3146;0.3375;1" dur="16.0s" repeatCount="indefinite"/>
+    <rect x="1082.5" y="312.0" width="68.4" height="26" rx="3" fill="#0D1B2A" stroke="#1E8FAD" stroke-width="1"/>
+    <text x="1089.5" y="329.0" font-family="Courier New, monospace" font-size="11" font-weight="normal" letter-spacing="0.5" fill="#FFFFFF">BANGKOK</text>
   </g>
   <circle cx="1080.6" cy="391.8" r="4" fill="none" stroke="#1E8FAD" stroke-width="1.5" opacity="0">
-    <animate attributeName="r" values="4;4;16;16;4" keyTimes="0;0.1736;0.1863;0.2586;1" dur="14.0s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0;0;0.8;0;0" keyTimes="0;0.1736;0.1863;0.2586;1" dur="14.0s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="4;4;15;15;4" keyTimes="0;0.7044;0.7197;0.8062;1" dur="16.0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.85;0;0" keyTimes="0;0.7044;0.7197;0.8062;1" dur="16.0s" repeatCount="indefinite"/>
   </circle>
   <circle cx="1080.6" cy="391.8" r="4" fill="#1E8FAD" opacity="0">
-    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.1736;0.1863;0.2586;1" dur="14.0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.8;0.8;0" keyTimes="0;0.7044;0.7197;0.8062;1" dur="16.0s" repeatCount="indefinite"/>
   </circle>
   <g opacity="0">
-    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.1736;0.2331;0.2586;1" dur="14.0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.7044;0.7757;0.8062;1" dur="16.0s" repeatCount="indefinite"/>
     <rect x="1094.6" y="357.8" width="82.8" height="26" rx="3" fill="#0D1B2A" stroke="#1E8FAD" stroke-width="1"/>
-    <text x="1103.6" y="374.8" font-family="Courier New, monospace" font-size="11" letter-spacing="0.5" fill="#FFFFFF">SINGAPORE</text>
+    <text x="1101.6" y="374.8" font-family="Courier New, monospace" font-size="11" font-weight="normal" letter-spacing="0.5" fill="#FFFFFF">SINGAPORE</text>
+  </g>
+  <circle cx="1091.6" cy="419.6" r="4" fill="none" stroke="#1E8FAD" stroke-width="1.5" opacity="0">
+    <animate attributeName="r" values="4;4;15;15;4" keyTimes="0;0.2344;0.2426;0.2894;1" dur="16.0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.85;0;0" keyTimes="0;0.2344;0.2426;0.2894;1" dur="16.0s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1091.6" cy="419.6" r="4" fill="#1E8FAD" opacity="0">
+    <animate attributeName="opacity" values="0;0;0.8;0.8;0" keyTimes="0;0.2344;0.2426;0.2894;1" dur="16.0s" repeatCount="indefinite"/>
+  </circle>
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.2344;0.2729;0.2894;1" dur="16.0s" repeatCount="indefinite"/>
+    <rect x="1105.6" y="385.6" width="68.4" height="26" rx="3" fill="#0D1B2A" stroke="#1E8FAD" stroke-width="1"/>
+    <text x="1112.6" y="402.6" font-family="Courier New, monospace" font-size="11" font-weight="normal" letter-spacing="0.5" fill="#FFFFFF">JAKARTA</text>
   </g>
   <circle cx="1118.7" cy="314.8" r="4" fill="none" stroke="#1E8FAD" stroke-width="1.5" opacity="0">
-    <animate attributeName="r" values="4;4;16;16;4" keyTimes="0;0.0279;0.0425;0.1257;1" dur="14.0s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0;0;0.8;0;0" keyTimes="0;0.0279;0.0425;0.1257;1" dur="14.0s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="4;4;15;15;4" keyTimes="0;0.7106;0.7284;0.8294;1" dur="16.0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.85;0;0" keyTimes="0;0.7106;0.7284;0.8294;1" dur="16.0s" repeatCount="indefinite"/>
   </circle>
   <circle cx="1118.7" cy="314.8" r="4" fill="#1E8FAD" opacity="0">
-    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.0279;0.0425;0.1257;1" dur="14.0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.8;0.8;0" keyTimes="0;0.7106;0.7284;0.8294;1" dur="16.0s" repeatCount="indefinite"/>
   </circle>
   <g opacity="0">
-    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.0279;0.0964;0.1257;1" dur="14.0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.7106;0.7937;0.8294;1" dur="16.0s" repeatCount="indefinite"/>
     <rect x="1132.7" y="280.8" width="82.8" height="26" rx="3" fill="#0D1B2A" stroke="#1E8FAD" stroke-width="1"/>
-    <text x="1141.7" y="297.8" font-family="Courier New, monospace" font-size="11" letter-spacing="0.5" fill="#FFFFFF">HONG KONG</text>
+    <text x="1139.7" y="297.8" font-family="Courier New, monospace" font-size="11" font-weight="normal" letter-spacing="0.5" fill="#FFFFFF">HONG KONG</text>
+  </g>
+  <circle cx="1145.5" cy="282.1" r="6" fill="none" stroke="#1E8FAD" stroke-width="2.2" opacity="0">
+    <animate attributeName="r" values="6;6;26;26;6" keyTimes="0;0.7506;0.7815;0.9563;1" dur="16.0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.85;0;0" keyTimes="0;0.7506;0.7815;0.9563;1" dur="16.0s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1145.5" cy="282.1" r="6" fill="none" stroke="#FFFFFF" stroke-width="1" opacity="0">
+    <animate attributeName="r" values="6;6;41.6;41.6;6" keyTimes="0;0.7506;0.7815;0.9563;1" dur="16.0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.5;0;0" keyTimes="0;0.7506;0.7815;0.9563;1" dur="16.0s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1145.5" cy="282.1" r="6" fill="#1E8FAD" opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.7506;0.7815;0.9563;1" dur="16.0s" repeatCount="indefinite"/>
+  </circle>
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.7506;0.8946;0.9563;1" dur="16.0s" repeatCount="indefinite"/>
+    <rect x="1159.5" y="244.1" width="78.8" height="30" rx="3" fill="#0D1B2A" stroke="#FFFFFF" stroke-width="1.3"/>
+    <text x="1168.5" y="265.1" font-family="Courier New, monospace" font-size="12.5" font-weight="bold" letter-spacing="0.5" fill="#FFFFFF">SHANGHAI</text>
+  </g>
+  <circle cx="1165.7" cy="258.5" r="4" fill="none" stroke="#1E8FAD" stroke-width="1.5" opacity="0">
+    <animate attributeName="r" values="4;4;15;15;4" keyTimes="0;0.4944;0.5156;0.6356;1" dur="16.0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.85;0;0" keyTimes="0;0.4944;0.5156;0.6356;1" dur="16.0s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1165.7" cy="258.5" r="4" fill="#1E8FAD" opacity="0">
+    <animate attributeName="opacity" values="0;0;0.8;0.8;0" keyTimes="0;0.4944;0.5156;0.6356;1" dur="16.0s" repeatCount="indefinite"/>
+  </circle>
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.4944;0.5933;0.6356;1" dur="16.0s" repeatCount="indefinite"/>
+    <rect x="1179.7" y="224.5" width="54.0" height="26" rx="3" fill="#0D1B2A" stroke="#1E8FAD" stroke-width="1"/>
+    <text x="1186.7" y="241.5" font-family="Courier New, monospace" font-size="11" font-weight="normal" letter-spacing="0.5" fill="#FFFFFF">SEOUL</text>
   </g>
   <circle cx="1212.2" cy="265.5" r="4" fill="none" stroke="#1E8FAD" stroke-width="1.5" opacity="0">
-    <animate attributeName="r" values="4;4;16;16;4" keyTimes="0;0.4029;0.4207;0.5221;1" dur="14.0s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0;0;0.8;0;0" keyTimes="0;0.4029;0.4207;0.5221;1" dur="14.0s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="4;4;15;15;4" keyTimes="0;0.5369;0.5585;0.6813;1" dur="16.0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.85;0;0" keyTimes="0;0.5369;0.5585;0.6813;1" dur="16.0s" repeatCount="indefinite"/>
   </circle>
   <circle cx="1212.2" cy="265.5" r="4" fill="#1E8FAD" opacity="0">
-    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.4029;0.4207;0.5221;1" dur="14.0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.8;0.8;0" keyTimes="0;0.5369;0.5585;0.6813;1" dur="16.0s" repeatCount="indefinite"/>
   </circle>
   <g opacity="0">
-    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.4029;0.4864;0.5221;1" dur="14.0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.5369;0.6379;0.6813;1" dur="16.0s" repeatCount="indefinite"/>
     <rect x="1226.2" y="231.5" width="54.0" height="26" rx="3" fill="#0D1B2A" stroke="#1E8FAD" stroke-width="1"/>
-    <text x="1235.2" y="248.5" font-family="Courier New, monospace" font-size="11" letter-spacing="0.5" fill="#FFFFFF">TOKYO</text>
+    <text x="1233.2" y="248.5" font-family="Courier New, monospace" font-size="11" font-weight="normal" letter-spacing="0.5" fill="#FFFFFF">TOKYO</text>
+  </g>
+  <circle cx="1143.6" cy="343.1" r="4" fill="none" stroke="#1E8FAD" stroke-width="1.5" opacity="0">
+    <animate attributeName="r" values="4;4;15;15;4" keyTimes="0;0.1519;0.1740;0.2994;1" dur="16.0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.85;0;0" keyTimes="0;0.1519;0.1740;0.2994;1" dur="16.0s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1143.6" cy="343.1" r="4" fill="#1E8FAD" opacity="0">
+    <animate attributeName="opacity" values="0;0;0.8;0.8;0" keyTimes="0;0.1519;0.1740;0.2994;1" dur="16.0s" repeatCount="indefinite"/>
+  </circle>
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.1519;0.2551;0.2994;1" dur="16.0s" repeatCount="indefinite"/>
+    <rect x="1157.6" y="309.1" width="61.2" height="26" rx="3" fill="#0D1B2A" stroke="#1E8FAD" stroke-width="1"/>
+    <text x="1164.6" y="326.1" font-family="Courier New, monospace" font-size="11" font-weight="normal" letter-spacing="0.5" fill="#FFFFFF">MANILA</text>
   </g>
   <circle cx="1254.4" cy="521.4" r="4" fill="none" stroke="#1E8FAD" stroke-width="1.5" opacity="0">
-    <animate attributeName="r" values="4;4;16;16;4" keyTimes="0;0.4743;0.4905;0.5821;1" dur="14.0s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0;0;0.8;0;0" keyTimes="0;0.4743;0.4905;0.5821;1" dur="14.0s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="4;4;15;15;4" keyTimes="0;0.0506;0.0638;0.1387;1" dur="16.0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.85;0;0" keyTimes="0;0.0506;0.0638;0.1387;1" dur="16.0s" repeatCount="indefinite"/>
   </circle>
   <circle cx="1254.4" cy="521.4" r="4" fill="#1E8FAD" opacity="0">
-    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.4743;0.4905;0.5821;1" dur="14.0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.8;0.8;0" keyTimes="0;0.0506;0.0638;0.1387;1" dur="16.0s" repeatCount="indefinite"/>
   </circle>
   <g opacity="0">
-    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.4743;0.5498;0.5821;1" dur="14.0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.0506;0.1123;0.1387;1" dur="16.0s" repeatCount="indefinite"/>
     <rect x="1268.4" y="487.4" width="61.2" height="26" rx="3" fill="#0D1B2A" stroke="#1E8FAD" stroke-width="1"/>
-    <text x="1277.4" y="504.4" font-family="Courier New, monospace" font-size="11" letter-spacing="0.5" fill="#FFFFFF">SYDNEY</text>
+    <text x="1275.4" y="504.4" font-family="Courier New, monospace" font-size="11" font-weight="normal" letter-spacing="0.5" fill="#FFFFFF">SYDNEY</text>
+  </g>
+  <circle cx="1231.7" cy="535.7" r="4" fill="none" stroke="#1E8FAD" stroke-width="1.5" opacity="0">
+    <animate attributeName="r" values="4;4;15;15;4" keyTimes="0;0.0213;0.0408;0.1512;1" dur="16.0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.85;0;0" keyTimes="0;0.0213;0.0408;0.1512;1" dur="16.0s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1231.7" cy="535.7" r="4" fill="#1E8FAD" opacity="0">
+    <animate attributeName="opacity" values="0;0;0.8;0.8;0" keyTimes="0;0.0213;0.0408;0.1512;1" dur="16.0s" repeatCount="indefinite"/>
+  </circle>
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.0213;0.1123;0.1512;1" dur="16.0s" repeatCount="indefinite"/>
+    <rect x="1245.7" y="501.7" width="82.8" height="26" rx="3" fill="#0D1B2A" stroke="#1E8FAD" stroke-width="1"/>
+    <text x="1252.7" y="518.7" font-family="Courier New, monospace" font-size="11" font-weight="normal" letter-spacing="0.5" fill="#FFFFFF">MELBOURNE</text>
   </g>
 
   <text x="700" y="655" text-anchor="middle" font-family="Courier New, monospace" font-size="12.5" letter-spacing="0.5" fill="rgba(255,255,255,0.35)">Developing situations surfaced as they emerge, anywhere in the network.</text>
