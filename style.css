@@ -367,3 +367,6 @@ footer{background:#07111A;border-top:1px solid var(--line);padding:32px 0 22px}
 }
 .mobile-overlay-cta a:hover { background: var(--teal-bright); }
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+.btn-ghost-dark{font-family:var(--font-mono);font-size:11.5px;letter-spacing:0.07em;text-transform:uppercase;background:transparent;color:var(--ink);border:1px solid var(--ink-soft);padding:14px 28px;transition:color 0.15s,border-color 0.15s,background 0.15s;display:inline-block;border-radius:8px}
+.btn-ghost-dark:hover{color:var(--teal);border-color:var(--teal)}
