@@ -66,16 +66,16 @@
 
   <g font-family="Arial Narrow, Arial, sans-serif">
     <text x="685" y="145" font-weight="700" font-size="17" letter-spacing="1" fill="#FFFFFF" text-decoration="underline">INTELLIGENCE</text>
-    <text x="685" y="166" font-family="Courier New, monospace" font-size="12" letter-spacing="0.5" fill="rgba(255,255,255,0.4)">Innermost ring. Always on.</text>
+    <text x="685" y="166" font-family="Courier New, monospace" font-size="12" letter-spacing="0.5" fill="rgba(255,255,255,0.4)">Open Source. Deep Web. Dark Web.</text>
 
     <text x="685" y="230" font-weight="700" font-size="17" letter-spacing="1" fill="#FFFFFF" text-decoration="underline">PRESENCE</text>
-    <text x="685" y="250" font-family="Courier New, monospace" font-size="12" letter-spacing="0.5" fill="rgba(255,255,255,0.4)">Middle ring. Swings wide:</text>
-    <text x="695" y="270" font-family="Courier New, monospace" font-size="11.5" fill="rgba(255,255,255,0.55)">OVERT &#8212; close, like a bodyguard at the elbow</text>
-    <text x="695" y="288" font-family="Courier New, monospace" font-size="11.5" fill="rgba(255,255,255,0.55)">LOW PROFILE &#8212; nearby, blended in</text>
-    <text x="695" y="306" font-family="Courier New, monospace" font-size="11.5" fill="rgba(255,255,255,0.55)">COVERT &#8212; present, unseen</text>
-    <text x="695" y="324" font-family="Courier New, monospace" font-size="11.5" fill="rgba(255,255,255,0.55)">REMOTE &#8212; monitoring from a distance</text>
+    <text x="685" y="250" font-family="Courier New, monospace" font-size="12" letter-spacing="0.5" fill="rgba(255,255,255,0.4)">Shifts with environment:</text>
+    <text x="695" y="270" font-family="Courier New, monospace" font-size="11.5" fill="rgba(255,255,255,0.55)">OVERT</text>
+    <text x="695" y="288" font-family="Courier New, monospace" font-size="11.5" fill="rgba(255,255,255,0.55)">LOW PROFILE</text>
+    <text x="695" y="306" font-family="Courier New, monospace" font-size="11.5" fill="rgba(255,255,255,0.55)">COVERT</text>
+    <text x="695" y="324" font-family="Courier New, monospace" font-size="11.5" fill="rgba(255,255,255,0.55)">REMOTE MONITORING</text>
 
     <text x="685" y="555" font-weight="700" font-size="17" letter-spacing="1" fill="#FFFFFF" text-decoration="underline">CONTINGENCY</text>
-    <text x="685" y="575" font-family="Courier New, monospace" font-size="12" letter-spacing="0.5" fill="rgba(255,255,255,0.4)">Outer limit. Standing by.</text>
+    <text x="685" y="575" font-family="Courier New, monospace" font-size="12" letter-spacing="0.5" fill="rgba(255,255,255,0.4)">Planned. Prepared.</text>
   </g>
 </svg>
