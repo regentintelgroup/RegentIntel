@@ -44,14 +44,14 @@ nav.links>li{position:relative}
 nav.links>li>a{font-family:var(--font-mono);font-size:12px;letter-spacing:0.06em;text-transform:uppercase;color:var(--muted);padding:0 14px;height:68px;display:flex;align-items:center;transition:color 0.15s;white-space:nowrap}
 nav.links>li>a:hover,nav.links>li>a.current{color:#fff}
 nav.links>li>a.current::after{content:'';position:absolute;bottom:0;left:14px;right:14px;height:1px;background:var(--teal-bright)}
-.dropdown{position:absolute;top:68px;left:0;background:var(--navy-mid);border:1px solid var(--line);border-top:1px solid var(--teal-dim);min-width:240px;opacity:0;pointer-events:none;transform:translateY(-4px);transition:opacity 0.15s,transform 0.15s;z-index:200}
+.dropdown{position:absolute;top:68px;left:0;background:var(--navy-mid);border:1px solid var(--line);border-top:1px solid var(--teal-dim);min-width:240px;opacity:0;pointer-events:none;transform:translateY(-4px);transition:opacity 0.15s,transform 0.15s;z-index:200;border-radius:0 0 8px 8px}
 nav.links>li:hover .dropdown,nav.links>li:focus-within .dropdown{opacity:1;pointer-events:all;transform:translateY(0)}
 .dropdown a{display:block;font-family:var(--font-mono);font-size:10px;letter-spacing:0.06em;text-transform:uppercase;color:var(--muted);padding:12px 18px;border-bottom:1px solid var(--line);transition:color 0.12s,background 0.12s}
 .dropdown a:last-child{border-bottom:none}
 .dropdown a:hover{color:#fff;background:rgba(20,110,135,0.12)}
-.nav-cta{display:none;font-family:var(--font-mono);font-size:12px;letter-spacing:0.06em;text-transform:uppercase;color:#fff;background:var(--teal);padding:10px 18px;white-space:nowrap;transition:background 0.15s;flex-shrink:0}
+.nav-cta{display:none;font-family:var(--font-mono);font-size:12px;letter-spacing:0.06em;text-transform:uppercase;color:#fff;background:var(--teal);padding:10px 18px;white-space:nowrap;transition:background 0.15s;flex-shrink:0;border-radius:8px}
 .nav-cta:hover{background:var(--teal-bright)}
-@media(min-width:960px){.nav-cta{display:block;margin-left:8px}}
+@media(min-width:960px){.nav-cta{display:block;margin-left:8px;border-radius:8px}}
 .menu-toggle{display:none;background:none;border:none;cursor:pointer;flex-direction:column;gap:5px;padding:8px}
 .menu-toggle span{display:block;width:24px;height:2px;background:#fff}
 
@@ -66,9 +66,9 @@ nav.links>li:hover .dropdown,nav.links>li:focus-within .dropdown{opacity:1;point
 @keyframes scanDown{0%{top:10%;opacity:0}10%{opacity:1}90%{opacity:1}100%{top:90%;opacity:0}}
 
 /* BUTTONS */
-.btn-primary{font-family:var(--font-mono);font-size:11.5px;letter-spacing:0.07em;text-transform:uppercase;background:var(--teal);color:#fff;padding:14px 28px;transition:background 0.15s;display:inline-block}
+.btn-primary{font-family:var(--font-mono);font-size:11.5px;letter-spacing:0.07em;text-transform:uppercase;background:var(--teal);color:#fff;padding:14px 28px;transition:background 0.15s;display:inline-block;border-radius:8px}
 .btn-primary:hover{background:var(--teal-bright)}
-.btn-ghost{font-family:var(--font-mono);font-size:11.5px;letter-spacing:0.07em;text-transform:uppercase;background:transparent;color:rgba(255,255,255,0.85);border:1px solid rgba(255,255,255,0.45);padding:14px 28px;transition:color 0.15s,border-color 0.15s,background 0.15s;display:inline-block}
+.btn-ghost{font-family:var(--font-mono);font-size:11.5px;letter-spacing:0.07em;text-transform:uppercase;background:transparent;color:rgba(255,255,255,0.85);border:1px solid rgba(255,255,255,0.45);padding:14px 28px;transition:color 0.15s,border-color 0.15s,background 0.15s;display:inline-block;border-radius:8px}
 .btn-ghost:hover{color:#fff;border-color:#fff;background:rgba(255,255,255,0.08)}
 
 /* MARQUEE */
@@ -134,7 +134,7 @@ section{padding:88px 0}
 .cap-row .cap-label{font-family:var(--font-mono);font-size:10.5px;letter-spacing:0.07em;text-transform:uppercase;color:var(--teal)}
 .cap-row h3{font-family:var(--font-display);font-weight:600;font-size:20px;text-transform:uppercase;color:var(--ink);margin-bottom:6px;letter-spacing:0.01em}
 .cap-row p{font-size:15px;color:var(--ink-soft);line-height:1.6}
-.cap-row .cap-arrow{font-family:var(--font-mono);font-size:11.5px;letter-spacing:0.05em;color:var(--teal);white-space:nowrap;flex-shrink:0}
+.cap-row .cap-arrow{font-family:var(--font-mono);font-size:11.5px;letter-spacing:0.05em;color:var(--teal);white-space:nowrap;flex-shrink:0;border-radius:4px}
 .cap-row .cap-arrow:hover{color:var(--teal-bright)}
 @media(max-width:760px){.cap-row{grid-template-columns:1fr;gap:10px}}
 
@@ -151,7 +151,7 @@ section{padding:88px 0}
 /* PROGRAM DETAIL */
 .program-detail{padding:80px 0}
 .program-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line-light);border:1px solid var(--line-light);overflow:hidden;margin-top:40px}
-.program-cell{background:#fff;padding:36px 32px}
+.program-cell{background:#fff;padding:36px 32px;border-radius:8px}
 .program-cell .cell-tag{font-family:var(--font-mono);font-size:10.5px;letter-spacing:0.1em;text-transform:uppercase;color:var(--teal);margin-bottom:10px;display:block}
 .program-cell h3{font-family:var(--font-display);font-weight:600;font-size:19px;text-transform:uppercase;letter-spacing:0.01em;color:var(--ink);margin-bottom:10px}
 .program-cell p{font-size:15.5px;color:var(--ink-soft);line-height:1.65}
@@ -189,7 +189,7 @@ section{padding:88px 0}
 .cta-section h2{font-family:var(--font-display);font-weight:600;font-size:clamp(22px,2.6vw,34px);letter-spacing:-0.01em;color:var(--ink);margin-bottom:14px;text-transform:uppercase}
 .cta-section p{font-size:17px;color:var(--ink-soft);margin-bottom:28px;max-width:520px;margin-left:auto;margin-right:auto}
 .cta-row{display:flex;gap:14px;flex-wrap:wrap;justify-content:center}
-.cta-section .btn-ghost{font-family:var(--font-mono);font-size:11.5px;letter-spacing:0.07em;text-transform:uppercase;background:transparent;color:var(--ink);border:1px solid var(--ink-soft);padding:14px 28px;transition:color 0.15s,border-color 0.15s;display:inline-block}
+.cta-section .btn-ghost{font-family:var(--font-mono);font-size:11.5px;letter-spacing:0.07em;text-transform:uppercase;background:transparent;color:var(--ink);border:1px solid var(--ink-soft);padding:14px 28px;transition:color 0.15s,border-color 0.15s;display:inline-block;border-radius:8px}
 .cta-section .btn-ghost:hover{color:var(--teal);border-color:var(--teal)}
 
 /* CONTACT */
@@ -207,7 +207,7 @@ section{padding:88px 0}
 form.briefing{display:grid;grid-template-columns:1fr 1fr;gap:14px}
 form.briefing .full{grid-column:1/-1}
 form.briefing label{font-family:var(--font-mono);font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted);display:block;margin-bottom:6px}
-form.briefing input,form.briefing select,form.briefing textarea{width:100%;background:#fff;border:1px solid var(--line-light);color:var(--ink);padding:12px 14px;font-family:var(--font-body);font-size:15px;outline:none;transition:border-color 0.15s;-webkit-appearance:none}
+form.briefing input,form.briefing select,form.briefing textarea{width:100%;background:#fff;border:1px solid var(--line-light);color:var(--ink);padding:12px 14px;font-family:var(--font-body);font-size:15px;outline:none;transition:border-color 0.15s;-webkit-appearance:none;border-radius:8px}
 form.briefing select option{background:#fff;color:var(--ink)}
 form.briefing input:focus,form.briefing select:focus,form.briefing textarea:focus{border-color:var(--teal)}
 form.briefing textarea{min-height:90px;resize:vertical}
@@ -363,6 +363,7 @@ footer{background:#07111A;border-top:1px solid var(--line);padding:32px 0 22px}
   padding: 18px;
   text-decoration: none;
   transition: background 0.15s;
+  border-radius: 8px;
 }
 .mobile-overlay-cta a:hover { background: var(--teal-bright); }
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
