@@ -256,7 +256,20 @@
     <button class="mobile-close" onclick="document.getElementById('mobile-overlay').classList.remove('open')" aria-label="Close">&#x2715;</button>
   </div>
   <nav class="mobile-overlay-nav">
-    <a href="services.html">Services</a>
+    <div class="mob-nav-item mob-has-sub" id="mob-services-toggle" onclick="document.getElementById('mob-services-sub').classList.toggle('open');this.classList.toggle('open')">
+      <span>Services</span>
+      <span class="mob-chevron">&#x203A;</span>
+    </div>
+    <div class="mob-sub" id="mob-services-sub">
+      <a href="ep.html">Executive Protection</a>
+      <a href="tscm.html">TSCM &amp; Technical Assurance</a>
+      <a href="intel.html">Protective Intelligence</a>
+      <a href="travel.html">Travel Security &amp; Country Risk</a>
+      <a href="osint.html">Due Diligence &amp; OSINT</a>
+      <a href="investigations.html">Investigations &amp; Asset Verification</a>
+      <a href="section132.html">IRC §132 Security Study</a>
+      <a href="training.html">Training &amp; Certification</a>
+    </div>
     <a href="who-we-serve.html">Who We Serve</a>
     <a href="methodology.html">Methodology</a>
     <a href="standards.html">Standards</a>

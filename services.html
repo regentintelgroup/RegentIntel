@@ -18,20 +18,6 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=DM+Mono:wght@400;500&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebPage",
-  "name": "Services",
-  "description": "Overview of Regent Intelligence Group capabilities including executive protection, TSCM, protective intelligence, travel security, investigations, and training.",
-  "publisher": {
-    "@type": "Organization",
-    "name": "Regent Intelligence Group",
-    "url": "https://regentintel.org",
-    "telephone": "+1-941-529-7479"
-  }
-}
-</script>
 </head>
 <body>
 
@@ -48,7 +34,6 @@
       <li>
         <a href="services.html" class="current">Services</a>
         <div class="dropdown">
-          <a href="training.html">Training &amp; Certification</a>
           <a href="ep.html">Executive Protection</a>
           <a href="tscm.html">TSCM &amp; Technical Assurance</a>
           <a href="intel.html">Protective Intelligence</a>
@@ -56,6 +41,7 @@
           <a href="osint.html">Due Diligence &amp; OSINT</a>
           <a href="investigations.html">Investigations &amp; Asset Verification</a>
           <a href="section132.html">IRC §132 Security Study</a>
+          <a href="training.html">Training &amp; Certification</a>
         </div>
       </li>
       <li><a href="who-we-serve.html">Who We Serve</a></li>
@@ -84,7 +70,6 @@
   <div class="wrap">
     <div class="capability-strip">
       <h2 class="sr-only">Capabilities Overview</h2>
-      <div class="cap-row" style="border-left:3px solid var(--teal);padding-left:20px;"><div class="cap-label">Training</div><div><h3 data-hover-decode>Protective Intelligence Analyst Certification</h3><p>The only certification that teaches the legal line between intelligence collection and licensed investigation. Five modules. Graded assessments. 5.5 hours of accredited professional development. Built from active operational doctrine. Online, self-paced. Enrollment open.</p></div><a href="https://courses.regentintel.org/courses/pia-c" class="cap-arrow">Enroll →</a></div>
       <div class="cap-row"><div class="cap-label">Executive Protection</div><div><h3 data-hover-decode>Close Protection Specialists</h3><p>Intelligence-driven protective details for principals and executives. Operators with U.S. government intelligence and special operations backgrounds, validated through the firm's internal curriculum.</p></div><a href="ep.html" class="cap-arrow">Learn more →</a></div>
       <div class="cap-row"><div class="cap-label">TSCM</div><div><h3 data-hover-decode>Technical Assurance &amp; Bug Sweeping</h3><p>RF spectrum analysis, physical inspection, device forensics, and continuous leave-behind monitoring. Governance-grade documentation suitable for executive review, legal scrutiny, and compliance use.</p></div><a href="tscm.html" class="cap-arrow">Learn more →</a></div>
       <div class="cap-row"><div class="cap-label">Protective Intelligence</div><div><h3 data-hover-decode>Continuous Monitoring &amp; Analysis</h3><p>Physical, financial, and reputational threat intelligence delivered through a centralized operations model. Collection runs continuously. Escalation is deliberate and documented.</p></div><a href="intel.html" class="cap-arrow">Learn more →</a></div>
@@ -92,6 +77,7 @@
       <div class="cap-row"><div class="cap-label">Due Diligence</div><div><h3 data-hover-decode>What the Background Check Missed</h3><p>Open-source investigation, network mapping, and behavioral pattern analysis. Conducted by intelligence-trained investigators producing findings suitable for legal proceedings and board-level decisions.</p></div><a href="osint.html" class="cap-arrow">Learn more →</a></div>
       <div class="cap-row"><div class="cap-label">Investigations</div><div><h3 data-hover-decode>Licensed Investigative Capability</h3><p>Asset verification, subject location, financial investigation, and network analysis, conducted under licensed investigative authority and documented to evidentiary standard.</p></div><a href="investigations.html" class="cap-arrow">Learn more →</a></div>
       <div class="cap-row"><div class="cap-label">IRC §132</div><div><h3 data-hover-decode>Security Study &amp; Assessment</h3><p>Documented threat analysis establishing the business necessity of protective measures, structured to support working condition fringe benefit treatment under IRC §132(d) for tax and legal counsel.</p></div><a href="section132.html" class="cap-arrow">Learn more →</a></div>
+      <div class="cap-row"><div class="cap-label">Training</div><div><h3 data-hover-decode>Practitioner Certifications</h3><p>OIPT-C, PIA-C, CMI-C, and AEP-C: the only certification programs built from active operational doctrine by the practitioners who authored it. Enrollment by application.</p></div><a href="training.html" class="cap-arrow">Learn more →</a></div>
     </div>
   </div>
 </section>
@@ -150,7 +136,20 @@
     <button class="mobile-close" onclick="document.getElementById('mobile-overlay').classList.remove('open')" aria-label="Close">&#x2715;</button>
   </div>
   <nav class="mobile-overlay-nav">
-    <a href="services.html">Services</a>
+    <div class="mob-nav-item mob-has-sub" id="mob-services-toggle" onclick="document.getElementById('mob-services-sub').classList.toggle('open');this.classList.toggle('open')">
+      <span>Services</span>
+      <span class="mob-chevron">&#x203A;</span>
+    </div>
+    <div class="mob-sub" id="mob-services-sub">
+      <a href="ep.html">Executive Protection</a>
+      <a href="tscm.html">TSCM &amp; Technical Assurance</a>
+      <a href="intel.html">Protective Intelligence</a>
+      <a href="travel.html">Travel Security &amp; Country Risk</a>
+      <a href="osint.html">Due Diligence &amp; OSINT</a>
+      <a href="investigations.html">Investigations &amp; Asset Verification</a>
+      <a href="section132.html">IRC §132 Security Study</a>
+      <a href="training.html">Training &amp; Certification</a>
+    </div>
     <a href="who-we-serve.html">Who We Serve</a>
     <a href="methodology.html">Methodology</a>
     <a href="standards.html">Standards</a>
