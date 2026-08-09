@@ -1,3 +1,103 @@
 [build]
   publish = "."
   base = "."
+
+# Force HTTPS and non-www
+[[redirects]]
+  from = "http://regentintel.org/*"
+  to = "https://regentintel.org/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://www.regentintel.org/*"
+  to = "https://regentintel.org/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.regentintel.org/*"
+  to = "https://regentintel.org/:splat"
+  status = 301
+  force = true
+
+# Fix /intel → /intel.html (the canonical issue)
+[[redirects]]
+  from = "/intel"
+  to = "/intel.html"
+  status = 301
+  force = true
+
+# Clean URL redirects for all pages (in case Google crawls without .html)
+[[redirects]]
+  from = "/services"
+  to = "/services.html"
+  status = 301
+
+[[redirects]]
+  from = "/ep"
+  to = "/ep.html"
+  status = 301
+
+[[redirects]]
+  from = "/tscm"
+  to = "/tscm.html"
+  status = 301
+
+[[redirects]]
+  from = "/travel"
+  to = "/travel.html"
+  status = 301
+
+[[redirects]]
+  from = "/osint"
+  to = "/osint.html"
+  status = 301
+
+[[redirects]]
+  from = "/investigations"
+  to = "/investigations.html"
+  status = 301
+
+[[redirects]]
+  from = "/section132"
+  to = "/section132.html"
+  status = 301
+
+[[redirects]]
+  from = "/methodology"
+  to = "/methodology.html"
+  status = 301
+
+[[redirects]]
+  from = "/standards"
+  to = "/standards.html"
+  status = 301
+
+[[redirects]]
+  from = "/partners"
+  to = "/partners.html"
+  status = 301
+
+[[redirects]]
+  from = "/training"
+  to = "/training.html"
+  status = 301
+
+[[redirects]]
+  from = "/consultation"
+  to = "/consultation.html"
+  status = 301
+
+[[redirects]]
+  from = "/who-we-serve"
+  to = "/who-we-serve.html"
+  status = 301
+
+# Headers for SEO and security
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
