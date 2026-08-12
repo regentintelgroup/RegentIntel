@@ -18,36 +18,408 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=DM+Mono:wght@400;500&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "SecurityService",
-  "name": "Regent Intelligence Group LLC",
-  "alternateName": "Regent Intel",
-  "url": "https://regentintel.org",
-  "logo": "https://regentintel.org/logo.png",
-  "image": "https://regentintel.org/hero.png",
-  "telephone": "+1-941-529-7479",
-  "email": "regentintelgroup@gmail.com",
-  "description": "Licensed private intelligence and security firm delivering executive protection, protective intelligence, TSCM, travel security, and investigative services for principals and organizations.",
-  "areaServed": {
-    "@type": "Country",
-    "name": "United States"
-  },
-  "address": {
-    "@type": "PostalAddress",
-    "addressRegion": "FL",
-    "addressLocality": "Sarasota",
-    "addressCountry": "US"
-  },
-  "hasCredential": {
-    "@type": "EducationalOccupationalCredential",
-    "credentialCategory": "license",
-    "name": "FDACS Class A Private Investigative Agency and Class B Security Agency License",
-    "identifier": "A 3600152"
-  }
+<style>
+/* ── INDEX-SPECIFIC OVERRIDES ── */
+
+/* HERO editorial, white, institution feel */
+.hero-editorial {
+  background: #fff;
+  padding: calc(68px + 80px) 0 80px;
+  border-bottom: 1px solid var(--line);
 }
-</script>
+.hero-editorial .wrap {
+  display: grid;
+  grid-template-columns: 1fr 420px;
+  gap: 80px;
+  align-items: end;
+}
+.hero-kicker {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin-bottom: 32px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.hero-kicker::before {
+  content: '';
+  width: 32px;
+  height: 1px;
+  background: var(--teal);
+  display: inline-block;
+}
+.hero-editorial h1 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(36px, 5vw, 68px);
+  line-height: 1.0;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: var(--navy);
+  margin-bottom: 32px;
+  max-width: 640px;
+}
+.hero-editorial h1 em {
+  font-style: normal;
+  color: var(--teal);
+}
+.hero-tagline {
+  font-size: 18px;
+  line-height: 1.75;
+  color: var(--ink-soft);
+  max-width: 560px;
+  margin-bottom: 40px;
+}
+.hero-actions-editorial {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.hero-right {
+  padding-bottom: 8px;
+}
+.hero-stat-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border-top: 2px solid var(--navy);
+}
+.hero-stat {
+  padding: 20px 0;
+  border-bottom: 1px solid var(--line);
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 16px;
+  align-items: baseline;
+}
+.hero-stat-num {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 32px;
+  color: var(--navy);
+  line-height: 1;
+}
+.hero-stat-num em {
+  font-style: normal;
+  color: var(--teal);
+  font-size: 20px;
+}
+.hero-stat-label {
+  font-size: 13px;
+  color: var(--ink-soft);
+  line-height: 1.5;
+}
+.hero-license {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-top: 20px;
+}
+
+/* PROVENANCE BAND the differentiator */
+.band-provenance {
+  background: var(--navy);
+  padding: 80px 0;
+}
+.provenance-inner {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 80px;
+  align-items: start;
+}
+.provenance-label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--teal-bright);
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.provenance-label::before {
+  content: '';
+  width: 24px;
+  height: 1px;
+  background: var(--teal-bright);
+}
+.provenance-headline {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(24px, 3vw, 40px);
+  text-transform: uppercase;
+  color: #fff;
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  margin-bottom: 24px;
+}
+.provenance-body {
+  font-size: 16px;
+  color: rgba(255,255,255,0.55);
+  line-height: 1.75;
+}
+.provenance-body strong {
+  color: #fff;
+  font-weight: 600;
+}
+.provenance-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+.provenance-list li {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  padding: 18px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+.prov-num {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  color: var(--teal-bright);
+  flex-shrink: 0;
+  width: 24px;
+}
+.prov-name {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 0.01em;
+}
+.prov-sub {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-left: auto;
+  flex-shrink: 0;
+}
+.provenance-closer {
+  margin-top: 32px;
+  padding: 20px 24px;
+  border-left: 2px solid var(--teal);
+  background: rgba(30,143,173,0.06);
+}
+.provenance-closer p {
+  font-size: 15px;
+  color: rgba(255,255,255,0.65);
+  line-height: 1.7;
+}
+.provenance-closer strong {
+  color: #fff;
+}
+
+/* PRACTICE AREAS list not grid */
+.band-practice {
+  background: var(--ivory);
+  padding: 80px 0;
+}
+.practice-inner {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 80px;
+  align-items: start;
+}
+.practice-sidebar .eyebrow { margin-bottom: 20px; }
+.practice-sidebar h2 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(22px, 2.4vw, 32px);
+  text-transform: uppercase;
+  color: var(--navy);
+  line-height: 1.08;
+  letter-spacing: -0.01em;
+  margin-bottom: 20px;
+}
+.practice-sidebar p {
+  font-size: 15px;
+  color: var(--ink-soft);
+  line-height: 1.7;
+}
+.practice-list {
+  border-top: 2px solid var(--navy);
+}
+.practice-item {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 32px;
+  align-items: baseline;
+  padding: 22px 0;
+  border-bottom: 1px solid var(--line);
+  text-decoration: none;
+  transition: background 0.15s;
+}
+.practice-item:hover { background: rgba(20,110,135,0.03); }
+.practice-item:hover .practice-arrow { color: var(--teal-bright); }
+.practice-num {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+  text-transform: uppercase;
+}
+.practice-name {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: var(--navy);
+  letter-spacing: 0.01em;
+}
+.practice-arrow {
+  font-family: var(--font-mono);
+  font-size: 16px;
+  color: var(--teal);
+  transition: color 0.15s;
+}
+
+/* DOCTRINE BAND */
+.band-doctrine {
+  background: #fff;
+  padding: 80px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+.doctrine-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+.doctrine-left h2 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(24px, 2.8vw, 38px);
+  text-transform: uppercase;
+  color: var(--navy);
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  margin-bottom: 24px;
+}
+.doctrine-left p {
+  font-size: 17px;
+  color: var(--ink-soft);
+  line-height: 1.75;
+  margin-bottom: 32px;
+}
+.doctrine-phases {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border-top: 1px solid var(--line);
+}
+.doctrine-phase {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 24px;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--line);
+  align-items: baseline;
+}
+.phase-label {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--teal);
+}
+.phase-text {
+  font-size: 15px;
+  color: var(--ink-soft);
+  line-height: 1.6;
+}
+.phase-text strong {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: var(--navy);
+  display: block;
+  margin-bottom: 4px;
+  letter-spacing: 0.01em;
+}
+
+/* WHO WE SERVE STRIP */
+.band-serve {
+  background: var(--navy);
+  padding: 72px 0;
+}
+.serve-label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--teal-bright);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+.serve-label::before { content: ''; width: 24px; height: 1px; background: var(--teal-bright); }
+.serve-strip {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: rgba(255,255,255,0.06);
+}
+.serve-cell {
+  background: var(--navy);
+  padding: 28px 24px;
+}
+.serve-cell-label {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--teal-bright);
+  margin-bottom: 10px;
+}
+.serve-cell-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 17px;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 0.01em;
+  line-height: 1.15;
+  margin-bottom: 10px;
+}
+.serve-cell-text {
+  font-size: 14px;
+  color: rgba(255,255,255,0.45);
+  line-height: 1.6;
+}
+
+/* RESPONSIVE */
+@media(max-width:960px) {
+  .hero-editorial .wrap { grid-template-columns: 1fr; gap: 48px; }
+  .hero-right { border-top: 1px solid var(--line); padding-top: 40px; }
+  .provenance-inner { grid-template-columns: 1fr; gap: 40px; }
+  .practice-inner { grid-template-columns: 1fr; gap: 32px; }
+  .doctrine-inner { grid-template-columns: 1fr; gap: 48px; }
+  .serve-strip { grid-template-columns: 1fr 1fr; }
+  .practice-item { grid-template-columns: 1fr auto; gap: 16px; }
+  .practice-num { display: none; }
+  .provenance-list li { flex-wrap: wrap; }
+  .prov-sub { margin-left: 40px; margin-top: 4px; }
+}
+@media(max-width:560px) {
+  .serve-strip { grid-template-columns: 1fr; }
+  .hero-stat { grid-template-columns: 80px 1fr; }
+}
+</style>
 </head>
 <body>
 
@@ -87,134 +459,225 @@
   </div>
 </header>
 
-<section class="hero" style="background-image:url('hero.png');background-size:cover;background-position:center right;background-repeat:no-repeat;">
-  <div class="hero-scroll-line"></div>
-  <div class="hero-inner">
-    <div class="hero-eyebrow">Protective Intelligence &amp; Security</div>
-    <h1><span data-decode>Your threats announce themselves. We listen.</span></h1>
-    <p class="hero-lede">Regent Intel is a licensed private intelligence and security firm. We combine intelligence and physical security under a single operational doctrine, protecting principals, organizations, and critical assets before risk becomes incident. The result is protection that lowers your risk without rearranging your life.</p>
-    <div class="hero-actions">
-      <a href="consultation.html" class="btn-primary">Consultation</a>
-      <a href="methodology.html" class="btn-ghost">Our Methodology</a>
-      <a href="regent-capability-sheet-v2.html" download="Regent-Intel-Capability-Statement-2026.html" class="btn-ghost">&#x2193; Capability Statement</a>
-    </div>
-  </div>
-</section>
-
-<div class="marquee">
-  <div class="marquee-track">
-    <span>ISO 31030 Travel Risk Management</span>
-    <span>ISO 22301 Business Continuity</span>
-    <span>ISO 22320 Incident &amp; Emergency Management</span>
-    <span>ISO 18788 Security Operations Governance</span>
-    <span>ISO 22316 Organizational Resilience</span>
-    <span>ISO 45001 Safety &amp; Welfare Principles</span>
-    <span>Licensed &amp; Insured · Security &amp; Investigations</span>
-    <span>ISO 31030 Travel Risk Management</span>
-    <span>ISO 22301 Business Continuity</span>
-    <span>ISO 22320 Incident &amp; Emergency Management</span>
-    <span>ISO 18788 Security Operations Governance</span>
-    <span>ISO 22316 Organizational Resilience</span>
-    <span>ISO 45001 Safety &amp; Welfare Principles</span>
-    <span>Licensed &amp; Insured · Security &amp; Investigations</span>
-  </div>
-</div>
-
-<section class="section-ivory">
-  <div class="wrap">
-    <div class="what-we-do-grid">
-      <div class="editorial">
-        <div class="eyebrow">Who Comes to Us</div>
-        <h2>Intelligence-driven protection, for those who know the world has changed.</h2>
-        <p>Regent Intel operates at the confluence of intelligence and security, as a single integrated capability delivered under the same doctrine, governed by the practitioners who wrote the standards. The analyst and the operator work from the same picture. The methodology does not change. Only the engagement does.</p>
-      </div>
-      <div>
-        <div class="serve-grid" style="background:transparent;border:none;gap:0;">
-          <div style="padding:24px 0;border-bottom:1px solid var(--line);">
-            <h3 style="font-family:var(--font-display);font-weight:600;font-size:18px;text-transform:uppercase;color:var(--ink);margin-bottom:8px;">Principals with a shifting threat picture</h3>
-            <p style="font-size:15px;color:var(--ink-soft);line-height:1.65;">A wealth event, a lawsuit, a public role, or escalating attention. The exposure is new, or newly serious, and generic coverage no longer fits.</p>
-          </div>
-          <div style="padding:24px 0;border-bottom:1px solid var(--line);">
-            <h3 style="font-family:var(--font-display);font-weight:600;font-size:18px;text-transform:uppercase;color:var(--ink);margin-bottom:8px;">Family offices protecting more than a principal</h3>
-            <p style="font-size:15px;color:var(--ink-soft);line-height:1.65;">Estates, travel, family members, and the reputational surface area that comes with all of it. One standard applied across every environment.</p>
-          </div>
-          <div style="padding:24px 0;border-bottom:1px solid var(--line);">
-            <h3 style="font-family:var(--font-display);font-weight:600;font-size:18px;text-transform:uppercase;color:var(--ink);margin-bottom:8px;">Executives who cannot afford to look protected</h3>
-            <p style="font-size:15px;color:var(--ink-soft);line-height:1.65;">Leadership visibility, travel, and public activity handled so the protection reads as staff, not security.</p>
-          </div>
-          <div style="padding:24px 0;">
-            <h3 style="font-family:var(--font-display);font-weight:600;font-size:18px;text-transform:uppercase;color:var(--ink);margin-bottom:8px;">Advisors acting on behalf of someone else</h3>
-            <p style="font-size:15px;color:var(--ink-soft);line-height:1.65;">Attorneys, fiduciaries, and family office leaders who need a partner that briefs them clearly and handles the principal discreetly.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section-dark">
-  <div class="wrap">
-    <div class="editorial">
-      <div class="eyebrow">The Framework</div>
-      <h2>Intelligence and security. Running together.</h2>
-      <p>Intelligence and security run concurrently at Regent Intel, not in sequence. The analyst and the operator work from the same picture, under the same doctrine, at the same time. Neither function waits for the other.</p>
-    </div>
-    <img src="confluence_image.svg" alt="Regent Intel: Safety, Intelligence, and Documentation converge into a single operational doctrine" style="width:100%;display:block;margin-bottom:48px;border-radius:2px;">
-  </div>
-</section>
-
-<section class="section-ivory">
-  <div class="wrap">
-    <div class="framework">
-      <div class="framework-step">
-        <div class="step-label">Assessment</div>
-        <div>
-          <h3 data-hover-decode>Exposure &amp; Threat Mapping</h3>
-          <p>Every engagement begins with a disciplined assessment of the principal's environment: digital footprint, travel patterns, facility exposure, insider risk, and threat vectors specific to their profile and circumstances.</p>
-        </div>
-      </div>
-      <div class="framework-step">
-        <div class="step-label">Intelligence</div>
-        <div>
-          <h3 data-hover-decode>Continuous Collection &amp; Analysis</h3>
-          <p>Collection runs continuously across open-source, signals, and human disciplines, correlated by analysts who understand what a change in pattern means before it becomes an incident.</p>
-        </div>
-      </div>
-      <div class="framework-step">
-        <div class="step-label">Design</div>
-        <div>
-          <h3 data-hover-decode>Protection Architecture</h3>
-          <p>Protection is designed to the principal's actual environment and threat picture, not applied from a template. Posture, personnel, and protocols are calibrated to what the intelligence shows, not what is standard practice.</p>
-        </div>
-      </div>
-      <div class="framework-step">
-        <div class="step-label">Execution</div>
-        <div>
-          <h3 data-hover-decode>Deployment &amp; Oversight</h3>
-          <p>Practitioners operate inside the principal's environment with the discipline to remain undetected, to anticipate rather than react, and to respond as conditions develop, always working from the same intelligence picture the analyst is watching. Every action is documented.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div class="confidence-banner">
+<!-- ── HERO: WHITE, EDITORIAL, INSTITUTION ── -->
+<div class="hero-editorial">
   <div class="wrap">
     <div>
-      <div class="eyebrow">Capability</div>
-      <h3>Government Grade. Commercial Speed.</h3>
+      <div class="hero-kicker">Regent Intelligence Group · Licensed &amp; Insured · FDACS #A 3600152</div>
+      <h1>Intelligence-<em>driven</em><br>protection.<br>One doctrine.</h1>
+      <p class="hero-tagline">A licensed private intelligence and security firm. We combine intelligence and physical security under a single operational doctrine protecting principals, organizations, and critical assets before risk becomes incident.</p>
+      <div class="hero-actions-editorial">
+        <a href="consultation.html" class="btn-primary">Request Consultation</a>
+        <a href="methodology.html" class="btn-ghost-dark">Our Methodology</a>
+        <a href="regent-capability-sheet-v2.html" download="Regent-Intel-Capability-Statement-2026.html" class="btn-ghost-dark">&#x2193; Capability Statement</a>
+      </div>
     </div>
-    <p>Safety, security, and intelligence delivered in moments, not weeks and months.</p>
+    <div class="hero-right">
+      <div class="hero-stat-stack">
+        <div class="hero-stat">
+          <div class="hero-stat-num">$1.2<em>B+</em></div>
+          <div class="hero-stat-label">In high-value assets protected without loss</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-num">33<em>+</em></div>
+          <div class="hero-stat-label">Countries supported across every continent</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-num">&lt;12<em>hr</em></div>
+          <div class="hero-stat-label">Emergency activation-to-arrival timeline</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-num">24/7</div>
+          <div class="hero-stat-label">Intelligence monitoring &amp; response readiness</div>
+        </div>
+      </div>
+      <div class="hero-license">Nationwide Operations · Global Deployment · regentintel.org</div>
+    </div>
   </div>
 </div>
 
+<!-- ── PROVENANCE: THE DIFFERENTIATOR ── -->
+<div class="band-provenance">
+  <div class="wrap">
+    <div class="provenance-inner">
+      <div>
+        <div class="provenance-label">Who Built This</div>
+        <div class="provenance-headline">Five disciplines. One doctrine. One firm.</div>
+        <p class="provenance-body">The practitioners who built this methodology each came from a distinct discipline, bringing a separate collection framework, a separate analytical standard, and a separate legal and operational background. <strong>Regent Intel was built by integrating all five into a single governed doctrine.</strong></p>
+        <div class="provenance-closer">
+          <p>Regent Intel was built at the intersection of all of them and the methodology reflects every one.</p>
+        </div>
+      </div>
+      <div>
+        <ul class="provenance-list">
+          <li>
+            
+            <span class="prov-name">OGA Programs</span>
+            <span class="prov-sub">Clandestine Operations</span>
+          </li>
+          <li>
+            
+            <span class="prov-name">Army Intelligence</span>
+            <span class="prov-sub">Strategic Counterintelligence</span>
+          </li>
+          <li>
+            
+            <span class="prov-name">Special Operations</span>
+            <span class="prov-sub">Domestic &amp; International</span>
+          </li>
+          <li>
+            
+            <span class="prov-name">Treasury</span>
+            <span class="prov-sub">Financial Investigations</span>
+          </li>
+          <li>
+            
+            <span class="prov-name">FBI</span>
+            <span class="prov-sub">Investigative Work</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
 
+<!-- ── PRACTICE AREAS: LIST NOT GRID ── -->
+<div class="band-practice">
+  <div class="wrap">
+    <div class="practice-inner">
+      <div class="practice-sidebar">
+        <div class="eyebrow">Capabilities</div>
+        <h2>Eight integrated capabilities. One standard.</h2>
+        <p>Every capability, regardless of scope, is governed by the same methodology and the same standard of accountability.</p>
+      </div>
+      <div>
+        <div class="practice-list">
+          <a href="ep.html" class="practice-item">
+            
+            <span class="practice-name">Executive Protection</span>
+            <span class="practice-arrow">→</span>
+          </a>
+          <a href="tscm.html" class="practice-item">
+            
+            <span class="practice-name">TSCM &amp; Technical Assurance</span>
+            <span class="practice-arrow">→</span>
+          </a>
+          <a href="intel.html" class="practice-item">
+            
+            <span class="practice-name">Protective Intelligence</span>
+            <span class="practice-arrow">→</span>
+          </a>
+          <a href="travel.html" class="practice-item">
+            
+            <span class="practice-name">Travel Security &amp; Country Risk</span>
+            <span class="practice-arrow">→</span>
+          </a>
+          <a href="osint.html" class="practice-item">
+            
+            <span class="practice-name">Due Diligence &amp; OSINT</span>
+            <span class="practice-arrow">→</span>
+          </a>
+          <a href="investigations.html" class="practice-item">
+            
+            <span class="practice-name">Investigations &amp; Asset Verification</span>
+            <span class="practice-arrow">→</span>
+          </a>
+          <a href="section132.html" class="practice-item">
+            
+            <span class="practice-name">IRC §132 Security Study</span>
+            <span class="practice-arrow">→</span>
+          </a>
+          <a href="training.html" class="practice-item">
+            
+            <span class="practice-name">Training &amp; Certification</span>
+            <span class="practice-arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ── DOCTRINE ── -->
+<div class="band-doctrine">
+  <div class="wrap">
+    <div class="doctrine-inner">
+      <div class="doctrine-left">
+        <div class="eyebrow">The Doctrine</div>
+        <h2>Intelligence and security. Running together.</h2>
+        <p>Intelligence and security run concurrently at Regent Intel. The analyst and the operator work from the same picture, under the same command, at the same time. Neither function waits for the other.</p>
+        <a href="methodology.html" class="btn-ghost-dark" style="display:inline-block;">Read the Methodology →</a>
+      </div>
+      <div class="doctrine-phases">
+        <div class="doctrine-phase">
+          <span class="phase-label">Assessment</span>
+          <div class="phase-text">
+            <strong>Exposure Assessment</strong>
+            Digital footprint, travel patterns, facility exposure, insider risk, and threat vectors specific to the principal's profile and current circumstances.
+          </div>
+        </div>
+        <div class="doctrine-phase">
+          <span class="phase-label">Intelligence</span>
+          <div class="phase-text">
+            <strong>Intelligence Collection</strong>
+            Collection runs continuously. Analysts identify what a change in pattern means before it becomes an incident.
+          </div>
+        </div>
+        <div class="doctrine-phase">
+          <span class="phase-label">Design</span>
+          <div class="phase-text">
+            <strong>Protection Design</strong>
+            Posture, personnel, and protocols calibrated to what the intelligence shows not applied from a template.
+          </div>
+        </div>
+        <div class="doctrine-phase">
+          <span class="phase-label">Execution</span>
+          <div class="phase-text">
+            <strong>Deployment &amp; Oversight</strong>
+            Every action documented. Every decision defensible. The program adjusts as conditions evolve.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ── WHO WE SERVE ── -->
+<div class="band-serve">
+  <div class="wrap">
+    <div class="serve-label">Who We Serve</div>
+    <div class="serve-strip">
+      <div class="serve-cell">
+        <div class="serve-cell-label">Principals</div>
+        <div class="serve-cell-title">A Shifting Threat Picture</div>
+        <div class="serve-cell-text">A wealth event, a lawsuit, a public role, or escalating attention. Generic coverage no longer fits.</div>
+      </div>
+      <div class="serve-cell">
+        <div class="serve-cell-label">Family Offices</div>
+        <div class="serve-cell-title">Protecting More Than a Principal</div>
+        <div class="serve-cell-text">Estates, travel, family members, and the reputational surface area that comes with all of it.</div>
+      </div>
+      <div class="serve-cell">
+        <div class="serve-cell-label">Executives</div>
+        <div class="serve-cell-title">Who Cannot Afford to Look Protected</div>
+        <div class="serve-cell-text">Protection that reads as staff, not security. Movement, privacy, and normal life preserved.</div>
+      </div>
+      <div class="serve-cell">
+        <div class="serve-cell-label">Advisors</div>
+        <div class="serve-cell-title">Acting on Behalf of Someone Else</div>
+        <div class="serve-cell-text">Attorneys, fiduciaries, and family office leaders who need a partner that handles the principal discreetly.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ── CONTACT ── -->
 <section class="contact-section" id="contact">
   <div class="wrap contact-grid">
     <div class="contact-info">
       <div class="eyebrow">Confidential Inquiry</div>
       <h2>We solve difficult problems.</h2>
-      <p>All inquiries are handled with complete confidentiality. No obligation: a conversation about what you are facing and what we can do about it.</p>
+      <p>All inquiries are handled with complete confidentiality. No obligation a conversation about what you are facing and what we can do about it.</p>
       <div class="contact-detail"><div class="k">Phone</div><div class="v"><a href="tel:9415297479">(941) 529-7479</a></div></div>
       <div class="contact-detail"><div class="k">Operations</div><div class="v">Nationwide · Global Deployment</div></div>
       <div class="contact-detail"><div class="k">License</div><div class="v">FDACS #A 3600152</div></div>
