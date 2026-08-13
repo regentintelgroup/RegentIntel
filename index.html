@@ -44,13 +44,7 @@
   align-items: center;
   gap: 14px;
 }
-.hero-kicker::before {
-  content: '';
-  width: 32px;
-  height: 1px;
-  background: var(--teal);
-  display: inline-block;
-}
+.hero-kicker::before { display: none; }
 .hero-editorial h1 {
   font-family: var(--font-display);
   font-weight: 700;
@@ -143,12 +137,7 @@
   align-items: center;
   gap: 12px;
 }
-.provenance-label::before {
-  content: '';
-  width: 24px;
-  height: 1px;
-  background: var(--teal-bright);
-}
+.provenance-label::before { display: none; }
 .provenance-headline {
   font-family: var(--font-display);
   font-weight: 700;
@@ -367,7 +356,7 @@
   gap: 12px;
   margin-bottom: 40px;
 }
-.serve-label::before { content: ''; width: 24px; height: 1px; background: var(--teal-bright); }
+.serve-label::before { display: none; }
 .serve-strip {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -419,6 +408,75 @@
   .serve-strip { grid-template-columns: 1fr; }
   .hero-stat { grid-template-columns: 80px 1fr; }
 }
+
+/* ── OPTION A: CINEMATIC PHOTOGRAPHIC HERO ── */
+.hero-cinematic {
+  position: relative;
+  min-height: 62vh;
+  display: flex;
+  align-items: center;
+  padding: calc(68px + 40px) 0 40px;
+  background:
+    linear-gradient(90deg, rgba(7,17,26,0.96) 0%, rgba(7,17,26,0.75) 40%, rgba(7,17,26,0.35) 70%, rgba(7,17,26,0.55) 100%),
+    url('hero.png');
+  background-size: cover;
+  background-position: center right;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+.hero-cinematic .network-svg {
+  position: absolute;
+  top: 0; right: 0; bottom: 0;
+  width: 55%;
+  pointer-events: none;
+  opacity: 0.6;
+}
+.hero-cinematic .wrap { position: relative; z-index: 2; }
+.hero-cinematic .hero-kicker { color: var(--teal-bright); margin-bottom: 28px; }
+.hero-cinematic h1 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(38px, 5.5vw, 76px);
+  line-height: 0.98;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 28px;
+  max-width: 760px;
+}
+.hero-cinematic h1 em { font-style: normal; color: var(--teal-bright); }
+.hero-cinematic .hero-tagline {
+  font-size: 18px;
+  line-height: 1.7;
+  color: rgba(255,255,255,0.68);
+  max-width: 560px;
+  margin-bottom: 40px;
+}
+.hero-cinematic .hero-actions-editorial { display: flex; gap: 12px; flex-wrap: wrap; }
+.hero-cinematic .hero-stats-inline {
+  display: flex;
+  gap: 48px;
+  margin-top: 56px;
+  flex-wrap: wrap;
+}
+.hero-cinematic .inline-stat { }
+.hero-cinematic .inline-stat-num {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 34px;
+  color: #fff;
+  line-height: 1;
+}
+.hero-cinematic .inline-stat-num em { font-style: normal; color: var(--teal-bright); font-size: 22px; }
+.hero-cinematic .inline-stat-label {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-top: 6px;
+}
+
 </style>
 </head>
 <body>
@@ -460,38 +518,46 @@
 </header>
 
 <!-- ── HERO: WHITE, EDITORIAL, INSTITUTION ── -->
-<div class="hero-editorial">
+<div class="hero-cinematic">
+  <svg class="network-svg" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMaxYMid slice">
+    <g stroke="rgba(30,143,173,0.35)" stroke-width="1" fill="none">
+      <line x1="480" y1="60" x2="620" y2="120"/><line x1="620" y1="120" x2="720" y2="80"/>
+      <line x1="620" y1="120" x2="680" y2="220"/><line x1="680" y1="220" x2="780" y2="180"/>
+      <line x1="680" y1="220" x2="600" y2="300"/><line x1="480" y1="60" x2="520" y2="180"/>
+      <line x1="520" y1="180" x2="600" y2="300"/>
+    </g>
+    <g fill="rgba(30,143,173,0.85)">
+      <circle cx="480" cy="60" r="3"/><circle cx="620" cy="120" r="4"/><circle cx="720" cy="80" r="3"/>
+      <circle cx="680" cy="220" r="4"/><circle cx="780" cy="180" r="3"/><circle cx="600" cy="300" r="3"/><circle cx="520" cy="180" r="3"/>
+    </g>
+  </svg>
+  <div class="wrap">
+    <div class="hero-kicker">Regent Intelligence Group · Licensed &amp; Insured · FDACS #A 3600152</div>
+    <h1>Intelligence-<em>driven</em> protection.</h1>
+    <p class="hero-tagline">A licensed private intelligence and security firm. We combine intelligence and physical security under a single operational doctrine, protecting principals, organizations, and critical assets before risk becomes incident.</p>
+    <div class="hero-actions-editorial">
+      <a href="consultation.html" class="btn-primary">Request Consultation</a>
+      <a href="methodology.html" class="btn-ghost">Our Methodology</a>
+      <a href="regent-capability-sheet-v2.html" download="Regent-Intel-Capability-Statement-2026.html" class="btn-ghost">&#x2193; Capability Statement</a>
+    </div>
+    </div>
+</div>
+
+<!-- WHITE EDITORIAL STRIP BELOW CINEMATIC -->
+<div class="hero-editorial" style="padding:64px 0;">
   <div class="wrap">
     <div>
-      <div class="hero-kicker">Regent Intelligence Group · Licensed &amp; Insured · FDACS #A 3600152</div>
-      <h1>Intelligence-<em>driven</em><br>protection.<br>One doctrine.</h1>
-      <p class="hero-tagline">A licensed private intelligence and security firm. We combine intelligence and physical security under a single operational doctrine protecting principals, organizations, and critical assets before risk becomes incident.</p>
-      <div class="hero-actions-editorial">
-        <a href="consultation.html" class="btn-primary">Request Consultation</a>
-        <a href="methodology.html" class="btn-ghost-dark">Our Methodology</a>
-        <a href="regent-capability-sheet-v2.html" download="Regent-Intel-Capability-Statement-2026.html" class="btn-ghost-dark">&#x2193; Capability Statement</a>
-      </div>
+      <div class="eyebrow">The Standard</div>
+      <h1 style="font-size:clamp(28px,3.4vw,44px);">Government grade. Commercial speed.</h1>
+      <p class="hero-tagline">Safety, security, and intelligence delivered in moments, not weeks and months. Every engagement governed by one methodology and one standard of accountability.</p>
     </div>
     <div class="hero-right">
       <div class="hero-stat-stack">
-        <div class="hero-stat">
-          <div class="hero-stat-num">$1.2<em>B+</em></div>
-          <div class="hero-stat-label">In high-value assets protected without loss</div>
-        </div>
-        <div class="hero-stat">
-          <div class="hero-stat-num">33<em>+</em></div>
-          <div class="hero-stat-label">Countries supported across every continent</div>
-        </div>
-        <div class="hero-stat">
-          <div class="hero-stat-num">&lt;12<em>hr</em></div>
-          <div class="hero-stat-label">Emergency activation-to-arrival timeline</div>
-        </div>
-        <div class="hero-stat">
-          <div class="hero-stat-num">24/7</div>
-          <div class="hero-stat-label">Intelligence monitoring &amp; response readiness</div>
-        </div>
+        <div class="hero-stat"><div class="hero-stat-num">$1.2<em>B+</em></div><div class="hero-stat-label">In high-value assets protected without loss</div></div>
+        <div class="hero-stat"><div class="hero-stat-num">33<em>+</em></div><div class="hero-stat-label">Countries supported across every continent</div></div>
+        <div class="hero-stat"><div class="hero-stat-num">&lt;12<em>hr</em></div><div class="hero-stat-label">Emergency activation-to-arrival timeline</div></div>
+        <div class="hero-stat"><div class="hero-stat-num">24/7</div><div class="hero-stat-label">Intelligence monitoring &amp; response readiness</div></div>
       </div>
-      <div class="hero-license">Nationwide Operations · Global Deployment · regentintel.org</div>
     </div>
   </div>
 </div>
@@ -547,7 +613,7 @@
     <div class="practice-inner">
       <div class="practice-sidebar">
         <div class="eyebrow">Capabilities</div>
-        <h2>Eight integrated capabilities. One standard.</h2>
+        <h2>Eight integrated capabilities.</h2>
         <p>Every capability, regardless of scope, is governed by the same methodology and the same standard of accountability.</p>
       </div>
       <div>
@@ -627,7 +693,7 @@
           <span class="phase-label">Design</span>
           <div class="phase-text">
             <strong>Protection Design</strong>
-            Posture, personnel, and protocols calibrated to what the intelligence shows not applied from a template.
+            Posture, personnel, and protocols calibrated to what the intelligence shows.
           </div>
         </div>
         <div class="doctrine-phase">
