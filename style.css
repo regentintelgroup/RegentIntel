@@ -528,3 +528,97 @@ footer{background:#07111A;border-top:1px solid var(--line);padding:32px 0 22px}
   color: #fff;
   background: rgba(30,143,173,0.1);
 }
+
+/* ── ALTERNATING SERVICE BLOCKS ── */
+.svc-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px;
+  align-items: center;
+  padding: 56px 0;
+  border-bottom: 1px solid var(--line-light);
+}
+.svc-block:last-child { border-bottom: none; }
+.svc-text .svc-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin-bottom: 16px;
+}
+.svc-text h3 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(24px, 2.6vw, 34px);
+  text-transform: uppercase;
+  color: var(--navy);
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  margin-bottom: 18px;
+}
+.svc-text p {
+  font-size: 16px;
+  color: var(--ink-soft);
+  line-height: 1.7;
+  margin-bottom: 24px;
+}
+.svc-cta {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--teal);
+  transition: color 0.15s;
+}
+.svc-cta:hover { color: var(--teal-bright); }
+.svc-card {
+  background: var(--navy);
+  border-radius: 8px;
+  padding: 32px 36px;
+}
+.svc-card .card-label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--teal-bright);
+  margin-bottom: 20px;
+}
+.svc-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.svc-card li {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  padding: 9px 0;
+  font-size: 15px;
+  color: rgba(255,255,255,0.72);
+  line-height: 1.5;
+}
+.svc-card li::before {
+  content: '';
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--teal-bright);
+  flex-shrink: 0;
+  display: inline-block;
+  transform: translateY(-2px);
+}
+/* alternate: even blocks put the card on the left */
+.svc-block.reverse .svc-text { order: 2; }
+.svc-block.reverse .svc-card { order: 1; }
+
+@media(max-width:820px) {
+  .svc-block, .svc-block.reverse {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 40px 0;
+  }
+  .svc-block.reverse .svc-text { order: 1; }
+  .svc-block.reverse .svc-card { order: 2; }
+}
