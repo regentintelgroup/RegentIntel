@@ -541,10 +541,11 @@ footer{background:#07111A;border-top:1px solid var(--line);padding:32px 0 22px}
 .svc-block:last-child { border-bottom: none; }
 .svc-text .svc-eyebrow {
   font-family: var(--font-mono);
-  font-size: 10px;
+  font-size: 11px;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--teal);
+  color: var(--teal-bright);
+  font-weight: 500;
   margin-bottom: 16px;
 }
 .svc-text h3 {
@@ -559,7 +560,7 @@ footer{background:#07111A;border-top:1px solid var(--line);padding:32px 0 22px}
 }
 .svc-text p {
   font-size: 16px;
-  color: var(--ink-soft);
+  color: var(--ink);
   line-height: 1.7;
   margin-bottom: 24px;
 }
@@ -568,7 +569,8 @@ footer{background:#07111A;border-top:1px solid var(--line);padding:32px 0 22px}
   font-size: 11px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--teal);
+  color: var(--teal-bright);
+  font-weight: 500;
   transition: color 0.15s;
 }
 .svc-cta:hover { color: var(--teal-bright); }
@@ -579,10 +581,11 @@ footer{background:#07111A;border-top:1px solid var(--line);padding:32px 0 22px}
 }
 .svc-card .card-label {
   font-family: var(--font-mono);
-  font-size: 10px;
+  font-size: 11px;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--teal-bright);
+  color: #3BADC9;
+  font-weight: 500;
   margin-bottom: 20px;
 }
 .svc-card ul {
@@ -596,15 +599,16 @@ footer{background:#07111A;border-top:1px solid var(--line);padding:32px 0 22px}
   gap: 12px;
   padding: 9px 0;
   font-size: 15px;
-  color: rgba(255,255,255,0.72);
+  color: rgba(255,255,255,0.92);
   line-height: 1.5;
+  font-weight: 500;
 }
 .svc-card li::before {
   content: '';
-  width: 5px;
-  height: 5px;
+  width: 6px;
+  height: 6px;
   border-radius: 50%;
-  background: var(--teal-bright);
+  background: #3BADC9;
   flex-shrink: 0;
   display: inline-block;
   transform: translateY(-2px);
