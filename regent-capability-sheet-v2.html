@@ -199,8 +199,18 @@
     transition: background 0.15s;
   }
   .cap-icon {
-    font-size: 20pt;
-    line-height: 1;
+    width: 26px;
+    height: 26px;
+    line-height: 0;
+  }
+  .cap-icon svg {
+    width: 26px;
+    height: 26px;
+    stroke: var(--teal-bright);
+    stroke-width: 1.5;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
   }
   .cap-name {
     font-family: 'Barlow Condensed', sans-serif;
@@ -472,42 +482,42 @@
   <div class="band-h2">Eight integrated capabilities. One standard.</div>
   <div class="cap-grid">
     <div class="cap-cell">
-      <div class="cap-icon">🛡️</div>
+      <div class="cap-icon"><svg viewBox="0 0 24 24"><path d="M12 2l8 3v6c0 5-3.5 8.5-8 11-4.5-2.5-8-6-8-11V5l8-3z"/></svg></div>
       <div class="cap-name">Executive Protection</div>
       <div class="cap-desc">Close protection specialists · Intelligence-driven details · Low-visibility operations</div>
     </div>
     <div class="cap-cell">
-      <div class="cap-icon">📡</div>
+      <div class="cap-icon"><svg viewBox="0 0 24 24"><path d="M4 12a8 8 0 0 1 8-8"/><path d="M4 12a4 4 0 0 1 4-4"/><circle cx="6" cy="18" r="1.5"/><path d="M7 17l6-6"/><path d="M13 5l6 6"/></svg></div>
       <div class="cap-name">TSCM</div>
       <div class="cap-desc">RF spectrum analysis · Physical inspection · Device forensics · 24/7 monitoring</div>
     </div>
     <div class="cap-cell">
-      <div class="cap-icon">🔍</div>
+      <div class="cap-icon"><svg viewBox="0 0 24 24"><circle cx="10" cy="10" r="6"/><path d="M20 20l-5.5-5.5"/></svg></div>
       <div class="cap-name">Protective Intelligence</div>
       <div class="cap-desc">Continuous monitoring · Threat analysis · Escalation detection · Decision support</div>
     </div>
     <div class="cap-cell">
-      <div class="cap-icon">✈️</div>
+      <div class="cap-icon"><svg viewBox="0 0 24 24"><path d="M21 15l-9-3-9 3M12 12V4a1.5 1.5 0 0 0-3 0M12 12l-2 6h4l-2-6z"/><path d="M10.5 4.5a1.5 1.5 0 0 1 3 0V12"/></svg></div>
       <div class="cap-name">Travel Security</div>
       <div class="cap-desc">Pre-travel briefings · Route analysis · In-country support · Crisis extraction</div>
     </div>
     <div class="cap-cell">
-      <div class="cap-icon">🧾</div>
+      <div class="cap-icon"><svg viewBox="0 0 24 24"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2z"/><path d="M9 8h6M9 12h6"/></svg></div>
       <div class="cap-name">Due Diligence</div>
       <div class="cap-desc">OSINT · Network mapping · Behavioral analysis · Board-grade reporting</div>
     </div>
     <div class="cap-cell">
-      <div class="cap-icon">⚖️</div>
+      <div class="cap-icon"><svg viewBox="0 0 24 24"><path d="M12 3v18M7 21h10M5 7h14M12 3l-5 4 2.5 5a3 3 0 0 1-5 0L9 7M12 3l5 4-2.5 5a3 3 0 0 0 5 0L15 7"/></svg></div>
       <div class="cap-name">Investigations</div>
       <div class="cap-desc">Asset verification · Subject location · Financial investigation · Evidentiary standard</div>
     </div>
     <div class="cap-cell">
-      <div class="cap-icon">📋</div>
+      <div class="cap-icon"><svg viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="17" rx="1.5"/><path d="M9 4V3a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v1M9 10h6M9 14h6"/></svg></div>
       <div class="cap-name">IRC §132 Study</div>
       <div class="cap-desc">Security necessity documentation · Tax counsel support · Governance-grade reporting</div>
     </div>
     <div class="cap-cell">
-      <div class="cap-icon">🎓</div>
+      <div class="cap-icon"><svg viewBox="0 0 24 24"><path d="M12 4L2 9l10 5 10-5-10-5z"/><path d="M6 11v5c0 1 2.5 2.5 6 2.5s6-1.5 6-2.5v-5"/></svg></div>
       <div class="cap-name">Training</div>
       <div class="cap-desc">PIA-C · OIPT-C · CMI-C · AEP-C · Enrollment by application</div>
     </div>
@@ -571,7 +581,7 @@
       </div>
     </div>
     <div class="prac-closer" style="margin-top:2px;">
-      No comparable firm has integrated all five disciplines. Most operate in a single lane. <strong>Regent Intel was built at the intersection of all of them.</strong>
+      <strong>Regent Intel was built at the intersection of all five disciplines, integrated into a single governed doctrine.</strong>
     </div>
   </div>
 
@@ -598,15 +608,16 @@
 <div class="band-footer">
   <div class="footer-left">
     <div class="footer-tagline">The Regent <span>Difference</span></div>
-    <div class="footer-sub">Intelligence-driven. Doctrine-governed. Delivered by practitioners who built the standard — not those who borrowed it.</div>
+    <div class="footer-sub">Intelligence-driven. Doctrine-governed. Delivered by practitioners who wrote the doctrine.</div>
   </div>
   <div class="footer-center">
     <div class="footer-contact">(941) 529-7479</div>
+    <div class="footer-contact">contact@regentintel.org</div>
     <div class="footer-url">regentintel.org</div>
   </div>
   <div class="footer-right">
     <div class="footer-closer">It is done.</div>
-    <div class="footer-license">Regent Intelligence Group LLC · Sarasota, FL · FDACS #A 3600152</div>
+    <div class="footer-license">Regent Intelligence Group LLC · FDACS #A 3600152</div>
   </div>
 </div>
 
