@@ -479,28 +479,35 @@ footer{background:#07111A;border-top:1px solid var(--line);padding:32px 0 22px}
 .mob-nav-item {
   font-family: var(--font-mono);
   font-size: 13px;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--muted);
-  padding: 16px 0;
-  border-bottom: 1px solid var(--line);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  color: rgba(255,255,255,0.65);
+  padding: 22px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  position: relative;
+  text-align: center;
   cursor: pointer;
   transition: color 0.15s;
   user-select: none;
 }
+.mob-nav-item > span:first-child {
+  display: block;
+  text-align: center;
+}
 .mob-nav-item:hover { color: #fff; }
 .mob-nav-item.open { color: #fff; }
 .mob-chevron {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
   font-size: 18px;
   color: var(--teal);
   transition: transform 0.2s;
   line-height: 1;
 }
 .mob-nav-item.open .mob-chevron {
-  transform: rotate(90deg);
+  transform: translateY(-50%) rotate(90deg);
 }
 .mob-sub {
   display: none;
@@ -626,3 +633,9 @@ footer{background:#07111A;border-top:1px solid var(--line);padding:32px 0 22px}
   .svc-block.reverse .svc-text { order: 1; }
   .svc-block.reverse .svc-card { order: 2; }
 }
+
+/* SERVICES/PARTNERS: CTA heading contrast on dark fixed-bg + rounded referral boxes */
+.cta-section h2{color:#fff !important}
+.cta-section p{color:rgba(255,255,255,0.7) !important}
+.program-grid{gap:16px !important;background:transparent !important;border:none !important;overflow:visible !important}
+.program-cell{border-radius:8px !important;border:1px solid var(--line-light)}

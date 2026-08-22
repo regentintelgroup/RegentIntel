@@ -478,9 +478,32 @@
   margin-top: 6px;
 }
 
+
+/* FIXED PAGE BACKGROUND for dark sections */
+.page-fixed-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  background: url('hero.png') center right / cover no-repeat, var(--navy);
+}
+.page-fixed-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(7,17,26,0.94) 0%, rgba(7,17,26,0.7) 45%, rgba(7,17,26,0.4) 75%, rgba(7,17,26,0.6) 100%);
+}
+.hero-cinematic { background: transparent !important; }
+.band-provenance { background: rgba(13,27,42,0.55) !important; }
+.band-serve { background: rgba(13,27,42,0.55) !important; }
+.hero-editorial { background: #fff !important; position: relative; z-index: 1; }
+.band-practice { position: relative; z-index: 1; }
+.band-doctrine { background: #fff !important; position: relative; z-index: 1; }
+.contact-section { position: relative; z-index: 1; }
+
 </style>
 </head>
 <body>
+<div class="page-fixed-bg"></div>
 
 <header>
   <div class="nav-inner">
