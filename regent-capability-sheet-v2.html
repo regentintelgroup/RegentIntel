@@ -38,7 +38,7 @@
   }
 
   /* ─────────────────────────────
-     BAND 1 — HEADER
+     BAND 1 / HEADER
   ───────────────────────────── */
   .band-header {
     background: var(--navy);
@@ -103,7 +103,7 @@
   }
 
   /* ─────────────────────────────
-     BAND 2 — POSITIONING
+     BAND 2 / POSITIONING
   ───────────────────────────── */
   .band-positioning {
     background: var(--navy-mid);
@@ -121,7 +121,7 @@
   .positioning-text strong { color: #fff; font-weight: 600; }
 
   /* ─────────────────────────────
-     BAND 3 — STATS
+     BAND 3 / STATS
   ───────────────────────────── */
   .band-stats {
     background: var(--ivory);
@@ -155,7 +155,7 @@
   }
 
   /* ─────────────────────────────
-     BAND 4 — CAPABILITIES
+     BAND 4 / CAPABILITIES
   ───────────────────────────── */
   .band-capabilities {
     background: var(--navy);
@@ -199,18 +199,8 @@
     transition: background 0.15s;
   }
   .cap-icon {
-    width: 26px;
-    height: 26px;
-    line-height: 0;
-  }
-  .cap-icon svg {
-    width: 26px;
-    height: 26px;
-    stroke: var(--teal-bright);
-    stroke-width: 1.5;
-    fill: none;
-    stroke-linecap: round;
-    stroke-linejoin: round;
+    font-size: 20pt;
+    line-height: 1;
   }
   .cap-name {
     font-family: 'Barlow Condensed', sans-serif;
@@ -231,7 +221,7 @@
   }
 
   /* ─────────────────────────────
-     BAND 5 — FRAMEWORK
+     BAND 5 / FRAMEWORK
   ───────────────────────────── */
   .band-framework {
     background: var(--ivory);
@@ -279,7 +269,7 @@
   }
 
   /* ─────────────────────────────
-     BAND 6 — PROVENANCE + STANDARDS (two equal halves)
+     BAND 6 / PROVENANCE + STANDARDS (two equal halves)
   ───────────────────────────── */
   .band-bottom {
     display: grid;
@@ -366,7 +356,7 @@
   }
 
   /* ─────────────────────────────
-     BAND 7 — FOOTER
+     BAND 7 / FOOTER
   ───────────────────────────── */
   .band-footer {
     background: var(--navy);
@@ -478,46 +468,46 @@
 
 <!-- ── BAND 4: CAPABILITIES ── -->
 <div class="band-capabilities">
-  <div class="band-label">02 — Core Capabilities</div>
+  <div class="band-label">02 / Core Capabilities</div>
   <div class="band-h2">Eight integrated capabilities. One standard.</div>
   <div class="cap-grid">
     <div class="cap-cell">
-      <div class="cap-icon"><svg viewBox="0 0 24 24"><path d="M12 2l8 3v6c0 5-3.5 8.5-8 11-4.5-2.5-8-6-8-11V5l8-3z"/></svg></div>
+      <div class="cap-icon">🛡️</div>
       <div class="cap-name">Executive Protection</div>
       <div class="cap-desc">Close protection specialists · Intelligence-driven details · Low-visibility operations</div>
     </div>
     <div class="cap-cell">
-      <div class="cap-icon"><svg viewBox="0 0 24 24"><path d="M4 12a8 8 0 0 1 8-8"/><path d="M4 12a4 4 0 0 1 4-4"/><circle cx="6" cy="18" r="1.5"/><path d="M7 17l6-6"/><path d="M13 5l6 6"/></svg></div>
+      <div class="cap-icon">📡</div>
       <div class="cap-name">TSCM</div>
       <div class="cap-desc">RF spectrum analysis · Physical inspection · Device forensics · 24/7 monitoring</div>
     </div>
     <div class="cap-cell">
-      <div class="cap-icon"><svg viewBox="0 0 24 24"><circle cx="10" cy="10" r="6"/><path d="M20 20l-5.5-5.5"/></svg></div>
+      <div class="cap-icon">🔍</div>
       <div class="cap-name">Protective Intelligence</div>
       <div class="cap-desc">Continuous monitoring · Threat analysis · Escalation detection · Decision support</div>
     </div>
     <div class="cap-cell">
-      <div class="cap-icon"><svg viewBox="0 0 24 24"><path d="M21 15l-9-3-9 3M12 12V4a1.5 1.5 0 0 0-3 0M12 12l-2 6h4l-2-6z"/><path d="M10.5 4.5a1.5 1.5 0 0 1 3 0V12"/></svg></div>
+      <div class="cap-icon">✈️</div>
       <div class="cap-name">Travel Security</div>
       <div class="cap-desc">Pre-travel briefings · Route analysis · In-country support · Crisis extraction</div>
     </div>
     <div class="cap-cell">
-      <div class="cap-icon"><svg viewBox="0 0 24 24"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2z"/><path d="M9 8h6M9 12h6"/></svg></div>
+      <div class="cap-icon">🧾</div>
       <div class="cap-name">Due Diligence</div>
       <div class="cap-desc">OSINT · Network mapping · Behavioral analysis · Board-grade reporting</div>
     </div>
     <div class="cap-cell">
-      <div class="cap-icon"><svg viewBox="0 0 24 24"><path d="M12 3v18M7 21h10M5 7h14M12 3l-5 4 2.5 5a3 3 0 0 1-5 0L9 7M12 3l5 4-2.5 5a3 3 0 0 0 5 0L15 7"/></svg></div>
+      <div class="cap-icon">⚖️</div>
       <div class="cap-name">Investigations</div>
       <div class="cap-desc">Asset verification · Subject location · Financial investigation · Evidentiary standard</div>
     </div>
     <div class="cap-cell">
-      <div class="cap-icon"><svg viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="17" rx="1.5"/><path d="M9 4V3a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v1M9 10h6M9 14h6"/></svg></div>
+      <div class="cap-icon">📋</div>
       <div class="cap-name">IRC §132 Study</div>
       <div class="cap-desc">Security necessity documentation · Tax counsel support · Governance-grade reporting</div>
     </div>
     <div class="cap-cell">
-      <div class="cap-icon"><svg viewBox="0 0 24 24"><path d="M12 4L2 9l10 5 10-5-10-5z"/><path d="M6 11v5c0 1 2.5 2.5 6 2.5s6-1.5 6-2.5v-5"/></svg></div>
+      <div class="cap-icon">🎓</div>
       <div class="cap-name">Training</div>
       <div class="cap-desc">PIA-C · OIPT-C · CMI-C · AEP-C · Enrollment by application</div>
     </div>
@@ -526,7 +516,7 @@
 
 <!-- ── BAND 5: FRAMEWORK ── -->
 <div class="band-framework">
-  <div class="band-label">03 — Engagement Framework</div>
+  <div class="band-label">03 / Engagement Framework</div>
   <div class="band-h2">How every engagement works.</div>
   <div class="framework-grid">
     <div class="framework-cell">
@@ -547,7 +537,7 @@
     <div class="framework-cell">
       <div class="framework-num">Phase 04</div>
       <div class="framework-title">Protection Design</div>
-      <div class="framework-text">Posture, personnel, and protocols calibrated to what the intelligence shows — not a template. Every action documented. Every decision defensible.</div>
+      <div class="framework-text">Posture, personnel, and protocols calibrated to what the intelligence shows. Every action documented. Every decision defensible.</div>
     </div>
   </div>
 </div>
@@ -556,7 +546,7 @@
 <div class="band-bottom">
 
   <div class="half half-dark">
-    <div class="band-label">04 — Practitioner Provenance</div>
+    <div class="band-label">04 / Practitioner Provenance</div>
     <div class="band-h2" style="margin-bottom:20px;">Built at the intersection<br>of five disciplines.</div>
     <div class="prac-grid">
       <div class="prac-cell">
@@ -581,12 +571,12 @@
       </div>
     </div>
     <div class="prac-closer" style="margin-top:2px;">
-      <strong>Regent Intel was built at the intersection of all five disciplines, integrated into a single governed doctrine.</strong>
+      No comparable firm has integrated all five disciplines. Most operate in a single lane. <strong>Regent Intel was built at the intersection of all of them.</strong>
     </div>
   </div>
 
   <div class="half half-ivory">
-    <div class="band-label">05 — Operational Standards</div>
+    <div class="band-label">05 / Operational Standards</div>
     <div class="band-h2" style="margin-bottom:20px;">Three disciplines.<br>One standard of accountability.</div>
     <div class="std-list">
       <div class="std-row"><span class="std-num">ISO 18788</span><span class="std-name">Security Operations Governance</span></div>
@@ -608,7 +598,7 @@
 <div class="band-footer">
   <div class="footer-left">
     <div class="footer-tagline">The Regent <span>Difference</span></div>
-    <div class="footer-sub">Intelligence-driven. Doctrine-governed. Delivered by practitioners who wrote the doctrine.</div>
+    <div class="footer-sub">Intelligence-driven. Doctrine-governed. Delivered by practitioners who built the standard / not those who borrowed it.</div>
   </div>
   <div class="footer-center">
     <div class="footer-contact">(941) 529-7479</div>
@@ -617,7 +607,7 @@
   </div>
   <div class="footer-right">
     <div class="footer-closer">It is done.</div>
-    <div class="footer-license">Regent Intelligence Group LLC · FDACS #A 3600152</div>
+    <div class="footer-license">Regent Intelligence Group LLC · Sarasota, FL · FDACS #A 3600152</div>
   </div>
 </div>
 
