@@ -635,7 +635,13 @@ footer{background:#07111A;border-top:1px solid var(--line);padding:32px 0 22px}
 }
 
 /* SERVICES/PARTNERS: CTA heading contrast on dark fixed-bg + rounded referral boxes */
-.cta-section h2{color:#fff !important}
-.cta-section p{color:rgba(255,255,255,0.7) !important}
+/* CTA white text ONLY on pages with the dark fixed background */
+body:has(.page-fixed-bg) .cta-section h2{color:#fff !important}
+body:has(.page-fixed-bg) .cta-section p{color:rgba(255,255,255,0.7) !important}
 .program-grid{gap:16px !important;background:transparent !important;border:none !important;overflow:visible !important}
 .program-cell{border-radius:8px !important;border:1px solid var(--line-light)}
+
+/* Partners: editorial heading on dark fixed-bg */
+.program-detail .editorial h2{color:#fff !important}
+.program-detail .editorial p{color:rgba(255,255,255,0.8) !important}
+.program-detail .editorial .eyebrow{color:var(--teal-bright) !important}
