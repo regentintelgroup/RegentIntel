@@ -68,7 +68,7 @@ nav.links>li:hover .dropdown,nav.links>li:focus-within .dropdown{opacity:1;point
 /* BUTTONS */
 .btn-primary{font-family:var(--font-mono);font-size:11.5px;letter-spacing:0.07em;text-transform:uppercase;background:var(--teal);color:#fff;padding:14px 28px;transition:background 0.15s;display:inline-block;border-radius:8px}
 .btn-primary:hover{background:var(--teal-bright)}
-.btn-ghost{font-family:var(--font-mono);font-size:11.5px;letter-spacing:0.07em;text-transform:uppercase;background:transparent;color:rgba(255,255,255,0.85);border:1px solid rgba(255,255,255,0.45);padding:14px 28px;transition:color 0.15s,border-color 0.15s,background 0.15s;display:inline-block;border-radius:8px}
+.btn-ghost{font-family:var(--font-mono);font-size:11.5px;letter-spacing:0.07em;text-transform:uppercase;background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.6);padding:14px 28px;transition:color 0.15s,border-color 0.15s,background 0.15s;display:inline-block;border-radius:8px}
 .btn-ghost:hover{color:#fff;border-color:#fff;background:rgba(255,255,255,0.08)}
 
 /* MARQUEE */
