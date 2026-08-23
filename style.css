@@ -95,6 +95,7 @@ section{padding:104px 0}
 .editorial h2{font-family:var(--font-display);font-weight:600;font-size:clamp(24px,2.8vw,38px);line-height:1.1;letter-spacing:-0.01em;margin-bottom:20px;color:var(--ink);text-transform:uppercase}
 .section-dark .editorial h2{color:#fff}
 .editorial p{font-size:18px;line-height:1.8;color:var(--ink-soft);margin-bottom:22px;max-width:680px}
+.editorial-center p{margin-left:auto;margin-right:auto}
 .section-dark .editorial p{color:rgba(255,255,255,0.65)}
 .editorial p strong{color:var(--ink);font-weight:600}
 .section-dark .editorial p strong{color:#fff}
