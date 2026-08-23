@@ -44,11 +44,11 @@ nav.links>li{position:relative}
 nav.links>li>a{font-family:var(--font-mono);font-size:12px;letter-spacing:0.06em;text-transform:uppercase;color:var(--muted);padding:0 14px;height:68px;display:flex;align-items:center;transition:color 0.15s;white-space:nowrap}
 nav.links>li>a:hover,nav.links>li>a.current{color:#fff}
 nav.links>li>a.current::after{content:'';position:absolute;bottom:0;left:14px;right:14px;height:1px;background:var(--teal-bright)}
-.dropdown{position:absolute;top:68px;left:0;background:var(--navy-mid);border:1px solid var(--line);border-top:1px solid var(--teal-dim);min-width:240px;opacity:0;pointer-events:none;transform:translateY(-4px);transition:opacity 0.15s,transform 0.15s;z-index:200;border-radius:0 0 8px 8px}
+.dropdown{position:absolute;top:68px;left:-12px;background:rgba(15,32,48,0.95);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,0.1);border-top:2px solid var(--teal);min-width:280px;opacity:0;pointer-events:none;transform:translateY(-6px);transition:opacity 0.2s,transform 0.2s;z-index:200;border-radius:0 0 12px 12px;box-shadow:0 4px 12px rgba(0,0,0,0.2),0 16px 40px rgba(0,0,0,0.3);padding:8px 0}
 nav.links>li:hover .dropdown,nav.links>li:focus-within .dropdown{opacity:1;pointer-events:all;transform:translateY(0)}
-.dropdown a{display:block;font-family:var(--font-mono);font-size:10px;letter-spacing:0.06em;text-transform:uppercase;color:var(--muted);padding:12px 18px;border-bottom:1px solid var(--line);transition:color 0.12s,background 0.12s}
+.dropdown a{display:block;font-family:var(--font-mono);font-size:11px;letter-spacing:0.06em;text-transform:uppercase;color:rgba(255,255,255,0.55);padding:14px 22px;border-bottom:none;transition:color 0.15s,background 0.15s,padding-left 0.15s}
 .dropdown a:last-child{border-bottom:none}
-.dropdown a:hover{color:#fff;background:rgba(20,110,135,0.12)}
+.dropdown a:hover{color:#fff;background:rgba(20,110,135,0.15);padding-left:26px}
 .nav-cta{display:none;font-family:var(--font-mono);font-size:12px;letter-spacing:0.06em;text-transform:uppercase;color:#fff;background:var(--teal);padding:10px 18px;white-space:nowrap;transition:background 0.2s,box-shadow 0.2s;flex-shrink:0;border-radius:10px;box-shadow:0 1px 3px rgba(0,0,0,0.1),0 3px 8px rgba(20,110,135,0.15)}
 .nav-cta:hover{background:var(--teal-bright)}
 @media(min-width:960px){.nav-cta{display:block;margin-left:8px;border-radius:10px}}
