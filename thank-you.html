@@ -6,30 +6,36 @@
 <link rel="icon" href="favicon.ico" sizes="any">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preload" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=DM+Mono:wght@400;500&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;1,400&display=swap" as="style">
-<title>Confidential Consultation | Regent Intel</title>
-<meta name="description" content="Request a confidential consultation with Regent Intelligence Group. All inquiries handled with complete discretion.">
-<link rel="canonical" href="https://regentintel.org/consultation.html">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Confidential Consultation | Regent Intel">
-<meta property="og:description" content="Request a confidential consultation with Regent Intelligence Group. All inquiries handled with complete discretion.">
-<meta property="og:url" content="https://regentintel.org/consultation.html">
-<meta property="og:image" content="https://regentintel.org/og-image.png">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Confidential Consultation | Regent Intel">
-<meta name="twitter:description" content="Request a confidential consultation with Regent Intelligence Group. All inquiries handled with complete discretion.">
-<meta name="twitter:image" content="https://regentintel.org/og-image.png">
+<title>Inquiry Received | Regent Intel</title>
+<meta name="description" content="Your confidential inquiry has been received by Regent Intelligence Group.">
+<meta name="robots" content="noindex">
+<link rel="canonical" href="https://regentintel.org/thank-you.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=DM+Mono:wght@400;500&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18403293997"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-18403293997');
+</script>
+
+<!-- Google Ads conversion: Consultation Inquiry -->
+<!-- REPLACE CONVERSION_LABEL_HERE with the label from the Consultation Inquiry event snippet -->
+<script>
+  gtag('event', 'conversion', {
+      'send_to': 'AW-18403293997/CONVERSION_LABEL_HERE'
+  });
+</script>
+
 <style>
 .page-fixed-bg{position:fixed;inset:0;z-index:-2;background:url('hero.webp') center right / cover no-repeat,var(--navy)}
 .page-fixed-bg::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(7,17,26,0.88) 0%,rgba(7,17,26,0.6) 45%,rgba(7,17,26,0.25) 75%,rgba(7,17,26,0.45) 100%)}
 .service-hero{background:transparent !important;min-height:80vh;display:flex;align-items:center}
-.program-detail{background:transparent !important}
-.section-dark{background:rgba(13,27,42,0.55) !important}
-.cta-section{background:rgba(13,27,42,0.5) !important;position:relative;z-index:1}
-.section-ivory{background:var(--ivory) !important;position:relative;z-index:1}
-.contact-section{background:var(--ivory) !important;position:relative;z-index:1}
+.confirm-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:32px}
 </style>
 </head>
 <body>
@@ -62,7 +68,7 @@
       <li><a href="methodology.html">Methodology</a></li>
       <li><a href="standards.html">Standards</a></li>
       <li><a href="partners.html">Partnership</a></li>
-      <li><a href="consultation.html" class="current">Consultation</a></li>
+      <li><a href="consultation.html">Consultation</a></li>
     </nav>
     <a href="consultation.html" class="nav-cta">Request Consultation</a>
     <button class="menu-toggle" aria-label="Menu" onclick="document.getElementById('mobile-overlay').classList.toggle('open')">
@@ -71,55 +77,19 @@
   </div>
 </header>
 
-<section class="service-hero" >
+<section class="service-hero">
   <div class="hero-scan-line"></div>
   <div class="wrap">
-    <div class="eyebrow">Confidential Consultation</div>
-    <h1><span data-decode>Tell us what you are facing.</span></h1>
-    <p class="lede">All inquiries are handled with complete confidentiality. No obligation. A conversation about what you are facing and what Regent Intel can do about it.</p>
-  </div>
-</section>
-<section class="contact-section" id="contact">
-  <div class="wrap contact-grid">
-    <div class="contact-info">
-      <div class="eyebrow">Get in Touch</div>
-      <h2>We solve difficult problems.</h2>
-      <p>Senior practitioners respond to all inquiries directly. You will not be transferred to a sales team.</p>
-      <div class="contact-detail"><div class="k">Phone</div><div class="v"><a href="tel:9415297479">(941) 529-7479</a></div></div>
-      <div class="contact-detail"><div class="k">Email</div><div class="v"><a href="mailto:contact@regentintel.org">contact@regentintel.org</a></div></div>
-      <div class="contact-detail"><div class="k">Operations</div><div class="v">Nationwide · Global Deployment</div></div>
-      <div class="contact-detail"><div class="k">License</div><div class="v">FDACS #A 3600152</div></div>
+    <div class="eyebrow">Confidential Inquiry</div>
+    <h1><span data-decode>Your inquiry has been received.</span></h1>
+    <p class="lede">Your inquiry will be reviewed and handled in confidence.</p>
+    <div class="confirm-actions">
+      <a href="methodology.html" class="btn-primary">Our Methodology</a>
+      <a href="index.html" class="nav-cta">Return to Home</a>
     </div>
-    <form class="briefing" name="briefing" method="POST" data-netlify="true" action="/thank-you">
-      <input type="hidden" name="form-name" value="briefing">
-      <div><label>First Name</label><input name="first_name" type="text" required></div>
-      <div><label>Last Name</label><input name="last_name" type="text" required></div>
-      <div><label>Organization</label><input name="organization" type="text"></div>
-      <div><label>Email</label><input name="email" type="email" required></div>
-      <div><label>Phone</label><input name="phone" type="tel"></div>
-      <div>
-        <label>Service Area</label>
-        <select name="service_area">
-          <option>Executive Protection</option>
-          <option>TSCM &amp; Technical Assurance</option>
-          <option>Protective Intelligence</option>
-          <option>Travel Security &amp; Country Risk</option>
-          <option>Due Diligence &amp; OSINT</option>
-          <option>Investigations &amp; Asset Verification</option>
-          <option>IRC §132 Security Study</option>
-          <option>Training &amp; Certification</option>
-          <option>Professional Partnership Inquiry</option>
-          <option>Multiple / General Inquiry</option>
-        </select>
-      </div>
-      <div class="full"><label>Brief Description</label><textarea name="message"></textarea></div>
-      <div class="submit-row">
-        <button type="submit" class="btn-primary" style="border:none;cursor:pointer;">Submit Inquiry</button>
-        <span class="form-note">All submissions are handled with strict confidentiality.</span>
-      </div>
-    </form>
   </div>
 </section>
+
 <footer>
   <div class="wrap">
     <div class="footer-top">
