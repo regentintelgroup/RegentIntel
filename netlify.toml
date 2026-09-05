@@ -21,14 +21,50 @@
   status = 301
   force = true
 
-# Fix /intel → /intel.html (the canonical issue)
+# ── OLD PAGES → NEW STRUCTURE ──
+[[redirects]]
+  from = "/methodology.html"
+  to = "/framework.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/methodology"
+  to = "/framework.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/standards.html"
+  to = "/framework.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/standards"
+  to = "/framework.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/partners.html"
+  to = "/who-we-serve.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/partners"
+  to = "/who-we-serve.html"
+  status = 301
+  force = true
+
+# ── CLEAN URL REDIRECTS ──
 [[redirects]]
   from = "/intel"
   to = "/intel.html"
   status = 301
   force = true
 
-# Clean URL redirects for all pages (in case Google crawls without .html)
 [[redirects]]
   from = "/services"
   to = "/services.html"
@@ -65,21 +101,6 @@
   status = 301
 
 [[redirects]]
-  from = "/methodology"
-  to = "/methodology.html"
-  status = 301
-
-[[redirects]]
-  from = "/standards"
-  to = "/standards.html"
-  status = 301
-
-[[redirects]]
-  from = "/partners"
-  to = "/partners.html"
-  status = 301
-
-[[redirects]]
   from = "/training"
   to = "/training.html"
   status = 301
@@ -92,6 +113,16 @@
 [[redirects]]
   from = "/who-we-serve"
   to = "/who-we-serve.html"
+  status = 301
+
+[[redirects]]
+  from = "/advisory"
+  to = "/advisory.html"
+  status = 301
+
+[[redirects]]
+  from = "/framework"
+  to = "/framework.html"
   status = 301
 
 # Headers for SEO and security

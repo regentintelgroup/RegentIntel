@@ -5,19 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" href="favicon.ico" sizes="any">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
-<link rel="preload" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=DM+Mono:wght@400;500&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;1,400&display=swap" as="style">
 <title>Confidential Consultation | Regent Intel</title>
 <meta name="description" content="Request a confidential consultation with Regent Intelligence Group. All inquiries handled with complete discretion.">
 <link rel="canonical" href="https://regentintel.org/consultation.html">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Confidential Consultation | Regent Intel">
-<meta property="og:description" content="Request a confidential consultation with Regent Intelligence Group. All inquiries handled with complete discretion.">
+<meta property="og:description" content="Request a confidential consultation with Regent Intelligence Group.">
 <meta property="og:url" content="https://regentintel.org/consultation.html">
 <meta property="og:image" content="https://regentintel.org/og-image.png">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Confidential Consultation | Regent Intel">
-<meta name="twitter:description" content="Request a confidential consultation with Regent Intelligence Group. All inquiries handled with complete discretion.">
-<meta name="twitter:image" content="https://regentintel.org/og-image.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=DM+Mono:wght@400;500&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
@@ -25,10 +20,6 @@
 .page-fixed-bg{position:fixed;inset:0;z-index:-2;background:url('hero.webp') center right / cover no-repeat,var(--navy)}
 .page-fixed-bg::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(7,17,26,0.88) 0%,rgba(7,17,26,0.6) 45%,rgba(7,17,26,0.25) 75%,rgba(7,17,26,0.45) 100%)}
 .service-hero{background:transparent !important;min-height:80vh;display:flex;align-items:center}
-.program-detail{background:transparent !important}
-.section-dark{background:rgba(13,27,42,0.55) !important}
-.cta-section{background:rgba(13,27,42,0.5) !important;position:relative;z-index:1}
-.section-ivory{background:var(--ivory) !important;position:relative;z-index:1}
 .contact-section{background:var(--ivory) !important;position:relative;z-index:1}
 </style>
 </head>
@@ -37,54 +28,34 @@
 
 <header>
   <div class="nav-inner">
-    <a href="index.html" class="logo">
-      <img src="logo.webp" alt="Regent Intel">
-      <div class="logo-text">
-        <div class="logo-name">Regent <span>Intel</span></div>
-        <div class="logo-tag">Protection · Intelligence · Results</div>
-      </div>
-    </a>
+    <a href="index.html" class="logo"><img src="logo.webp" alt="Regent Intel"><div class="logo-text"><div class="logo-name">Regent <span>Intel</span></div><div class="logo-tag">Protection · Intelligence · Results</div></div></a>
     <nav class="links" id="main-nav">
-      <li>
-        <a href="services.html">Services</a>
-        <div class="dropdown">
-          <a href="ep.html">Executive Protection</a>
-          <a href="tscm.html">TSCM &amp; Technical Assurance</a>
-          <a href="intel.html">Protective Intelligence</a>
-          <a href="travel.html">Travel Security &amp; Country Risk</a>
-          <a href="osint.html">Due Diligence &amp; OSINT</a>
-          <a href="investigations.html">Investigations &amp; Asset Verification</a>
-          <a href="section132.html">IRC §132 Security Study</a>
-          <a href="training.html">Training &amp; Certification</a>
-        </div>
-      </li>
+      <li><a href="services.html">Services</a><div class="dropdown"><a href="ep.html">Executive Protection</a><a href="tscm.html">TSCM &amp; Technical Assurance</a><a href="intel.html">Protective Intelligence</a><a href="travel.html">Travel Security &amp; Country Risk</a><a href="osint.html">Due Diligence &amp; OSINT</a><a href="investigations.html">Investigations &amp; Asset Verification</a><a href="section132.html">IRC §132 Security Study</a><a href="training.html">Training &amp; Certification</a></div></li>
       <li><a href="who-we-serve.html">Who We Serve</a></li>
-      <li><a href="methodology.html">Methodology</a></li>
-      <li><a href="standards.html">Standards</a></li>
-      <li><a href="partners.html">Partnership</a></li>
+      <li><a href="advisory.html">Advisory</a></li>
+      <li><a href="framework.html">Framework</a></li>
       <li><a href="consultation.html" class="current">Consultation</a></li>
     </nav>
     <a href="consultation.html" class="nav-cta">Request Consultation</a>
-    <button class="menu-toggle" aria-label="Menu" onclick="document.getElementById('mobile-overlay').classList.toggle('open')">
-      <span></span><span></span><span></span>
-    </button>
+    <button class="menu-toggle" aria-label="Menu" onclick="document.getElementById('mobile-overlay').classList.toggle('open')"><span></span><span></span><span></span></button>
   </div>
 </header>
 
-<section class="service-hero" >
+<section class="service-hero">
   <div class="hero-scan-line"></div>
   <div class="wrap">
     <div class="eyebrow">Confidential Consultation</div>
     <h1><span data-decode>Tell us what you are facing.</span></h1>
-    <p class="lede">All inquiries are handled with complete confidentiality. No obligation. A conversation about what you are facing and what Regent Intel can do about it.</p>
+    <p class="lede">All inquiries are handled with complete confidentiality. No obligation. A conversation about your risk picture, your priorities, and what Regent Intel can do about it.</p>
   </div>
 </section>
+
 <section class="contact-section" id="contact">
   <div class="wrap contact-grid">
     <div class="contact-info">
-      <div class="eyebrow">Get in Touch</div>
-      <h2>We solve difficult problems.</h2>
-      <p>Senior practitioners respond to all inquiries directly. You will not be transferred to a sales team.</p>
+      <div class="eyebrow" style="font-family:var(--font-mono);font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:var(--teal);display:flex;align-items:center;gap:10px;margin-bottom:20px;">Get in Touch</div>
+      <h2 style="font-family:var(--font-display);font-weight:600;font-size:clamp(22px,2.6vw,34px);color:var(--ink);text-transform:uppercase;margin-bottom:12px;">We solve difficult problems.</h2>
+      <p style="font-size:17px;color:var(--ink-soft);margin-bottom:32px;line-height:1.78;">Senior practitioners respond to all inquiries directly. You will not be transferred to a sales team.</p>
       <div class="contact-detail"><div class="k">Phone</div><div class="v"><a href="tel:9415297479">(941) 529-7479</a></div></div>
       <div class="contact-detail"><div class="k">Email</div><div class="v"><a href="mailto:contact@regentintel.org">contact@regentintel.org</a></div></div>
       <div class="contact-detail"><div class="k">Operations</div><div class="v">Nationwide · Global Deployment</div></div>
@@ -100,6 +71,7 @@
       <div>
         <label>Service Area</label>
         <select name="service_area">
+          <option>Security Risk Advisory</option>
           <option>Executive Protection</option>
           <option>TSCM &amp; Technical Assurance</option>
           <option>Protective Intelligence</option>
@@ -120,63 +92,9 @@
     </form>
   </div>
 </section>
-<footer>
-  <div class="wrap">
-    <div class="footer-top">
-      <div class="footer-logo">
-        <img src="logo.webp" alt="Regent Intel">
-        <div class="footer-wordmark">Regent <span>Intel</span></div>
-      </div>
-      <div class="footer-links">
-        <a href="services.html">Services</a>
-        <a href="who-we-serve.html">Who We Serve</a>
-        <a href="methodology.html">Methodology</a>
-        <a href="standards.html">Standards</a>
-        <a href="partners.html">Partnership</a>
-        <a href="training.html">Training</a>
-        <a href="consultation.html">Consultation</a>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>&copy; 2026 Regent Intelligence Group LLC. Licensed &amp; Insured. FDACS #A 3600152.</span>
-      <span>PROTECTIVE INTELLIGENCE</span>
-    </div>
-  </div>
-</footer>
-<script src="scramble.js"></script>
 
-<div class="mobile-overlay" id="mobile-overlay">
-  <div class="mobile-overlay-header">
-    <div class="mobile-overlay-logo">
-      <img src="logo.webp" alt="Regent Intel">
-      <span>Regent <em>Intel</em></span>
-    </div>
-    <button class="mobile-close" onclick="document.getElementById('mobile-overlay').classList.remove('open')" aria-label="Close">&#x2715;</button>
-  </div>
-  <nav class="mobile-overlay-nav">
-    <div class="mob-nav-item mob-has-sub" id="mob-services-toggle" onclick="document.getElementById('mob-services-sub').classList.toggle('open');this.classList.toggle('open')">
-      <span>Services</span>
-      <span class="mob-chevron">&#x203A;</span>
-    </div>
-    <div class="mob-sub" id="mob-services-sub">
-      <a href="ep.html">Executive Protection</a>
-      <a href="tscm.html">TSCM &amp; Technical Assurance</a>
-      <a href="intel.html">Protective Intelligence</a>
-      <a href="travel.html">Travel Security &amp; Country Risk</a>
-      <a href="osint.html">Due Diligence &amp; OSINT</a>
-      <a href="investigations.html">Investigations &amp; Asset Verification</a>
-      <a href="section132.html">IRC §132 Security Study</a>
-      <a href="training.html">Training &amp; Certification</a>
-    </div>
-    <a href="who-we-serve.html">Who We Serve</a>
-    <a href="methodology.html">Methodology</a>
-    <a href="standards.html">Standards</a>
-    <a href="partners.html">Partnership</a>
-    <a href="consultation.html" class="highlight">Consultation</a>
-  </nav>
-  <div class="mobile-overlay-cta">
-    <a href="consultation.html">Request a Consultation</a>
-  </div>
-</div>
+<footer><div class="wrap"><div class="footer-top"><div class="footer-logo"><img src="logo.webp" alt="Regent Intel"><div class="footer-wordmark">Regent <span>Intel</span></div></div><div class="footer-links"><a href="services.html">Services</a><a href="who-we-serve.html">Who We Serve</a><a href="advisory.html">Advisory</a><a href="framework.html">Framework</a><a href="training.html">Training</a><a href="consultation.html">Consultation</a></div></div><div class="footer-bottom"><span>&copy; 2026 Regent Intelligence Group LLC. Licensed &amp; Insured. FDACS #A 3600152.</span><span>ENTERPRISE SECURITY RISK MANAGEMENT</span></div></div></footer>
+<script src="scramble.js"></script>
+<div class="mobile-overlay" id="mobile-overlay"><div class="mobile-overlay-header"><div class="mobile-overlay-logo"><img src="logo.webp" alt="Regent Intel"><span>Regent <em>Intel</em></span></div><button class="mobile-close" onclick="document.getElementById('mobile-overlay').classList.remove('open')" aria-label="Close">&#x2715;</button></div><nav class="mobile-overlay-nav"><div class="mob-nav-item mob-has-sub" onclick="document.getElementById('mob-services-sub').classList.toggle('open');this.classList.toggle('open')"><span>Services</span><span class="mob-chevron">&#x203A;</span></div><div class="mob-sub" id="mob-services-sub"><a href="ep.html">Executive Protection</a><a href="tscm.html">TSCM &amp; Technical Assurance</a><a href="intel.html">Protective Intelligence</a><a href="travel.html">Travel Security &amp; Country Risk</a><a href="osint.html">Due Diligence &amp; OSINT</a><a href="investigations.html">Investigations &amp; Asset Verification</a><a href="section132.html">IRC §132 Security Study</a><a href="training.html">Training &amp; Certification</a></div><a href="who-we-serve.html">Who We Serve</a><a href="advisory.html">Advisory</a><a href="framework.html">Framework</a><a href="consultation.html" class="highlight">Consultation</a></nav><div class="mobile-overlay-cta"><a href="consultation.html">Request a Consultation</a></div></div>
 </body>
 </html>

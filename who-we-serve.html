@@ -5,19 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" href="favicon.ico" sizes="any">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
-<link rel="preload" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=DM+Mono:wght@400;500&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;1,400&display=swap" as="style">
 <title>Who We Serve | Regent Intel</title>
-<meta name="description" content="Regent Intel serves principals with a shifting threat picture, family offices, executives who cannot afford to look protected, and advisors acting on behalf of someone else.">
+<meta name="description" content="Regent Intel serves security leaders, principals, family offices, executives, law firms, and corporate counsel as the Security Professional within the ESRM framework.">
 <link rel="canonical" href="https://regentintel.org/who-we-serve.html">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Who We Serve | Regent Intel">
-<meta property="og:description" content="Regent Intel serves principals with a shifting threat picture, family offices, executives who cannot afford to look protected, and advisors acting on behalf of someone else.">
+<meta property="og:description" content="Regent Intel serves security leaders, principals, family offices, executives, law firms, and corporate counsel.">
 <meta property="og:url" content="https://regentintel.org/who-we-serve.html">
 <meta property="og:image" content="https://regentintel.org/og-image.png">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Who We Serve | Regent Intel">
-<meta name="twitter:description" content="Regent Intel serves principals with a shifting threat picture, family offices, executives who cannot afford to look protected, and advisors acting on behalf of someone else.">
-<meta name="twitter:image" content="https://regentintel.org/og-image.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=DM+Mono:wght@400;500&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
@@ -25,11 +20,10 @@
 .page-fixed-bg{position:fixed;inset:0;z-index:-2;background:url('hero.webp') center right / cover no-repeat,var(--navy)}
 .page-fixed-bg::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(7,17,26,0.88) 0%,rgba(7,17,26,0.6) 45%,rgba(7,17,26,0.25) 75%,rgba(7,17,26,0.45) 100%)}
 .service-hero{background:transparent !important;min-height:80vh;display:flex;align-items:center}
-.program-detail{background:transparent !important}
+.program-detail{background:transparent !important;position:relative;z-index:1}
 .section-dark{background:rgba(13,27,42,0.55) !important}
 .cta-section{background:rgba(13,27,42,0.5) !important;position:relative;z-index:1}
 .section-ivory{background:var(--ivory) !important;position:relative;z-index:1}
-.program-detail{position:relative;z-index:1}
 .program-detail .editorial h2{color:#fff !important}
 .program-detail .editorial p{color:rgba(255,255,255,0.7) !important}
 .program-detail .editorial .eyebrow{color:var(--teal-bright) !important}
@@ -40,37 +34,16 @@
 
 <header>
   <div class="nav-inner">
-    <a href="index.html" class="logo">
-      <img src="logo.webp" alt="Regent Intel">
-      <div class="logo-text">
-        <div class="logo-name">Regent <span>Intel</span></div>
-        <div class="logo-tag">Protection · Intelligence · Results</div>
-      </div>
-    </a>
+    <a href="index.html" class="logo"><img src="logo.webp" alt="Regent Intel"><div class="logo-text"><div class="logo-name">Regent <span>Intel</span></div><div class="logo-tag">Protection · Intelligence · Results</div></div></a>
     <nav class="links" id="main-nav">
-      <li>
-        <a href="services.html">Services</a>
-        <div class="dropdown">
-          <a href="ep.html">Executive Protection</a>
-          <a href="tscm.html">TSCM &amp; Technical Assurance</a>
-          <a href="intel.html">Protective Intelligence</a>
-          <a href="travel.html">Travel Security &amp; Country Risk</a>
-          <a href="osint.html">Due Diligence &amp; OSINT</a>
-          <a href="investigations.html">Investigations &amp; Asset Verification</a>
-          <a href="section132.html">IRC §132 Security Study</a>
-          <a href="training.html">Training &amp; Certification</a>
-        </div>
-      </li>
+      <li><a href="services.html">Services</a><div class="dropdown"><a href="ep.html">Executive Protection</a><a href="tscm.html">TSCM &amp; Technical Assurance</a><a href="intel.html">Protective Intelligence</a><a href="travel.html">Travel Security &amp; Country Risk</a><a href="osint.html">Due Diligence &amp; OSINT</a><a href="investigations.html">Investigations &amp; Asset Verification</a><a href="section132.html">IRC §132 Security Study</a><a href="training.html">Training &amp; Certification</a></div></li>
       <li><a href="who-we-serve.html" class="current">Who We Serve</a></li>
-      <li><a href="methodology.html">Methodology</a></li>
-      <li><a href="standards.html">Standards</a></li>
-      <li><a href="partners.html">Partnership</a></li>
+      <li><a href="advisory.html">Advisory</a></li>
+      <li><a href="framework.html">Framework</a></li>
       <li><a href="consultation.html">Consultation</a></li>
     </nav>
     <a href="consultation.html" class="nav-cta">Request Consultation</a>
-    <button class="menu-toggle" aria-label="Menu" onclick="document.getElementById('mobile-overlay').classList.toggle('open')">
-      <span></span><span></span><span></span>
-    </button>
+    <button class="menu-toggle" aria-label="Menu" onclick="document.getElementById('mobile-overlay').classList.toggle('open')"><span></span><span></span><span></span></button>
   </div>
 </header>
 
@@ -78,116 +51,77 @@
   <div class="hero-scan-line"></div>
   <div class="wrap">
     <div class="eyebrow">Who We Serve</div>
-    <h1><span data-decode>Intelligence-driven protection, for those who know the world has changed.</span></h1>
-    <p class="lede">Regent Intel operates at the confluence of intelligence and security, as a single integrated capability delivered under the same doctrine, governed by the practitioners who wrote the standards. The analyst and the operator work from the same picture. The methodology does not change. Only the engagement does.</p>
+    <h1><span data-decode>We extend your program — or become your security function entirely.</span></h1>
+    <p class="lede">Every engagement falls into one of two models: organizations with an existing security function that need specialized capability, and those that need a Security Professional to fill the role from the ground up.</p>
   </div>
 </section>
 
+<!-- TRACK 1: Extending existing programs -->
 <section class="program-detail">
   <div class="wrap">
-    <div class="editorial editorial-center">
-      <div class="eyebrow eyebrow-center">Four Situations</div>
-      <h2 style="white-space:nowrap;">Your exposure has evolved. Your program needs to.</h2>
-      <p>The engagements that come to us share one trait: the exposure is new, newly serious, or newly visible. What follows is calibrated to that specific picture, not a template applied regardless of it.</p>
-      <div class="cta-row" style="justify-content:center;margin-top:24px;">
-      <a href="Regent-Intel-Capability-Statement-2026.pdf" download class="btn-ghost">&#x2193; Capability Statement</a>
-      </div>
+    <div class="editorial">
+      <div class="eyebrow">Extending Your Program</div>
+      <h2>You have a security function. You need specialized capability.</h2>
+      <p>Your CSO or security director owns the ESRM relationship internally. Regent Intel plugs into your existing governance structure, reports through your chain, and delivers intelligence, investigative, and protective capability that extends your program without duplicating your role.</p>
     </div>
-    <div class="program-grid">
-      <div class="program-cell"><span class="cell-tag">Principals</span><h3 data-hover-decode>A Shifting Threat Picture</h3><p>A wealth event, a lawsuit, a public role, or escalating attention. The exposure is new, or newly serious, and generic coverage no longer fits.</p></div>
-      <div class="program-cell"><span class="cell-tag">Family Offices</span><h3 data-hover-decode>Protecting More Than a Principal</h3><p>Estates, travel, family members, and the reputational surface area that comes with all of it. One standard applied across every environment.</p></div>
-      <div class="program-cell"><span class="cell-tag">Executives</span><h3 data-hover-decode>Who Cannot Afford to Look Protected</h3><p>Leadership visibility, travel, and public activity handled so the protection reads as staff, not security.</p></div>
-      <div class="program-cell"><span class="cell-tag">Advisors</span><h3 data-hover-decode>Acting on Behalf of Someone Else</h3><p>Attorneys, fiduciaries, and family office leaders who need a partner that briefs them clearly and handles the principal discreetly.</p></div>
+    <div class="program-grid" style="margin-top:32px;">
+      <div class="program-cell"><span class="cell-tag">Security Leaders</span><h3 data-hover-decode>CSOs &amp; Security Directors</h3><p>ESRM-aligned capability to extend your enterprise security program. Intelligence, investigations, TSCM, and protective operations that integrate with your risk framework and report through your governance structure.</p></div>
+      <div class="program-cell"><span class="cell-tag">Risk Committees</span><h3 data-hover-decode>Board-Level Security Governance</h3><p>Independent security risk assessments, threat intelligence briefings, and governance-grade reporting structured for board presentation, audit committee review, and enterprise risk oversight.</p></div>
+      <div class="program-cell"><span class="cell-tag">Corporate Counsel</span><h3 data-hover-decode>Executive &amp; Corporate Risk</h3><p>IRC §132 security assessments, executive threat analysis, due diligence on partners and key personnel, and corporate intelligence programs. Structured for board-level governance and legal review.</p></div>
+      <div class="program-cell"><span class="cell-tag">Investigative Agencies</span><h3 data-hover-decode>Overflow &amp; Specialized Capacity</h3><p>Available to local and regional PI agencies requiring intelligence-grade methodology, national reach, or specialized capability beyond their current capacity. All referrals handled confidentially.</p></div>
     </div>
   </div>
 </section>
+
+<!-- TRACK 2: Becoming the function -->
+<section class="section-dark">
+  <div class="wrap">
+    <div class="editorial">
+      <div class="eyebrow">Becoming Your Security Professional</div>
+      <h2>You don't have a security function. You need one.</h2>
+      <p>Principals, family offices, executives, and smaller organizations without a dedicated security function. Regent Intel fills the entire Security Professional role: we identify the assets that matter, assess the risks, present mitigation options, and execute the program you approve. You make the risk decisions. We do everything else.</p>
+    </div>
+    <div class="program-grid" style="margin-top:32px;">
+      <div class="program-cell"><span class="cell-tag">Principals</span><h3 data-hover-decode>A Shifting Threat Picture</h3><p>A wealth event, a lawsuit, a public role, or escalating attention. The exposure is new, or newly serious, and generic coverage no longer fits. We apply the full ESRM cycle to your specific risk environment.</p></div>
+      <div class="program-cell"><span class="cell-tag">Family Offices</span><h3 data-hover-decode>Protecting More Than a Principal</h3><p>Estates, travel, family members, and the reputational surface area that comes with all of it. One standard applied across every environment, one risk management framework governing every decision.</p></div>
+      <div class="program-cell"><span class="cell-tag">Executives</span><h3 data-hover-decode>Who Cannot Afford to Look Protected</h3><p>Leadership visibility, travel, and public activity handled so the protection reads as staff, not security. Risk mitigation designed for executives whose roles demand normal movement and accessible presence.</p></div>
+      <div class="program-cell"><span class="cell-tag">Advisors &amp; Counsel</span><h3 data-hover-decode>Acting on Behalf of Someone Else</h3><p>Attorneys, fiduciaries, and family office leaders who need a security risk management partner that briefs clearly, produces governance-grade deliverables, and handles the principal discreetly.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- REFERRAL PARTNERS -->
 <section class="section-ivory">
+  <div class="wrap">
+    <div class="editorial">
+      <div class="eyebrow">Professional Partners</div>
+      <h2>Your client. Your engagement. Our capability.</h2>
+      <p>Regent Intel is available to attorneys, family offices, corporate counsel, and local investigative agencies as a licensed investigative and protective partner. We operate within the scope of your engagement, under your direction, and produce findings structured for your specific legal and advisory purpose.</p>
+      <p>We do not contact your client directly without your authorization. All referral engagements are scoped, structured, and delivered to your specifications. Findings are produced in whatever format your engagement requires: legal brief, advisory memo, or evidentiary exhibit.</p>
+      <div style="margin-top:24px;">
+        <a href="Regent-Intel-Capability-Statement-2026.pdf" download class="btn-ghost-dark">&#x2193; Capability Statement</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FIRST CONVERSATION -->
+<section class="section-dark">
   <div class="wrap">
     <div class="editorial editorial-center">
       <div class="eyebrow">The First Conversation</div>
-      <h2>What you picture and what your organization actually needs aren’t always the same thing.</h2>
-      <p>The first conversation is where those two align. You define what matters most: your people, operations, assets, reputation, and ability to keep moving. We identify the exposures that could disrupt them, then build a practical strategy to reduce risk, strengthen resilience, and protect continuity.</p>
+      <h2>What you picture and what your organization actually needs are not always the same thing.</h2>
+      <p>The first conversation is where those two align. You define what matters most. We identify the security risks that could disrupt it — then build a practical strategy to reduce risk, strengthen resilience, and protect continuity. The security function advises. The asset owner decides. The program adapts.</p>
     </div>
   </div>
 </section>
 
-<div class="confidence-banner">
-  <div class="wrap">
-    <div>
-      <div class="eyebrow">Capability</div>
-      <h3>Government Grade. Commercial Speed.</h3>
-    </div>
-    <p>Safety, security, and intelligence delivered in moments, not weeks and months.</p>
-  </div>
-</div>
+<div class="confidence-banner"><div class="wrap"><div><div class="eyebrow">Capability</div><h3>Government Grade. Commercial Speed.</h3></div><p>Security risk management delivered in moments, not weeks and months.</p></div></div>
 
-<section class="cta-section">
-  <div class="wrap">
-    <h2>We solve difficult problems.</h2>
-    <p>All inquiries are handled with complete confidentiality.</p>
-    <div class="cta-row">
-      <a href="consultation.html" class="btn-primary">Request a Consultation</a>
-      <a href="tel:9415297479" class="btn-ghost">Call (941) 529-7479</a>
-    </div>
-  </div>
-</section>
-<footer>
-  <div class="wrap">
-    <div class="footer-top">
-      <div class="footer-logo">
-        <img src="logo.webp" alt="Regent Intel">
-        <div class="footer-wordmark">Regent <span>Intel</span></div>
-      </div>
-      <div class="footer-links">
-        <a href="services.html">Services</a>
-        <a href="who-we-serve.html">Who We Serve</a>
-        <a href="methodology.html">Methodology</a>
-        <a href="standards.html">Standards</a>
-        <a href="partners.html">Partnership</a>
-        <a href="training.html">Training</a>
-        <a href="consultation.html">Consultation</a>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>&copy; 2026 Regent Intelligence Group LLC. Licensed &amp; Insured. FDACS #A 3600152.</span>
-      <span>PROTECTIVE INTELLIGENCE</span>
-    </div>
-  </div>
-</footer>
+<section class="cta-section"><div class="wrap"><h2>We solve difficult problems.</h2><p>All inquiries are handled with complete confidentiality.</p><div class="cta-row"><a href="consultation.html" class="btn-primary">Request a Consultation</a><a href="tel:9415297479" class="btn-ghost">Call (941) 529-7479</a></div></div></section>
+
+<footer><div class="wrap"><div class="footer-top"><div class="footer-logo"><img src="logo.webp" alt="Regent Intel"><div class="footer-wordmark">Regent <span>Intel</span></div></div><div class="footer-links"><a href="services.html">Services</a><a href="who-we-serve.html">Who We Serve</a><a href="advisory.html">Advisory</a><a href="framework.html">Framework</a><a href="training.html">Training</a><a href="consultation.html">Consultation</a></div></div><div class="footer-bottom"><span>&copy; 2026 Regent Intelligence Group LLC. Licensed &amp; Insured. FDACS #A 3600152.</span><span>ENTERPRISE SECURITY RISK MANAGEMENT</span></div></div></footer>
 <script src="scramble.js"></script>
-
-<div class="mobile-overlay" id="mobile-overlay">
-  <div class="mobile-overlay-header">
-    <div class="mobile-overlay-logo">
-      <img src="logo.webp" alt="Regent Intel">
-      <span>Regent <em>Intel</em></span>
-    </div>
-    <button class="mobile-close" onclick="document.getElementById('mobile-overlay').classList.remove('open')" aria-label="Close">&#x2715;</button>
-  </div>
-  <nav class="mobile-overlay-nav">
-    <div class="mob-nav-item mob-has-sub" id="mob-services-toggle" onclick="document.getElementById('mob-services-sub').classList.toggle('open');this.classList.toggle('open')">
-      <span>Services</span>
-      <span class="mob-chevron">&#x203A;</span>
-    </div>
-    <div class="mob-sub" id="mob-services-sub">
-      <a href="ep.html">Executive Protection</a>
-      <a href="tscm.html">TSCM &amp; Technical Assurance</a>
-      <a href="intel.html">Protective Intelligence</a>
-      <a href="travel.html">Travel Security &amp; Country Risk</a>
-      <a href="osint.html">Due Diligence &amp; OSINT</a>
-      <a href="investigations.html">Investigations &amp; Asset Verification</a>
-      <a href="section132.html">IRC §132 Security Study</a>
-      <a href="training.html">Training &amp; Certification</a>
-    </div>
-    <a href="who-we-serve.html">Who We Serve</a>
-    <a href="methodology.html">Methodology</a>
-    <a href="standards.html">Standards</a>
-    <a href="partners.html">Partnership</a>
-    <a href="consultation.html" class="highlight">Consultation</a>
-  </nav>
-  <div class="mobile-overlay-cta">
-    <a href="consultation.html">Request a Consultation</a>
-  </div>
-</div>
+<div class="mobile-overlay" id="mobile-overlay"><div class="mobile-overlay-header"><div class="mobile-overlay-logo"><img src="logo.webp" alt="Regent Intel"><span>Regent <em>Intel</em></span></div><button class="mobile-close" onclick="document.getElementById('mobile-overlay').classList.remove('open')" aria-label="Close">&#x2715;</button></div><nav class="mobile-overlay-nav"><div class="mob-nav-item mob-has-sub" onclick="document.getElementById('mob-services-sub').classList.toggle('open');this.classList.toggle('open')"><span>Services</span><span class="mob-chevron">&#x203A;</span></div><div class="mob-sub" id="mob-services-sub"><a href="ep.html">Executive Protection</a><a href="tscm.html">TSCM &amp; Technical Assurance</a><a href="intel.html">Protective Intelligence</a><a href="travel.html">Travel Security &amp; Country Risk</a><a href="osint.html">Due Diligence &amp; OSINT</a><a href="investigations.html">Investigations &amp; Asset Verification</a><a href="section132.html">IRC §132 Security Study</a><a href="training.html">Training &amp; Certification</a></div><a href="who-we-serve.html">Who We Serve</a><a href="advisory.html">Advisory</a><a href="framework.html">Framework</a><a href="consultation.html" class="highlight">Consultation</a></nav><div class="mobile-overlay-cta"><a href="consultation.html">Request a Consultation</a></div></div>
 </body>
 </html>
