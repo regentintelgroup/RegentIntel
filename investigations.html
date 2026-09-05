@@ -21,8 +21,19 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=DM+Mono:wght@400;500&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<style>
+.page-fixed-bg{position:fixed;inset:0;z-index:-2;background:url('hero.webp') center right / cover no-repeat,var(--navy)}
+.page-fixed-bg::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(7,17,26,0.88) 0%,rgba(7,17,26,0.6) 45%,rgba(7,17,26,0.25) 75%,rgba(7,17,26,0.45) 100%)}
+.service-hero{background:transparent !important;min-height:80vh;display:flex;align-items:center}
+.program-detail{background:transparent !important;position:relative;z-index:1}
+.section-dark{background:rgba(13,27,42,0.55) !important}
+.section-ivory{background:var(--ivory) !important;position:relative;z-index:1}
+.cta-section{background:rgba(13,27,42,0.5) !important;position:relative;z-index:1}
+.confidence-banner{position:relative;z-index:1}
+</style>
 </head>
 <body>
+<div class="page-fixed-bg"></div>
 
 <header>
   <div class="nav-inner">
@@ -48,10 +59,9 @@
         </div>
       </li>
       <li><a href="who-we-serve.html">Who We Serve</a></li>
-      <li><a href="advisory.html">Advisory</a></li>
-      
-      
-      <li><a href="framework.html">Framework</a></li>
+      <li><a href="methodology.html">Methodology</a></li>
+      <li><a href="standards.html">Standards</a></li>
+      <li><a href="partners.html">Partnership</a></li>
       <li><a href="consultation.html">Consultation</a></li>
     </nav>
     <a href="consultation.html" class="nav-cta">Request Consultation</a>
@@ -131,16 +141,16 @@
       <div class="footer-links">
         <a href="services.html">Services</a>
         <a href="who-we-serve.html">Who We Serve</a>
-        <a href="advisory.html">Advisory</a>
-        <a href="framework.html">Framework</a>
-        
+        <a href="methodology.html">Methodology</a>
+        <a href="standards.html">Standards</a>
+        <a href="partners.html">Partnership</a>
         <a href="training.html">Training</a>
         <a href="consultation.html">Consultation</a>
       </div>
     </div>
     <div class="footer-bottom">
       <span>&copy; 2026 Regent Intelligence Group LLC. Licensed &amp; Insured. FDACS #A 3600152.</span>
-      <span>ENTERPRISE SECURITY RISK MANAGEMENT</span>
+      <span>PROTECTIVE INTELLIGENCE</span>
     </div>
   </div>
 </footer>
@@ -170,9 +180,9 @@
       <a href="training.html">Training &amp; Certification</a>
     </div>
     <a href="who-we-serve.html">Who We Serve</a>
-    <a href="advisory.html">Advisory</a>
-    <a href="framework.html">Framework</a>
-    
+    <a href="methodology.html">Methodology</a>
+    <a href="standards.html">Standards</a>
+    <a href="partners.html">Partnership</a>
     <a href="consultation.html" class="highlight">Consultation</a>
   </nav>
   <div class="mobile-overlay-cta">
