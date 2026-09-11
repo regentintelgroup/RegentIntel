@@ -1,5 +1,23 @@
 [
   {
+    "id": "SIGACT-HF-002",
+    "title": "SIGACT-HF-002: Homeland Focus Assessment",
+    "series": "HF",
+    "date": "2026-09-11",
+    "bluf": "BLUF</h2> <p>The dominant Homeland development of the reporting period is the issuance of a federal law enforcement bulletin in advance of the 25th anniversary of the September 11 attacks, warning that <span class=\"hi\">[E-HIGH]</span> foreign terrorist organizations \"continue to encourage attacks in",
+    "filename": "SIGACT-HF-002-20260911.html",
+    "classification": "UNCLASSIFIED"
+  },
+  {
+    "id": "SITREP-EF-002",
+    "title": "SITREP-EF-002: Epic Fury Theater Assessment",
+    "series": "EF",
+    "date": "2026-09-11",
+    "bluf": "#1F3864; border-bottom:2px solid #C00000; padding-bottom:4px;\">SECTION 1: BLUF</h2>",
+    "filename": "SITREP-EF-002-20260911.html",
+    "classification": "UNCLASSIFIED"
+  },
+  {
     "id": "SIGACT-HF-001",
     "title": "SIGACT-HF-001: Homeland Focus Assessment",
     "series": "HF",

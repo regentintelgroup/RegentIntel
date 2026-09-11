@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SITREP-EF-002: Epic Fury Theater Assessment | Regent Intelligence Group</title>
+    <meta name="description" content="#1F3864; border-bottom:2px solid #C00000; padding-bottom:4px;">SECTION 1: BLUF</h2>">
+    <meta property="og:title" content="SITREP-EF-002: Epic Fury Theater Assessment | Regent Intelligence Group">
+    <meta property="og:description" content="#1F3864; border-bottom:2px solid #C00000; padding-bottom:4px;">SECTION 1: BLUF</h2>">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://regentintel.org/reports/SITREP-EF-002-20260911.html">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #0a0e14;
+            color: #c8cdd3;
+            line-height: 1.7;
+            font-size: 15px;
+        }
+        .classification-bar {
+            background: #0D1B2A;
+            text-align: center;
+            padding: 6px;
+            font-size: 11px;
+            letter-spacing: 2px;
+            color: #4a9a6a;
+            border-bottom: 1px solid rgba(20,110,135,0.2);
+        }
+        .report-header {
+            background: #0D1B2A;
+            border-bottom: 2px solid #146E87;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .report-header .org {
+            font-size: 12px;
+            letter-spacing: 2px;
+            color: #146E87;
+            text-transform: uppercase;
+            margin-bottom: 4px;
+        }
+        .report-header .tagline {
+            font-size: 11px;
+            font-style: italic;
+            color: #146E87;
+            margin-bottom: 16px;
+        }
+        .report-header h1 {
+            font-size: 22px;
+            color: #e8ecf0;
+            margin-bottom: 8px;
+            font-weight: 700;
+        }
+        .report-header .meta {
+            font-size: 12px;
+            color: #7a8a9a;
+            line-height: 1.8;
+        }
+        .report-body {
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 40px 20px 80px;
+        }
+        .report-body h2 {
+            font-size: 13px;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin-top: 36px;
+            margin-bottom: 12px;
+            padding-bottom: 6px;
+            border-bottom: 2px solid #2E5494;
+            font-weight: 700;
+            color: #b0ccf0;
+        }
+        .report-body h3 {
+            font-size: 15px;
+            margin-top: 24px;
+            margin-bottom: 8px;
+            font-weight: 700;
+            color: #a0c0e8;
+        }
+        .report-body p {
+            margin-bottom: 14px;
+            color: #dce0e5;
+        }
+        .report-body table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0;
+            font-size: 13px;
+        }
+        .report-body th {
+            background: #1F3864;
+            color: #fff;
+            font-weight: 700;
+            padding: 8px 10px;
+            text-align: left;
+            font-size: 11px;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+        .report-body td {
+            padding: 8px 10px;
+            border-bottom: 1px solid #1a2a3a;
+            color: #dce0e5;
+        }
+        .report-body tr:nth-child(even) td {
+            background: rgba(255,255,255,0.02);
+        }
+        .bluf {
+            background: #0D1B2A;
+            border-left: 3px solid #146E87;
+            padding: 20px 24px;
+            margin: 24px 0;
+            line-height: 1.8;
+        }
+        .bluf p {
+            color: #e0e4e8;
+        }
+        .bluf-label {
+            font-size: 11px;
+            letter-spacing: 1.5px;
+            color: #146E87;
+            margin-bottom: 8px;
+            font-weight: 700;
+        }
+        .osint-boilerplate {
+            background: rgba(20,110,135,0.06);
+            border: 1px solid rgba(20,110,135,0.15);
+            padding: 16px 20px;
+            margin: 16px 0;
+            font-size: 12px;
+            color: #9aaabb;
+            line-height: 1.7;
+            font-style: italic;
+        }
+        .confidence-high { color: #2aae2a; font-weight: 700; }
+        .confidence-moderate { color: #d4a020; font-weight: 700; }
+        .confidence-low { color: #e83030; font-weight: 700; }
+        .source-label { color: #7ab0e8; font-weight: 700; }
+        blockquote {
+            border-left: 3px solid #2E5494;
+            padding: 12px 20px;
+            margin: 16px 0;
+            font-style: italic;
+            color: #9aaabb;
+        }
+        blockquote .attribution {
+            font-style: normal;
+            font-size: 12px;
+            color: #7a8a9a;
+            margin-top: 8px;
+        }
+        .disclaimer {
+            font-size: 11px;
+            color: #5a6a7a;
+            line-height: 1.7;
+            padding: 20px 0;
+            border-top: 1px solid #1a2a3a;
+            margin-top: 40px;
+            font-style: italic;
+        }
+        .report-footer {
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 30px 20px;
+            border-top: 1px solid #1a2a3a;
+            text-align: center;
+        }
+        .report-footer a {
+            color: #146E87;
+            text-decoration: none;
+            font-size: 13px;
+        }
+        .report-footer a:hover { text-decoration: underline; }
+        .report-footer .back {
+            display: inline-block;
+            margin-top: 16px;
+            padding: 10px 24px;
+            border: 1px solid #146E87;
+            color: #146E87;
+            font-size: 13px;
+            text-decoration: none;
+        }
+        .report-footer .back:hover {
+            background: #146E87;
+            color: #0D1B2A;
+        }
+    </style>
+</head>
+<body>
+    <div class="classification-bar">UNCLASSIFIED // FOR PUBLIC RELEASE</div>
+    <div class="report-header">
+        <div class="org">Regent Intelligence Group</div>
+        <div class="tagline">Government Grade. Commercial Speed.</div>
+        <h1>SITREP-EF-002: Epic Fury Theater Assessment</h1>
+        <div class="meta">
+            Threat Development Analyst | All-Source Analysis Division<br>
+            September 11, 2026 | 112009Z SEP 2026<br>
+            UNCLASSIFIED // FOR PUBLIC RELEASE
+        </div>
+    </div>
+    <div class="report-body">
+        <div class="disclaimer">
+            Regent Intel Group intelligence products are produced exclusively from open-source intelligence (OSINT). Analytical staff apply cleared-background tradecraft to public information. Confidence levels indicate strength of inference from available evidence, not probability of specific outcomes. All predictive assessments carry inherent uncertainty.
+        </div>
+        <p><html lang="en"></p>
+<p><head></p>
+<p><meta charset="UTF-8"></p>
+<p><title>SITREP-EF-002 | Regent Intel Group</title></p>
+<p></head></p>
+<p><body style="font-family: Arial, Helvetica, sans-serif; color:#1a1a1a; max-width:1000px; margin:0 auto; padding:16px; line-height:1.5;"></p>
+<p><div style="background:#1F3864; color:#ffffff; text-align:center; font-weight:bold; letter-spacing:1px; padding:8px;">UNCLASSIFIED // FOR PUBLIC RELEASE</div></p>
+<p><div style="border:2px solid #1F3864; padding:20px; margin-top:16px;"></p>
+<p><div style="color:#146E87; font-size:12px; letter-spacing:2px; font-weight:bold;">REGENT INTEL GROUP | THREAT DEVELOPMENT ANALYST | ALL-SOURCE ANALYSIS DIVISION</div></p>
+<p><h1 style="color:#1F3864; margin:8px 0 4px 0; font-size:26px;">OPERATION EPIC FURY: THEATER SITUATION REPORT</h1></p>
+<p><div style="color:#2E5494; font-size:18px; font-weight:bold;">SITREP-EF-002</div></p>
+<p><div style="font-size:14px; margin-top:6px;">DTG: 112009Z SEP 2026 | September 11, 2026</div></p>
+<p><div style="font-size:14px;">Supersedes: SITREP-EF-001 (pre-automation baseline, legacy distribution)</div></p>
+<p><p style="font-size:12px; font-style:italic; background:#f2f4f8; border-left:4px solid #146E87; padding:10px; margin-top:14px;">"Regent Intel Group intelligence products are produced exclusively from open-source intelligence (OSINT). Analytical staff apply cleared-background tradecraft to public information. Confidence levels indicate strength of inference from available evidence, not probability of specific outcomes. All predictive assessments carry inherent uncertainty. Prior assessment accuracy is reviewed in each main theater SITREP."</p></p>
+<p></div></p>
+<p><h2 style="color:#1F3864; border-bottom:2px solid #C00000; padding-bottom:4px;">SECTION 0: PRIOR ASSESSMENT REVIEW</h2></p>
+<p><p><strong>Prior Assessment Review:</strong> This is the inaugural report in the automated web publication series. Assessment tracking begins with the next report.</p></p>
+<p><h2 style="color:#1F3864; border-bottom:2px solid #C00000; padding-bottom:4px;">SECTION 1: BLUF</h2></p>
+<p><p>The theater center of gravity shifted west in the reporting period: Iranian-aligned Houthi forces seized the Red Sea port of Mocha and a strategic island at the southern approach to the Red Sea, placing an IRGC-trained proxy in physical proximity to a second global chokepoint while the Strait of Hormuz remains functionally degraded after six months of conflict. The capture of Perim and Mocha gives a group trained and aided by Iran's Revolutionary Guards greater ability to halt traffic in the Red Sea and potentially hands Iran more leverage in its war with the US. Simultaneously, a genuine diplomatic vector opened: Gulf Cooperation Council states are considering a meeting with Iranian officials in Salalah, Oman, in what would be the first such gathering since the war began more than six months ago, and that signal alone was sufficient to break a five-session run of crude price gains. The analytical tension defining this report is that escalation and de-escalation indicators are running concurrently and at comparable strength, which is why no single-hypothesis forecast is offered at high predictive confidence. Homeland-relevant Iranian cyber targeting of operational technology continues as the most probable near-term vector for Iranian retaliation that does not require kinetic risk acceptance.</p></p>
+<p><h2 style="color:#1F3864; border-bottom:2px solid #C00000; padding-bottom:4px;">SECTION 2: OPERATIONAL CONTEXT</h2></p>
+<p><table style="width:100%; border-collapse:collapse; font-size:14px;"></p>
+<p><tr style="background:#1F3864; color:#fff;"><th style="text-align:left; padding:8px;">Field</th><th style="text-align:left; padding:8px;">Entry</th></tr></p>
+<p><tr><td style="padding:8px; border:1px solid #ccc; font-weight:bold;">Report Number</td><td style="padding:8px; border:1px solid #ccc;">SITREP-EF-002</td></tr></p>
+<p><tr style="background:#f2f4f8;"><td style="padding:8px; border:1px solid #ccc; font-weight:bold;">Classification</td><td style="padding:8px; border:1px solid #ccc;">UNCLASSIFIED // FOR PUBLIC RELEASE</td></tr></p>
+<p><tr><td style="padding:8px; border:1px solid #ccc; font-weight:bold;">Produced By</td><td style="padding:8px; border:1px solid #ccc;">Regent Intel Group, Threat Development Analyst, All-Source Analysis Division</td></tr></p>
+<p><tr style="background:#f2f4f8;"><td style="padding:8px; border:1px solid #ccc; font-weight:bold;">DTG</td><td style="padding:8px; border:1px solid #ccc;">112009Z SEP 2026</td></tr></p>
+<p><tr><td style="padding:8px; border:1px solid #ccc; font-weight:bold;">Period Covered</td><td style="padding:8px; border:1px solid #ccc;">Approximately 092000Z SEP 2026 to 112000Z SEP 2026, with 7-day context where required for baseline</td></tr></p>
+<p><tr style="background:#f2f4f8;"><td style="padding:8px; border:1px solid #ccc; font-weight:bold;">Companion Product</td><td style="padding:8px; border:1px solid #ccc;">SIGACT-HF series (U.S. Homeland significant activity)</td></tr></p>
+<p><tr><td style="padding:8px; border:1px solid #ccc; font-weight:bold;">Analytic Standard</td><td style="padding:8px; border:1px solid #ccc;">ICD 203, seven analytic standards</td></tr></p>
+<p></table></p>
+<p><p style="font-size:12px; font-style:italic; background:#f2f4f8; border-left:4px solid #146E87; padding:10px; margin-top:14px;">"This product is produced exclusively from open-source intelligence (OSINT). It does not represent classified collection. Regent Intel Group analytical staff apply cleared-background tradecraft, including ACH methodology, PMESII-PT, F3EAD, and SIGINT-informed behavioral analysis, to public information. Confidence levels reflect strength of inference from available OSINT, not probability of outcome."</p></p>
+<p><p style="font-size:13px;"><strong>Source symmetry note for this edition:</strong> No <span class="source-label">[OPP]</span> advocacy-origin sourcing was used in this product. Adversary-origin claims are labeled <span class="source-label">[ADVERSARY-SOURCED]</span>. Allied official claims are labeled <span class="source-label">[GOV -- ALLIED]</span> and are tested against observable evidence on the same basis. One material allied-source and commercial-source divergence is documented at Section 3.C.</p></p>
+<p><h2 style="color:#1F3864; border-bottom:2px solid #C00000; padding-bottom:4px;">SECTION 3: STRATEGIC OVERVIEW</h2></p>
+<p><h3 style="color:#2E5494;">3.A Iran Nuclear Program and IAEA Verification</h3></p>
+<p><p>The verification baseline established in prior reporting carries forward unchanged and has now been restated at the Board of Governors level. IAEA Director General Rafael Grossi has reiterated that the agency is unable to verify the status of Iran's declared nuclear material and facilities due to a lack of access and information from Tehran, with Iran having stopped granting access to sites hit by U.S. and Israeli strikes in June of last year. Speaking at the opening of the Board of Governors meeting in Vienna on September 7, Grossi described the situation as a "matter of serious proliferation concern." [GOV / E-HIGH]</p></p>
+<p><p><strong>Assessment:</strong> The verification gap is now structural rather than episodic, and the IAEA has no near-term pathway to reestablishing material accountancy absent a political decision in Tehran. [E-HIGH / P-HIGH] The analytically important consequence is negative rather than positive: the Agency is not in a position to confirm either weaponization activity or its absence. Prior Agency statements have been consistent on this point, holding that there has been no evidence of Iran building a nuclear bomb while the large stockpile of near-weapons-grade enriched uranium and the refusal to grant inspectors full access are cause for serious concern. [GOV / E-HIGH]</p></p>
+<p><p><strong>Explicit assumption:</strong> This assessment assumes no covert third-party inspection or bilateral technical access arrangement exists outside public reporting. If such an arrangement exists, the verification gap is narrower than assessed and the proliferation-timeline inference below is invalid.</p></p>
+<p><p><strong>Analyst note on inference limits:</strong> Publicly available OSINT does not support any specific breakout-timeline figure at this date. Post-strike damage reporting available in open source is confined to earlier IAEA characterizations of physical damage at Natanz and Esfahan, including confirmation that damage occurred at Esfahan's chemical laboratory, uranium conversion plant, Tehran reactor fuel manufacturing plant, and UF4 to enriched uranium metal processing facility. [GOV / E-MODERATE, dated] Any current stockpile or enrichment-rate figure circulating in commentary should be treated as unsourced. See Information Gaps, Gap 1.</p></p>
+<p><h3 style="color:#2E5494;">3.B IRGC Proxy Activity: Houthi Operations as the Period's Decisive Development</h3></p>
+<p><p>The most consequential development of the reporting period is territorial rather than kinetic. Houthi forces seized the Red Sea city of Mocha on Thursday, expanding control over the strategic Bab al-Mandeb Strait, as internationally recognized government forces withdrew; three Yemeni government sources also confirmed the city had been taken to Reuters. [WIRE, PRESS / E-HIGH] Houthi forces additionally captured a strategic island at the southern entrance to the Red Sea, per two officials, opening a new front in the Iran war and further threatening Saudi oil exports. [WIRE / E-HIGH] Mokha sits about 50 miles from the Bab el-Mandeb Strait.</p></p>
+<p><p>Force-disposition context: before this offensive the Houthis already controlled much of Yemen's north including Sanaa and the port of Hodeidah, but did not hold any areas directly overlooking Bab al-Mandab. [PRESS / E-HIGH] That threshold has now been crossed. Yemen's Presidential Leadership Council Vice Chairman Tareq Saleh stated that government forces including the National Resistance, Giants Brigades and Nation's Shield forces suffered deaths and injuries during several days of Houthi attacks. [GOV / E-MODERATE]</p></p>
+<p><p><strong>Assessment:</strong> Houthi control of the Yemeni Red Sea littoral converts an interdiction capability that was previously stand-off and attritable into one that is geographically anchored and materially harder to suppress by air. [E-HIGH / P-MODERATE] Independent expert characterization supports this reading: controlling the coast "would strengthen Houthi maritime coercion," per Andreas Krieg of King's College London. [PRESS/RESEARCH / E-MODERATE]</p></p>
+<p><p>A behavioral indicator of note. The Houthi public posture pairs declared escalation against Riyadh with reassurance toward commercial traffic generally. In a Friday statement the Houthi armed forces boasted of coastal gains without mentioning the island, Mokha or the Bab el-Mandeb Strait, vowed "escalation for escalation" against Saudi Arabia, and declared that maritime navigation is safe for all companies. [ADVERSARY-SOURCED / E-HIGH as to the statement; E-LOW as to its accuracy] A Houthi military spokesman separately said navigation through Bab al Mandeb was "safe for all" except Saudi vessels. <span class="source-label">[ADVERSARY-SOURCED]</span></p></p>
+<p><p><strong>Assessment on the messaging pattern:</strong> The deliberate omission of the island, Mocha and the strait from the formal armed-forces statement, combined with the carve-out construction on navigation safety, is assessed as an attempt to secure the territorial gain while avoiding the international coalition response that an explicit closure threat would trigger. [E-MODERATE / P-MODERATE] This is an inference from the structure of the adversary's own messaging, not from any claim of communications access.</p></p>
+<p><p><strong>Iranian direction question.</strong> Two Iranian sources told Reuters that Tehran had instructed the Houthis to attack Saudi Arabia and promised additional funding and weapons, despite publicly denying control over the group. [WIRE, anonymous-sourced / E-MODERATE] This is the single most consequential sourcing question in the section, and it is not <span class="confidence-high">[E-HIGH]</span>: it rests on unnamed sources of adversary nationality whose motive to overstate Tehran's command authority cannot be excluded. It is nonetheless consistent with observable behavior and is carried as the working assessment.</p></p>
+<p><h3 style="color:#2E5494;">3.C Strait of Hormuz Maritime Security</h3></p>
+<p><p><strong>Documented source divergence.</strong> Available OSINT contains a material contradiction on the operational status of the strait, and analytical honesty requires stating it rather than resolving it by preference. A commercial marine insurance advisory assesses that the Strait of Hormuz remains open to commercial traffic while vessel movements remain below historical levels, with operators facing a combination of security threats, navigation hazards and operational uncertainty. [TRADE / E-MODERATE] A live transit-tracking aggregator assesses the strait as effectively closed to commercial shipping as of 10 September 2026, citing 6 transits on September 6 against a normal figure of approximately 85 per day. [SOCIAL, automated aggregator, unverified / E-LOW]</p></p>
+<p><p><strong>Assessment:</strong> The divergence is definitional rather than factual. The strait is legally and physically transitable and is not closed in the sense of being blocked; it is commercially non-viable for most operators. Both sources are describing the same condition through different thresholds. Regent Intel Group carries the condition as <strong>SEVERELY DEGRADED, NOT CLOSED</strong>. [E-MODERATE / P-MODERATE] Clients should not treat the aggregator transit count as verified; it is not wire-confirmed and its methodology is self-described as automated. The provider itself cautions that its headline transit count conflates traffic that energy desks read differently.</p></p>
+<p><p>Threat-environment specifics are better sourced than the status label. Recent weeks have seen continued Iranian surveillance, vessel hailing and enforcement-related activity in and around the strait, together with reported missile, UAV and other maritime security incidents, alongside continued GNSS interference, AIS anomalies and the risk posed by drifting or uncharted mines. [TRADE / E-MODERATE] Humanitarian exposure is officially acknowledged: the IMO reports more than 20,000 seafarers in the region including those stranded on vessels unable to exit the strait, and has prepared an evacuation plan for approximately 6,000 seafarers which is currently paused. [GOV / E-HIGH]</p></p>
+<p><p><strong>Assessment on the paused evacuation plan:</strong> The pause is read as a leading indicator rather than a humanitarian footnote. An international organization does not hold an approved evacuation plan in abeyance unless the responsible bodies assess either that conditions are improving or that execution would itself create risk. Given the concurrent diplomatic track at Section 3.G, the former is assessed as more likely. [E-HIGH on the fact / P-LOW on the interpretation. Analytical flag only.]</p></p>
+<p><h3 style="color:#2E5494;">3.D U.S. Force Posture, CENTCOM AOR</h3></p>
+<p><p>Naval presence is confirmed at two carrier strike groups with asymmetric escort composition. USS George Washington arrived in the CENTCOM area of responsibility on or around August 19 escorted by a single guided-missile destroyer, USS Shoup, while the USS George H.W. Bush strike group is composed of the guided-missile cruiser USS Princeton and the destroyers USS Ross and USS Donald Cook. [TRADE / E-MODERATE]</p></p>
+<p><p><strong>Assessment:</str</p>
+    </div>
+    <div class="classification-bar">UNCLASSIFIED // FOR PUBLIC RELEASE</div>
+    <div class="report-footer">
+        <a href="https://regentintel.org/advisory" class="back">Return to Intelligence Feed</a>
+        <br><br>
+        <a href="https://regentintel.org">regentintel.org</a>
+    </div>
+</body>
+</html>
