@@ -64,14 +64,13 @@
 .prov-sub{font-family:var(--font-mono);font-size:10px;letter-spacing:0.06em;text-transform:uppercase;color:var(--muted);margin-left:auto;flex-shrink:0}
 
 .band-capabilities{background:var(--ivory);padding:80px 0}
-.cap-list{border-top:2px solid var(--navy);margin-top:32px}
-.cap-item{display:grid;grid-template-columns:1fr auto;gap:32px;padding:22px 0;border-bottom:1px solid var(--line-light);text-decoration:none;transition:background 0.15s;align-items:baseline}
-.cap-item:hover{background:rgba(20,110,135,0.03)}
-.cap-name{font-family:var(--font-display);font-weight:700;font-size:20px;text-transform:uppercase;color:var(--navy);letter-spacing:0.01em}
-.cap-desc{font-size:15px;color:var(--ink-soft);line-height:1.6;margin-top:4px}
-.cap-arrow{font-family:var(--font-mono);font-size:16px;color:var(--teal);transition:color 0.15s}
-.cap-item:hover .cap-arrow{color:var(--teal-bright)}
-.cap-phase{font-family:var(--font-mono);font-size:9px;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-top:2px}
+.cap-grid-compact{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:32px}
+.cap-card{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:24px 28px;background:#fff;border-radius:12px;border:1px solid var(--line-light);box-shadow:0 1px 3px rgba(0,0,0,0.04);text-decoration:none;transition:box-shadow 0.2s,transform 0.15s}
+.cap-card:hover{box-shadow:0 2px 6px rgba(0,0,0,0.06),0 8px 20px rgba(0,0,0,0.08);transform:translateY(-2px)}
+.cap-card-name{font-family:var(--font-display);font-weight:700;font-size:17px;text-transform:uppercase;color:var(--navy);letter-spacing:0.01em;line-height:1.15}
+.cap-card-phase{font-family:var(--font-mono);font-size:9px;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-top:4px}
+.cap-card-arrow{font-family:var(--font-mono);font-size:16px;color:var(--teal);flex-shrink:0;transition:transform 0.15s}
+.cap-card:hover .cap-card-arrow{transform:translateX(4px);color:var(--teal-bright)}
 
 .band-serve{background:var(--navy);padding:72px 0}
 .serve-label{font-family:var(--font-mono);font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:var(--teal-bright);margin-bottom:40px}
@@ -94,6 +93,7 @@
   .esrm-cycle{grid-template-columns:1fr}
   .stat-row{grid-template-columns:80px 1fr}
   .hero-cinematic{min-height:70vh}
+  .cap-grid-compact{grid-template-columns:1fr}
 }
 </style>
 </head>
@@ -215,15 +215,15 @@
       <h2 style="font-family:var(--font-display);font-weight:700;font-size:clamp(24px,2.8vw,38px);text-transform:uppercase;color:var(--navy);line-height:1.05;letter-spacing:-0.01em;margin-bottom:16px;">Eight capabilities deployed within the ESRM cycle.</h2>
       <p style="font-size:16px;color:var(--ink-soft);line-height:1.7;">Each capability maps to a phase of the lifecycle. The advisory assessment determines which get deployed, at what scale, and in what combination.</p>
     </div>
-    <div class="cap-list">
-      <a href="ep.html" class="cap-item"><div><div class="cap-name">Executive Protection</div><div class="cap-phase">Mitigation</div></div><span class="cap-arrow">→</span></a>
-      <a href="tscm.html" class="cap-item"><div><div class="cap-name">TSCM &amp; Technical Assurance</div><div class="cap-phase">Risk Identification · Mitigation</div></div><span class="cap-arrow">→</span></a>
-      <a href="intel.html" class="cap-item"><div><div class="cap-name">Protective Intelligence</div><div class="cap-phase">Risk Identification · Continuous Improvement</div></div><span class="cap-arrow">→</span></a>
-      <a href="travel.html" class="cap-item"><div><div class="cap-name">Travel Security &amp; Country Risk</div><div class="cap-phase">Risk Identification · Mitigation</div></div><span class="cap-arrow">→</span></a>
-      <a href="osint.html" class="cap-item"><div><div class="cap-name">Due Diligence &amp; OSINT</div><div class="cap-phase">Asset Identification · Risk Identification</div></div><span class="cap-arrow">→</span></a>
-      <a href="investigations.html" class="cap-item"><div><div class="cap-name">Investigations &amp; Asset Verification</div><div class="cap-phase">Risk Identification · Continuous Improvement</div></div><span class="cap-arrow">→</span></a>
-      <a href="section132.html" class="cap-item"><div><div class="cap-name">IRC §132 Security Study</div><div class="cap-phase">Asset Identification · Governance</div></div><span class="cap-arrow">→</span></a>
-      <a href="training.html" class="cap-item"><div><div class="cap-name">Training &amp; Certification</div><div class="cap-phase">Continuous Improvement</div></div><span class="cap-arrow">→</span></a>
+    <div class="cap-grid-compact">
+      <a href="ep.html" class="cap-card"><div><div class="cap-card-name">Executive Protection</div><div class="cap-card-phase">Mitigation</div></div><span class="cap-card-arrow">→</span></a>
+      <a href="tscm.html" class="cap-card"><div><div class="cap-card-name">TSCM &amp; Technical Assurance</div><div class="cap-card-phase">Risk Identification · Mitigation</div></div><span class="cap-card-arrow">→</span></a>
+      <a href="intel.html" class="cap-card"><div><div class="cap-card-name">Protective Intelligence</div><div class="cap-card-phase">Risk Identification · Continuous Improvement</div></div><span class="cap-card-arrow">→</span></a>
+      <a href="travel.html" class="cap-card"><div><div class="cap-card-name">Travel Security &amp; Country Risk</div><div class="cap-card-phase">Risk Identification · Mitigation</div></div><span class="cap-card-arrow">→</span></a>
+      <a href="osint.html" class="cap-card"><div><div class="cap-card-name">Due Diligence &amp; OSINT</div><div class="cap-card-phase">Asset Identification · Risk Identification</div></div><span class="cap-card-arrow">→</span></a>
+      <a href="investigations.html" class="cap-card"><div><div class="cap-card-name">Investigations &amp; Asset Verification</div><div class="cap-card-phase">Risk Identification · Continuous Improvement</div></div><span class="cap-card-arrow">→</span></a>
+      <a href="section132.html" class="cap-card"><div><div class="cap-card-name">IRC §132 Security Study</div><div class="cap-card-phase">Asset Identification · Governance</div></div><span class="cap-card-arrow">→</span></a>
+      <a href="training.html" class="cap-card"><div><div class="cap-card-name">Training &amp; Certification</div><div class="cap-card-phase">Continuous Improvement</div></div><span class="cap-card-arrow">→</span></a>
     </div>
   </div>
 </div>
@@ -233,7 +233,7 @@
   <div class="wrap">
     <div class="editorial">
       <div class="eyebrow">Current Intelligence</div>
-      <h2>Published assessments from the All-Source Analysis Division.</h2>
+      <h2>Current assessments. Updated daily.</h2>
       <p>Unclassified reporting produced daily across two standing collection requirements. Select a series to access the latest assessment.</p>
     </div>
 
