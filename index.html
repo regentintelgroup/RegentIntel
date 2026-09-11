@@ -228,18 +228,80 @@
   </div>
 </div>
 
-<!-- WHO WE SERVE -->
-<div class="band-serve">
+<!-- CURRENT INTELLIGENCE -->
+<section class="section-dark" id="intelligence-feed" style="padding:80px 0;">
   <div class="wrap">
-    <div class="serve-label">Who We Serve</div>
-    <div class="serve-strip">
-      <div class="serve-cell"><div class="serve-cell-label">Security Leaders</div><div class="serve-cell-title">CSOs &amp; Security Directors</div><div class="serve-cell-text">Specialized capability that extends your ESRM program. We plug into your governance structure.</div></div>
-      <div class="serve-cell"><div class="serve-cell-label">Principals &amp; Executives</div><div class="serve-cell-title">A Shifting Threat Picture</div><div class="serve-cell-text">We become your Security Professional. Full lifecycle risk management for individuals without a security function.</div></div>
-      <div class="serve-cell"><div class="serve-cell-label">Family Offices</div><div class="serve-cell-title">Protecting More Than a Principal</div><div class="serve-cell-text">Estates, travel, family members. One standard applied across every environment.</div></div>
-      <div class="serve-cell"><div class="serve-cell-label">Advisors &amp; Counsel</div><div class="serve-cell-title">Acting on Behalf of Someone Else</div><div class="serve-cell-text">Attorneys, fiduciaries, and risk committees who need a partner that briefs clearly and handles the principal discreetly.</div></div>
+    <div class="editorial">
+      <div class="eyebrow">Current Intelligence</div>
+      <h2>Published assessments from the All-Source Analysis Division.</h2>
+      <p>Unclassified reporting produced daily across two standing collection requirements. Select a series to access the latest assessment.</p>
+    </div>
+
+    <div class="intel-cards" style="display:flex;flex-direction:column;gap:24px;margin-top:40px;">
+      <a href="advisory.html" id="idx-ef-card" class="intel-card" style="display:grid;grid-template-columns:1fr 1fr;text-decoration:none;border:1px solid rgba(255,255,255,0.06);overflow:hidden;transition:border-color 0.25s,transform 0.25s;">
+        <div style="position:relative;min-height:280px;overflow:hidden;">
+          <img src="ef-cover.webp" alt="Epic Fury Theater Assessment" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.4s;">
+          <div style="position:absolute;inset:0;background:linear-gradient(90deg,transparent 60%,rgba(7,11,20,0.95) 100%);"></div>
+        </div>
+        <div style="padding:40px 36px;display:flex;flex-direction:column;justify-content:center;background:rgba(7,11,20,0.85);">
+          <div style="font-family:var(--font-mono);font-size:10px;letter-spacing:0.14em;text-transform:uppercase;margin-bottom:12px;color:#c47a3a;">Operation Epic Fury</div>
+          <h3 style="font-family:var(--font-display);font-size:22px;font-weight:700;color:rgba(255,255,255,0.9);text-transform:uppercase;letter-spacing:0.01em;margin-bottom:14px;line-height:1.3;">Theater Assessment Series</h3>
+          <p style="font-family:var(--font-body);font-size:14px;color:rgba(255,255,255,0.45);line-height:1.7;margin-bottom:20px;">Iran/U.S. strategic competition, IRGC proxy activity, Gulf state security posture, Strait of Hormuz, and global Iranian threat network assessment. ICD 203 compliant. Daily production.</p>
+          <div style="display:flex;align-items:center;gap:16px;margin-top:auto;">
+            <span style="font-family:var(--font-mono);font-size:9px;letter-spacing:0.12em;color:rgba(74,154,106,0.6);text-transform:uppercase;">UNCLASSIFIED</span>
+            <span id="idx-ef-latest" style="font-family:var(--font-mono);font-size:10px;color:rgba(255,255,255,0.25);"></span>
+          </div>
+        </div>
+      </a>
+
+      <a href="advisory.html" id="idx-hf-card" class="intel-card" style="display:grid;grid-template-columns:1fr 1fr;text-decoration:none;border:1px solid rgba(255,255,255,0.06);overflow:hidden;transition:border-color 0.25s,transform 0.25s;">
+        <div style="position:relative;min-height:280px;overflow:hidden;">
+          <img src="hf-cover.webp" alt="Homeland Focus Assessment" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.4s;">
+          <div style="position:absolute;inset:0;background:linear-gradient(90deg,transparent 60%,rgba(7,11,20,0.95) 100%);"></div>
+        </div>
+        <div style="padding:40px 36px;display:flex;flex-direction:column;justify-content:center;background:rgba(7,11,20,0.85);">
+          <div style="font-family:var(--font-mono);font-size:10px;letter-spacing:0.14em;text-transform:uppercase;margin-bottom:12px;color:#4a9a6a;">Homeland Focus</div>
+          <h3 style="font-family:var(--font-display);font-size:22px;font-weight:700;color:rgba(255,255,255,0.9);text-transform:uppercase;letter-spacing:0.01em;margin-bottom:14px;line-height:1.3;">Domestic Threat Assessment Series</h3>
+          <p style="font-family:var(--font-body);font-size:14px;color:rgba(255,255,255,0.45);line-height:1.7;margin-bottom:20px;">DVE, state-sponsored homeland targeting, TCO nexus, critical infrastructure threats, disrupted plots, and FBI/DHS advisory tracking. F3EAD-informed threat vector analysis. Daily production.</p>
+          <div style="display:flex;align-items:center;gap:16px;margin-top:auto;">
+            <span style="font-family:var(--font-mono);font-size:9px;letter-spacing:0.12em;color:rgba(74,154,106,0.6);text-transform:uppercase;">UNCLASSIFIED</span>
+            <span id="idx-hf-latest" style="font-family:var(--font-mono);font-size:10px;color:rgba(255,255,255,0.25);"></span>
+          </div>
+        </div>
+      </a>
     </div>
   </div>
-</div>
+</section>
+
+<style>
+.intel-card:hover{border-color:rgba(20,110,135,0.4) !important;transform:translateY(-2px)}
+.intel-card:hover img{transform:scale(1.03) !important}
+@media(max-width:768px){
+  .intel-card{grid-template-columns:1fr !important}
+  .intel-card > div:first-child{min-height:200px !important}
+  .intel-card > div:last-child{padding:28px 24px !important}
+}
+</style>
+
+<script>
+fetch('/reports.json').then(function(r){return r.json()}).then(function(data){
+  var reports=data.filter(function(r){return r.id.indexOf('SAMPLE')===-1});
+  var efReports=reports.filter(function(r){return r.series==='EF'});
+  var hfReports=reports.filter(function(r){return r.series==='HF'});
+  if(efReports.length>0){
+    var ef=efReports[0];
+    document.getElementById('idx-ef-card').href='/reports/'+ef.filename;
+    var efd=new Date(ef.date+'T12:00:00Z').toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric'});
+    document.getElementById('idx-ef-latest').textContent=ef.id+' | '+efd;
+  }
+  if(hfReports.length>0){
+    var hf=hfReports[0];
+    document.getElementById('idx-hf-card').href='/reports/'+hf.filename;
+    var hfd=new Date(hf.date+'T12:00:00Z').toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric'});
+    document.getElementById('idx-hf-latest').textContent=hf.id+' | '+hfd;
+  }
+}).catch(function(){});
+</script>
 
 <!-- CONTACT -->
 <section class="contact-section" id="contact">
