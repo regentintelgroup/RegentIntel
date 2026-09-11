@@ -535,18 +535,20 @@ def generate_report(series, dry_run=False):
     filename = "{}-{}.html".format(title, DATE_FILE)
 
     print("[{}] Generating {}...".format(datetime.now().strftime("%H:%M:%S"), title))
-    print("[{}] Calling Claude API with web search...".format(datetime.now().strftime("%H:%M:%S")))
+    print("[{}] Calling Claude API with web search (streaming)...".format(datetime.now().strftime("%H:%M:%S")))
 
-    response = client.messages.create(
+    report_text = ""
+    with client.messages.stream(
         model=MODEL,
         max_tokens=12000,
         system=SYSTEM_PROMPT,
         tools=[{"type": "web_search_20250305", "name": "web_search"}],
         messages=[{"role": "user", "content": prompt}]
-    )
+    ) as stream:
+        for event in stream:
+            pass
+        response = stream.get_final_message()
 
-    # Extract text content from response
-    report_text = ""
     for block in response.content:
         if block.type == "text":
             report_text += block.text
