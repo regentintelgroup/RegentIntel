@@ -163,6 +163,69 @@
   </div>
 </section>
 
+<!-- CURRENT INTELLIGENCE FEED -->
+<section class="section-dark" id="intelligence-feed">
+  <div class="wrap">
+    <div class="editorial">
+      <div class="eyebrow">Current Intelligence</div>
+      <h2>Published assessments from the All-Source Analysis Division.</h2>
+      <p>Unclassified reporting produced daily across two standing collection requirements. Epic Fury covers the Iran/U.S. strategic competition and broader Middle East theater. Homeland Focus covers domestic threat streams including DVE, state-sponsored activity, TCO nexus, and critical infrastructure.</p>
+    </div>
+
+    <div class="feed-filters" style="display:flex;gap:8px;margin-top:32px;margin-bottom:28px;">
+      <button class="feed-filter active" data-filter="all" onclick="filterFeed('all',this)">All Reports</button>
+      <button class="feed-filter" data-filter="EF" onclick="filterFeed('EF',this)">Epic Fury</button>
+      <button class="feed-filter" data-filter="HF" onclick="filterFeed('HF',this)">Homeland Focus</button>
+    </div>
+
+    <div id="intel-feed" style="border-top:1px solid rgba(255,255,255,0.08);">
+      <div style="font-family:var(--font-mono);font-size:12px;color:rgba(255,255,255,0.3);padding:40px 0;text-align:center;">Loading intelligence feed...</div>
+    </div>
+  </div>
+</section>
+
+<style>
+.feed-filter{font-family:var(--font-mono);font-size:10px;letter-spacing:0.12em;text-transform:uppercase;padding:8px 20px;background:transparent;border:1px solid rgba(255,255,255,0.1);color:rgba(255,255,255,0.4);cursor:pointer;transition:all 0.2s}
+.feed-filter:hover{border-color:var(--teal);color:rgba(255,255,255,0.7)}
+.feed-filter.active{border-color:var(--teal);color:var(--teal-bright);background:rgba(20,110,135,0.08)}
+.feed-item{display:block;padding:28px 0;border-bottom:1px solid rgba(255,255,255,0.06);text-decoration:none;transition:background 0.15s}
+.feed-item:hover{background:rgba(20,110,135,0.04)}
+.feed-item-header{display:flex;align-items:center;gap:12px;margin-bottom:10px}
+.feed-series{font-family:var(--font-mono);font-size:9px;letter-spacing:0.14em;text-transform:uppercase;padding:3px 10px;border:1px solid}
+.feed-series.ef{color:#c47a3a;border-color:rgba(196,122,58,0.3)}
+.feed-series.hf{color:#4a9a6a;border-color:rgba(74,154,106,0.3)}
+.feed-date{font-family:var(--font-mono);font-size:11px;color:rgba(255,255,255,0.3)}
+.feed-classification{font-family:var(--font-mono);font-size:9px;letter-spacing:0.1em;color:rgba(74,154,106,0.5);margin-left:auto}
+.feed-title{font-family:var(--font-display);font-size:17px;font-weight:600;color:rgba(255,255,255,0.85);margin-bottom:8px;letter-spacing:0.01em}
+.feed-bluf{font-family:var(--font-body);font-size:14px;color:rgba(255,255,255,0.45);line-height:1.65}
+</style>
+
+<script>
+var allReports=[];
+fetch('/reports.json').then(function(r){return r.json()}).then(function(data){
+  allReports=data.filter(function(r){return r.id.indexOf('SAMPLE')===-1});
+  renderFeed('all');
+}).catch(function(){
+  document.getElementById('intel-feed').innerHTML='<div style="font-family:var(--font-mono);font-size:12px;color:rgba(255,255,255,0.25);padding:40px 0;text-align:center;">Intelligence feed initializing. First reports publishing shortly.</div>';
+});
+function filterFeed(f,btn){
+  document.querySelectorAll('.feed-filter').forEach(function(b){b.classList.remove('active')});
+  btn.classList.add('active');
+  renderFeed(f);
+}
+function renderFeed(filter){
+  var filtered=filter==='all'?allReports:allReports.filter(function(r){return r.series===filter});
+  var el=document.getElementById('intel-feed');
+  if(filtered.length===0){el.innerHTML='<div style="font-family:var(--font-mono);font-size:12px;color:rgba(255,255,255,0.25);padding:40px 0;text-align:center;">Intelligence feed initializing. First reports publishing shortly.</div>';return;}
+  el.innerHTML=filtered.slice(0,20).map(function(r){
+    var sc=r.series.toLowerCase();
+    var d=new Date(r.date+'T12:00:00Z');
+    var df=d.toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric'});
+    return '<a href="/reports/'+r.filename+'" class="feed-item"><div class="feed-item-header"><span class="feed-series '+sc+'">'+(r.series==='EF'?'Epic Fury':'Homeland Focus')+'</span><span class="feed-date">'+df+'</span><span class="feed-classification">'+r.classification+'</span></div><div class="feed-title">'+r.title+'</div><div class="feed-bluf">'+r.bluf+'</div></a>';
+  }).join('');
+}
+</script>
+
 <!-- PROVENANCE -->
 <section class="section-dark">
   <div class="wrap">
