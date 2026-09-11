@@ -1,5 +1,23 @@
 [
   {
+    "id": "SIGACT-HF-003",
+    "title": "SIGACT-HF-003: Homeland Focus Assessment",
+    "series": "HF",
+    "date": "2026-09-11",
+    "bluf": "BLUF</h2>",
+    "filename": "SIGACT-HF-003-20260911.html",
+    "classification": "UNCLASSIFIED"
+  },
+  {
+    "id": "SITREP-EF-003",
+    "title": "SITREP-EF-003: Epic Fury Theater Assessment",
+    "series": "EF",
+    "date": "2026-09-11",
+    "bluf": "#1F3864;\">SECTION 1: BOTTOM LINE UP FRONT (BLUF)</h2> <p>The U.S.-Iran conflict has re-entered sustained kinetic exchange after a period of relative dormancy, with a reciprocal maritime attrition cycle now the war's dominant operational feature: Iran states it attacked 10 ships near the Strait of Ho",
+    "filename": "SITREP-EF-003-20260911.html",
+    "classification": "UNCLASSIFIED"
+  },
+  {
     "id": "SIGACT-HF-002",
     "title": "SIGACT-HF-002: Homeland Focus Assessment",
     "series": "HF",
