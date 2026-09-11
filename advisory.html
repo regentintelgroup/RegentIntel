@@ -169,61 +169,96 @@
     <div class="editorial">
       <div class="eyebrow">Current Intelligence</div>
       <h2>Published assessments from the All-Source Analysis Division.</h2>
-      <p>Unclassified reporting produced daily across two standing collection requirements. Epic Fury covers the Iran/U.S. strategic competition and broader Middle East theater. Homeland Focus covers domestic threat streams including DVE, state-sponsored activity, TCO nexus, and critical infrastructure.</p>
+      <p>Unclassified reporting produced daily across two standing collection requirements. Select a series to access the latest assessment.</p>
     </div>
 
-    <div class="feed-filters" style="display:flex;gap:8px;margin-top:32px;margin-bottom:28px;">
-      <button class="feed-filter active" data-filter="all" onclick="filterFeed('all',this)">All Reports</button>
-      <button class="feed-filter" data-filter="EF" onclick="filterFeed('EF',this)">Epic Fury</button>
-      <button class="feed-filter" data-filter="HF" onclick="filterFeed('HF',this)">Homeland Focus</button>
-    </div>
+    <div class="intel-cards">
+      <!-- EPIC FURY CARD -->
+      <a href="#" id="ef-card" class="intel-card">
+        <div class="intel-card-image">
+          <img src="ef-cover.webp" alt="Epic Fury Theater Assessment">
+          <div class="intel-card-overlay"></div>
+        </div>
+        <div class="intel-card-content">
+          <div class="intel-card-series ef">Operation Epic Fury</div>
+          <h3 class="intel-card-title">Theater Assessment Series</h3>
+          <p class="intel-card-desc">Iran/U.S. strategic competition, IRGC proxy activity, Gulf state security posture, Strait of Hormuz, and global Iranian threat network assessment. ICD 203 compliant. Daily production.</p>
+          <div class="intel-card-meta">
+            <span class="intel-card-class">UNCLASSIFIED</span>
+            <span class="intel-card-latest" id="ef-latest">Latest report loading...</span>
+          </div>
+        </div>
+      </a>
 
-    <div id="intel-feed" style="border-top:1px solid rgba(255,255,255,0.08);">
-      <div style="font-family:var(--font-mono);font-size:12px;color:rgba(255,255,255,0.3);padding:40px 0;text-align:center;">Loading intelligence feed...</div>
+      <!-- HOMELAND FOCUS CARD -->
+      <a href="#" id="hf-card" class="intel-card">
+        <div class="intel-card-image">
+          <img src="hf-cover.webp" alt="Homeland Focus Assessment">
+          <div class="intel-card-overlay"></div>
+        </div>
+        <div class="intel-card-content">
+          <div class="intel-card-series hf">Homeland Focus</div>
+          <h3 class="intel-card-title">Domestic Threat Assessment Series</h3>
+          <p class="intel-card-desc">DVE, state-sponsored homeland targeting, TCO nexus, critical infrastructure threats, disrupted plots, and FBI/DHS advisory tracking. F3EAD-informed threat vector analysis. Daily production.</p>
+          <div class="intel-card-meta">
+            <span class="intel-card-class">UNCLASSIFIED</span>
+            <span class="intel-card-latest" id="hf-latest">Latest report loading...</span>
+          </div>
+        </div>
+      </a>
     </div>
   </div>
 </section>
 
 <style>
-.feed-filter{font-family:var(--font-mono);font-size:10px;letter-spacing:0.12em;text-transform:uppercase;padding:8px 20px;background:transparent;border:1px solid rgba(255,255,255,0.1);color:rgba(255,255,255,0.4);cursor:pointer;transition:all 0.2s}
-.feed-filter:hover{border-color:var(--teal);color:rgba(255,255,255,0.7)}
-.feed-filter.active{border-color:var(--teal);color:var(--teal-bright);background:rgba(20,110,135,0.08)}
-.feed-item{display:block;padding:28px 0;border-bottom:1px solid rgba(255,255,255,0.06);text-decoration:none;transition:background 0.15s}
-.feed-item:hover{background:rgba(20,110,135,0.04)}
-.feed-item-header{display:flex;align-items:center;gap:12px;margin-bottom:10px}
-.feed-series{font-family:var(--font-mono);font-size:9px;letter-spacing:0.14em;text-transform:uppercase;padding:3px 10px;border:1px solid}
-.feed-series.ef{color:#c47a3a;border-color:rgba(196,122,58,0.3)}
-.feed-series.hf{color:#4a9a6a;border-color:rgba(74,154,106,0.3)}
-.feed-date{font-family:var(--font-mono);font-size:11px;color:rgba(255,255,255,0.3)}
-.feed-classification{font-family:var(--font-mono);font-size:9px;letter-spacing:0.1em;color:rgba(74,154,106,0.5);margin-left:auto}
-.feed-title{font-family:var(--font-display);font-size:17px;font-weight:600;color:rgba(255,255,255,0.85);margin-bottom:8px;letter-spacing:0.01em}
-.feed-bluf{font-family:var(--font-body);font-size:14px;color:rgba(255,255,255,0.45);line-height:1.65}
+.intel-cards{display:flex;flex-direction:column;gap:24px;margin-top:40px}
+.intel-card{display:grid;grid-template-columns:1fr 1fr;text-decoration:none;border:1px solid rgba(255,255,255,0.06);overflow:hidden;transition:border-color 0.25s,transform 0.25s}
+.intel-card:hover{border-color:rgba(20,110,135,0.4);transform:translateY(-2px)}
+.intel-card-image{position:relative;min-height:280px;overflow:hidden}
+.intel-card-image img{width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.4s}
+.intel-card:hover .intel-card-image img{transform:scale(1.03)}
+.intel-card-overlay{position:absolute;inset:0;background:linear-gradient(90deg,transparent 60%,rgba(7,11,20,0.95) 100%)}
+.intel-card-content{padding:40px 36px;display:flex;flex-direction:column;justify-content:center;background:rgba(7,11,20,0.85)}
+.intel-card-series{font-family:var(--font-mono);font-size:10px;letter-spacing:0.14em;text-transform:uppercase;margin-bottom:12px}
+.intel-card-series.ef{color:#c47a3a}
+.intel-card-series.hf{color:#4a9a6a}
+.intel-card-title{font-family:var(--font-display);font-size:22px;font-weight:700;color:rgba(255,255,255,0.9);text-transform:uppercase;letter-spacing:0.01em;margin-bottom:14px;line-height:1.3}
+.intel-card-desc{font-family:var(--font-body);font-size:14px;color:rgba(255,255,255,0.45);line-height:1.7;margin-bottom:20px}
+.intel-card-meta{display:flex;align-items:center;gap:16px;margin-top:auto}
+.intel-card-class{font-family:var(--font-mono);font-size:9px;letter-spacing:0.12em;color:rgba(74,154,106,0.6);text-transform:uppercase}
+.intel-card-latest{font-family:var(--font-mono);font-size:10px;color:rgba(255,255,255,0.25)}
+@media(max-width:768px){
+  .intel-card{grid-template-columns:1fr}
+  .intel-card-image{min-height:200px}
+  .intel-card-content{padding:28px 24px}
+}
 </style>
 
 <script>
-var allReports=[];
 fetch('/reports.json').then(function(r){return r.json()}).then(function(data){
-  allReports=data.filter(function(r){return r.id.indexOf('SAMPLE')===-1});
-  renderFeed('all');
+  var reports=data.filter(function(r){return r.id.indexOf('SAMPLE')===-1});
+  var efReports=reports.filter(function(r){return r.series==='EF'});
+  var hfReports=reports.filter(function(r){return r.series==='HF'});
+  if(efReports.length>0){
+    var ef=efReports[0];
+    document.getElementById('ef-card').href='/reports/'+ef.filename;
+    var efd=new Date(ef.date+'T12:00:00Z').toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric'});
+    document.getElementById('ef-latest').textContent=ef.id+' | '+efd;
+  } else {
+    document.getElementById('ef-latest').textContent='First report publishing shortly';
+  }
+  if(hfReports.length>0){
+    var hf=hfReports[0];
+    document.getElementById('hf-card').href='/reports/'+hf.filename;
+    var hfd=new Date(hf.date+'T12:00:00Z').toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric'});
+    document.getElementById('hf-latest').textContent=hf.id+' | '+hfd;
+  } else {
+    document.getElementById('hf-latest').textContent='First report publishing shortly';
+  }
 }).catch(function(){
-  document.getElementById('intel-feed').innerHTML='<div style="font-family:var(--font-mono);font-size:12px;color:rgba(255,255,255,0.25);padding:40px 0;text-align:center;">Intelligence feed initializing. First reports publishing shortly.</div>';
+  document.getElementById('ef-latest').textContent='Feed initializing';
+  document.getElementById('hf-latest').textContent='Feed initializing';
 });
-function filterFeed(f,btn){
-  document.querySelectorAll('.feed-filter').forEach(function(b){b.classList.remove('active')});
-  btn.classList.add('active');
-  renderFeed(f);
-}
-function renderFeed(filter){
-  var filtered=filter==='all'?allReports:allReports.filter(function(r){return r.series===filter});
-  var el=document.getElementById('intel-feed');
-  if(filtered.length===0){el.innerHTML='<div style="font-family:var(--font-mono);font-size:12px;color:rgba(255,255,255,0.25);padding:40px 0;text-align:center;">Intelligence feed initializing. First reports publishing shortly.</div>';return;}
-  el.innerHTML=filtered.slice(0,20).map(function(r){
-    var sc=r.series.toLowerCase();
-    var d=new Date(r.date+'T12:00:00Z');
-    var df=d.toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric'});
-    return '<a href="/reports/'+r.filename+'" class="feed-item"><div class="feed-item-header"><span class="feed-series '+sc+'">'+(r.series==='EF'?'Epic Fury':'Homeland Focus')+'</span><span class="feed-date">'+df+'</span><span class="feed-classification">'+r.classification+'</span></div><div class="feed-title">'+r.title+'</div><div class="feed-bluf">'+r.bluf+'</div></a>';
-  }).join('');
-}
 </script>
 
 <!-- PROVENANCE -->
