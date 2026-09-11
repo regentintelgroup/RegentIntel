@@ -1,11 +1,20 @@
 [
   {
-    "id": "SIGACT-HF-2026-SAMPLE",
-    "title": "Sample Homeland Focus Assessment",
+    "id": "SIGACT-HF-001",
+    "title": "SIGACT-HF-001: Homeland Focus Assessment",
     "series": "HF",
     "date": "2026-09-11",
-    "bluf": "This is a sample entry demonstrating the intelligence feed format. Replace with your first published report.",
-    "filename": "SIGACT-HF-2026-SAMPLE.html",
+    "bluf": "Assessment available in full report.",
+    "filename": "SIGACT-HF-001-20260911.html",
+    "classification": "UNCLASSIFIED"
+  },
+  {
+    "id": "SITREP-EF-001",
+    "title": "SITREP-EF-001: Epic Fury Theater Assessment",
+    "series": "EF",
+    "date": "2026-09-11",
+    "bluf": "Assessment available in full report.",
+    "filename": "SITREP-EF-001-20260911.html",
     "classification": "UNCLASSIFIED"
   }
 ]
