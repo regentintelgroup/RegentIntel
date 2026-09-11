@@ -293,179 +293,203 @@ REPORT_HTML_TEMPLATE = """<!DOCTYPE html>
         * {{ margin: 0; padding: 0; box-sizing: border-box; }}
         body {{
             font-family: Arial, Helvetica, sans-serif;
-            background: #0a0e14;
-            color: #c8cdd3;
+            background: #fff;
+            color: #1a1a1a;
             line-height: 1.7;
-            font-size: 15px;
+            font-size: 10.5pt;
         }}
         .classification-bar {{
-            background: #0D1B2A;
+            background: #C00000;
             text-align: center;
-            padding: 6px;
-            font-size: 11px;
+            padding: 5px;
+            font-size: 9pt;
+            font-weight: 700;
             letter-spacing: 2px;
-            color: #4a9a6a;
-            border-bottom: 1px solid rgba(20,110,135,0.2);
+            color: #fff;
         }}
         .report-header {{
-            background: #0D1B2A;
-            border-bottom: 2px solid #146E87;
-            padding: 40px 20px;
-            text-align: center;
+            background: #fff;
+            border-bottom: 3px solid #2E5494;
+            padding: 40px 40px 30px;
+            max-width: 850px;
+            margin: 0 auto;
         }}
         .report-header .org {{
-            font-size: 12px;
+            font-size: 9pt;
             letter-spacing: 2px;
-            color: #146E87;
+            color: #1F3864;
             text-transform: uppercase;
-            margin-bottom: 4px;
+            font-weight: 700;
+            margin-bottom: 2px;
         }}
         .report-header .tagline {{
-            font-size: 11px;
+            font-size: 9pt;
             font-style: italic;
             color: #146E87;
-            margin-bottom: 16px;
+            margin-bottom: 20px;
         }}
         .report-header h1 {{
-            font-size: 22px;
-            color: #e8ecf0;
-            margin-bottom: 8px;
+            font-size: 16pt;
+            color: #1F3864;
+            margin-bottom: 10px;
             font-weight: 700;
         }}
         .report-header .meta {{
-            font-size: 12px;
-            color: #7a8a9a;
+            font-size: 9pt;
+            color: #444;
             line-height: 1.8;
         }}
+        .report-header .header-class {{
+            font-size: 9pt;
+            font-weight: 700;
+            color: #C00000;
+            margin-top: 8px;
+            letter-spacing: 1px;
+        }}
         .report-body {{
-            max-width: 760px;
+            max-width: 850px;
             margin: 0 auto;
-            padding: 40px 20px 80px;
+            padding: 30px 40px 60px;
         }}
         .report-body h2 {{
-            font-size: 13px;
-            letter-spacing: 1.5px;
+            font-size: 11pt;
+            letter-spacing: 1px;
             text-transform: uppercase;
-            margin-top: 36px;
-            margin-bottom: 12px;
-            padding-bottom: 6px;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            padding-bottom: 4px;
             border-bottom: 2px solid #2E5494;
             font-weight: 700;
-            color: #b0ccf0;
+            color: #1F3864;
         }}
         .report-body h3 {{
-            font-size: 15px;
-            margin-top: 24px;
-            margin-bottom: 8px;
+            font-size: 10.5pt;
+            margin-top: 20px;
+            margin-bottom: 6px;
             font-weight: 700;
-            color: #a0c0e8;
+            color: #2E5494;
         }}
         .report-body p {{
-            margin-bottom: 14px;
-            color: #dce0e5;
+            margin-bottom: 12px;
+            color: #1a1a1a;
+            text-align: justify;
+        }}
+        .report-body strong {{
+            color: #1a1a1a;
         }}
         .report-body table {{
             width: 100%;
             border-collapse: collapse;
-            margin: 16px 0;
-            font-size: 13px;
+            margin: 14px 0;
+            font-size: 9.5pt;
         }}
         .report-body th {{
             background: #1F3864;
             color: #fff;
             font-weight: 700;
-            padding: 8px 10px;
+            padding: 6px 10px;
             text-align: left;
-            font-size: 11px;
+            font-size: 9pt;
             letter-spacing: 0.5px;
             text-transform: uppercase;
+            border: 1px solid #1F3864;
         }}
         .report-body td {{
-            padding: 8px 10px;
-            border-bottom: 1px solid #1a2a3a;
-            color: #dce0e5;
+            padding: 6px 10px;
+            border: 1px solid #ccc;
+            color: #1a1a1a;
         }}
         .report-body tr:nth-child(even) td {{
-            background: rgba(255,255,255,0.02);
+            background: #F2F2F2;
         }}
         .bluf {{
-            background: #0D1B2A;
-            border-left: 3px solid #146E87;
-            padding: 20px 24px;
-            margin: 24px 0;
+            background: #f8f9fa;
+            border-left: 4px solid #1F3864;
+            padding: 16px 20px;
+            margin: 20px 0;
             line-height: 1.8;
         }}
         .bluf p {{
-            color: #e0e4e8;
+            color: #1a1a1a;
         }}
         .bluf-label {{
-            font-size: 11px;
+            font-size: 9pt;
             letter-spacing: 1.5px;
-            color: #146E87;
-            margin-bottom: 8px;
+            color: #1F3864;
+            margin-bottom: 6px;
             font-weight: 700;
+            text-transform: uppercase;
         }}
-        .osint-boilerplate {{
-            background: rgba(20,110,135,0.06);
-            border: 1px solid rgba(20,110,135,0.15);
-            padding: 16px 20px;
-            margin: 16px 0;
-            font-size: 12px;
-            color: #9aaabb;
+        .disclaimer {{
+            font-size: 8pt;
+            color: #1F3864;
             line-height: 1.7;
+            padding: 14px 16px;
+            border: 1px solid #2E5494;
+            margin-bottom: 24px;
             font-style: italic;
+            background: #f8f9fa;
         }}
-        .confidence-high {{ color: #2aae2a; font-weight: 700; }}
-        .confidence-moderate {{ color: #d4a020; font-weight: 700; }}
-        .confidence-low {{ color: #e83030; font-weight: 700; }}
-        .source-label {{ color: #7ab0e8; font-weight: 700; }}
+        .confidence-high {{ color: #1A5E1A; font-weight: 700; }}
+        .confidence-moderate {{ color: #7B4F00; font-weight: 700; }}
+        .confidence-low {{ color: #C00000; font-weight: 700; }}
+        .source-label {{ color: #1F3864; font-weight: 700; }}
         blockquote {{
             border-left: 3px solid #2E5494;
-            padding: 12px 20px;
-            margin: 16px 0;
+            padding: 10px 18px;
+            margin: 14px 0;
             font-style: italic;
-            color: #9aaabb;
+            color: #333;
+            background: #f8f9fa;
         }}
         blockquote .attribution {{
             font-style: normal;
-            font-size: 12px;
-            color: #7a8a9a;
-            margin-top: 8px;
+            font-size: 9pt;
+            color: #666;
+            margin-top: 6px;
         }}
-        .disclaimer {{
-            font-size: 11px;
-            color: #5a6a7a;
-            line-height: 1.7;
-            padding: 20px 0;
-            border-top: 1px solid #1a2a3a;
-            margin-top: 40px;
-            font-style: italic;
+        hr {{
+            border: none;
+            border-top: 1px solid #2E5494;
+            margin: 24px 0;
         }}
         .report-footer {{
-            max-width: 760px;
+            max-width: 850px;
             margin: 0 auto;
-            padding: 30px 20px;
-            border-top: 1px solid #1a2a3a;
+            padding: 24px 40px;
+            border-top: 2px solid #2E5494;
             text-align: center;
         }}
+        .report-footer .prepared {{
+            font-size: 7pt;
+            color: #1F3864;
+            font-style: italic;
+            margin-bottom: 12px;
+        }}
         .report-footer a {{
-            color: #146E87;
+            color: #2E5494;
             text-decoration: none;
-            font-size: 13px;
+            font-size: 10pt;
         }}
         .report-footer a:hover {{ text-decoration: underline; }}
         .report-footer .back {{
             display: inline-block;
-            margin-top: 16px;
-            padding: 10px 24px;
-            border: 1px solid #146E87;
-            color: #146E87;
-            font-size: 13px;
+            margin-top: 12px;
+            padding: 8px 20px;
+            border: 1px solid #1F3864;
+            color: #1F3864;
+            font-size: 9pt;
             text-decoration: none;
+            font-weight: 700;
         }}
         .report-footer .back:hover {{
-            background: #146E87;
-            color: #0D1B2A;
+            background: #1F3864;
+            color: #fff;
+        }}
+        @media print {{
+            .classification-bar {{ background: #C00000 !important; color: #fff !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }}
+            .report-footer .back {{ display: none; }}
+            body {{ font-size: 10pt; }}
         }}
     </style>
 </head>
@@ -476,10 +500,10 @@ REPORT_HTML_TEMPLATE = """<!DOCTYPE html>
         <div class="tagline">Government Grade. Commercial Speed.</div>
         <h1>{title}</h1>
         <div class="meta">
-            Threat Development Analyst | All-Source Analysis Division<br>
-            {date_display} | {dtg}<br>
-            UNCLASSIFIED // FOR PUBLIC RELEASE
+            Threat Development Analyst<br>
+            {date_display} | {dtg}
         </div>
+        <div class="header-class">UNCLASSIFIED // FOR PUBLIC RELEASE</div>
     </div>
     <div class="report-body">
         <div class="disclaimer">
@@ -489,9 +513,8 @@ REPORT_HTML_TEMPLATE = """<!DOCTYPE html>
     </div>
     <div class="classification-bar">UNCLASSIFIED // FOR PUBLIC RELEASE</div>
     <div class="report-footer">
+        <div class="prepared">Prepared by Regent Intel Group | Authorized Recipients Only</div>
         <a href="https://regentintel.org/advisory" class="back">Return to Intelligence Feed</a>
-        <br><br>
-        <a href="https://regentintel.org">regentintel.org</a>
     </div>
 </body>
 </html>"""
