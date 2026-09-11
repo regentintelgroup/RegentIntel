@@ -185,7 +185,7 @@
           <p class="intel-card-desc">Iran/U.S. strategic competition, IRGC proxy activity, Gulf state security posture, Strait of Hormuz, and global Iranian threat network assessment. ICD 203 compliant. Daily production.</p>
           <div class="intel-card-meta">
             <span class="intel-card-class">UNCLASSIFIED</span>
-            <span class="intel-card-latest" id="ef-latest">Latest report loading...</span>
+            <span class="intel-card-latest" id="ef-latest"></span>
           </div>
         </div>
       </a>
@@ -202,7 +202,7 @@
           <p class="intel-card-desc">DVE, state-sponsored homeland targeting, TCO nexus, critical infrastructure threats, disrupted plots, and FBI/DHS advisory tracking. F3EAD-informed threat vector analysis. Daily production.</p>
           <div class="intel-card-meta">
             <span class="intel-card-class">UNCLASSIFIED</span>
-            <span class="intel-card-latest" id="hf-latest">Latest report loading...</span>
+            <span class="intel-card-latest" id="hf-latest"></span>
           </div>
         </div>
       </a>
@@ -245,7 +245,7 @@ fetch('/reports.json').then(function(r){return r.json()}).then(function(data){
     var efd=new Date(ef.date+'T12:00:00Z').toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric'});
     document.getElementById('ef-latest').textContent=ef.id+' | '+efd;
   } else {
-    document.getElementById('ef-latest').textContent='First report publishing shortly';
+    document.getElementById('ef-latest').textContent='';
   }
   if(hfReports.length>0){
     var hf=hfReports[0];
@@ -253,11 +253,11 @@ fetch('/reports.json').then(function(r){return r.json()}).then(function(data){
     var hfd=new Date(hf.date+'T12:00:00Z').toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric'});
     document.getElementById('hf-latest').textContent=hf.id+' | '+hfd;
   } else {
-    document.getElementById('hf-latest').textContent='First report publishing shortly';
+    document.getElementById('hf-latest').textContent='';
   }
 }).catch(function(){
-  document.getElementById('ef-latest').textContent='Feed initializing';
-  document.getElementById('hf-latest').textContent='Feed initializing';
+  document.getElementById('ef-latest').textContent='';
+  document.getElementById('hf-latest').textContent='';
 });
 </script>
 
