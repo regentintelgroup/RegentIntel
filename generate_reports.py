@@ -34,7 +34,7 @@ except ImportError:
 REPO_DIR = os.environ.get("REPO_DIR", os.path.expanduser("~/RegentIntel"))
 REPORTS_DIR = os.path.join(REPO_DIR, "reports")
 REPORTS_JSON = os.path.join(REPO_DIR, "reports.json")
-MODEL = "claude-opus-4-0"
+MODEL = "claude-opus-5"
 DTG = datetime.now(timezone.utc).strftime("%d%H%MZ %b %Y").upper()
 DATE_DISPLAY = datetime.now(timezone.utc).strftime("%B %d, %Y")
 DATE_FILE = datetime.now(timezone.utc).strftime("%Y%m%d")
