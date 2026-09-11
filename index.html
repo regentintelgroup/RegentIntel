@@ -43,8 +43,10 @@
 .stat-label{font-size:13px;color:var(--ink-soft);line-height:1.5}
 
 .band-esrm{background:var(--navy);padding:80px 0}
-.esrm-cycle{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(255,255,255,0.06);border-radius:12px;overflow:hidden;margin-top:40px;margin-bottom:32px}
-.esrm-phase{background:var(--navy);padding:36px 28px}
+.esrm-cycle{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:40px;margin-bottom:32px;background:transparent}
+.esrm-phase{position:relative;padding:36px 28px;border-radius:12px;overflow:hidden;min-height:280px;display:flex;flex-direction:column;justify-content:flex-end;background-size:cover;background-position:center}
+.esrm-phase::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(7,17,26,0.5) 0%,rgba(7,17,26,0.82) 100%);z-index:1}
+.esrm-phase > *{position:relative;z-index:2}
 .esrm-phase-tag{font-family:var(--font-mono);font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:var(--teal-bright);margin-bottom:14px}
 .esrm-phase h3{font-family:var(--font-display);font-weight:700;font-size:20px;text-transform:uppercase;color:#fff;letter-spacing:0.01em;line-height:1.15;margin-bottom:12px}
 .esrm-phase p{font-size:15px;color:rgba(255,255,255,0.6);line-height:1.72}
@@ -176,10 +178,10 @@
       <p style="font-size:17px;color:rgba(255,255,255,0.65);line-height:1.78;max-width:640px;">Security as a business function — integrated with your organization's broader risk posture. The security professional identifies and assesses risk. The asset owner decides. The program adapts continuously.</p>
     </div>
     <div class="esrm-cycle">
-      <div class="esrm-phase"><div class="esrm-phase-tag">Identify &amp; Prioritize Assets</div><h3>Exposure Assessment</h3><p>People, operations, facilities, reputation, and information mapped against your mission and priorities.</p></div>
-      <div class="esrm-phase"><div class="esrm-phase-tag">Identify &amp; Prioritize Risks</div><h3>Threat Analysis</h3><p>Threats and vulnerabilities assessed through intelligence-grade methodology. Risk ranked by likelihood and impact.</p></div>
-      <div class="esrm-phase"><div class="esrm-phase-tag">Mitigate Prioritized Risks</div><h3>Protection Design</h3><p>Mitigation options presented to asset owners. They decide. We design and deploy the program.</p></div>
-      <div class="esrm-phase"><div class="esrm-phase-tag">Continuous Improvement</div><h3>Monitoring &amp; Adaptation</h3><p>Collection runs continuously. The program adjusts as conditions evolve. Every decision documented and defensible.</p></div>
+      <div class="esrm-phase" style="background-image:url('esrm-exposure.webp')"><div class="esrm-phase-tag">Identify &amp; Prioritize Assets</div><h3>Exposure Assessment</h3><p>People, operations, facilities, reputation, and information mapped against your mission and priorities.</p></div>
+      <div class="esrm-phase" style="background-image:url('esrm-threat.webp')"><div class="esrm-phase-tag">Identify &amp; Prioritize Risks</div><h3>Threat Analysis</h3><p>Threats and vulnerabilities assessed through intelligence-grade methodology. Risk ranked by likelihood and impact.</p></div>
+      <div class="esrm-phase" style="background-image:url('esrm-protection.webp')"><div class="esrm-phase-tag">Mitigate Prioritized Risks</div><h3>Protection Design</h3><p>Mitigation options presented to asset owners. They decide. We design and deploy the program.</p></div>
+      <div class="esrm-phase" style="background-image:url('esrm-monitoring.webp')"><div class="esrm-phase-tag">Continuous Improvement</div><h3>Monitoring &amp; Adaptation</h3><p>Collection runs continuously. The program adjusts as conditions evolve. Every decision documented and defensible.</p></div>
     </div>
   </div>
 </div>
