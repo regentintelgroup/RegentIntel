@@ -345,25 +345,24 @@ REPORT_HTML_TEMPLATE = """<!DOCTYPE html>
         .report-body h2 {{
             font-size: 13px;
             letter-spacing: 1.5px;
-            color: #1F3864;
             text-transform: uppercase;
             margin-top: 36px;
             margin-bottom: 12px;
             padding-bottom: 6px;
             border-bottom: 2px solid #2E5494;
             font-weight: 700;
-            color: #8aacdf;
+            color: #b0ccf0;
         }}
         .report-body h3 {{
             font-size: 15px;
-            color: #2E5494;
             margin-top: 24px;
             margin-bottom: 8px;
             font-weight: 700;
-            color: #7a9fd4;
+            color: #a0c0e8;
         }}
         .report-body p {{
             margin-bottom: 14px;
+            color: #dce0e5;
         }}
         .report-body table {{
             width: 100%;
@@ -384,6 +383,7 @@ REPORT_HTML_TEMPLATE = """<!DOCTYPE html>
         .report-body td {{
             padding: 8px 10px;
             border-bottom: 1px solid #1a2a3a;
+            color: #dce0e5;
         }}
         .report-body tr:nth-child(even) td {{
             background: rgba(255,255,255,0.02);
@@ -394,6 +394,9 @@ REPORT_HTML_TEMPLATE = """<!DOCTYPE html>
             padding: 20px 24px;
             margin: 24px 0;
             line-height: 1.8;
+        }}
+        .bluf p {{
+            color: #e0e4e8;
         }}
         .bluf-label {{
             font-size: 11px;
@@ -408,14 +411,14 @@ REPORT_HTML_TEMPLATE = """<!DOCTYPE html>
             padding: 16px 20px;
             margin: 16px 0;
             font-size: 12px;
-            color: #7a8a9a;
+            color: #9aaabb;
             line-height: 1.7;
             font-style: italic;
         }}
-        .confidence-high {{ color: #1A5E1A; font-weight: 700; }}
-        .confidence-moderate {{ color: #7B4F00; font-weight: 700; }}
-        .confidence-low {{ color: #C00000; font-weight: 700; }}
-        .source-label {{ color: #8aacdf; font-weight: 700; }}
+        .confidence-high {{ color: #2aae2a; font-weight: 700; }}
+        .confidence-moderate {{ color: #d4a020; font-weight: 700; }}
+        .confidence-low {{ color: #e83030; font-weight: 700; }}
+        .source-label {{ color: #7ab0e8; font-weight: 700; }}
         blockquote {{
             border-left: 3px solid #2E5494;
             padding: 12px 20px;
@@ -552,6 +555,34 @@ def generate_report(series, dry_run=False):
     for block in response.content:
         if block.type == "text":
             report_text += block.text
+
+    # Strip web search status/thinking lines that leak into output
+    filtered_lines = []
+    skip_patterns = [
+        "I'll begin collection",
+        "Significant developments detected",
+        "Collection continuing",
+        "Collecting final",
+        "Final collection pass",
+        "Let me search",
+        "Let me now",
+        "I'll now",
+        "I'll search",
+        "Searching for",
+        "Now searching",
+        "Let me collect",
+        "Beginning collection",
+        "Continuing collection",
+        "I need to search",
+        "I will search",
+        "Let me check",
+        "Let me look",
+    ]
+    for line in report_text.split("\n"):
+        if any(line.strip().startswith(p) or line.strip().lower().startswith(p.lower()) for p in skip_patterns):
+            continue
+        filtered_lines.append(line)
+    report_text = "\n".join(filtered_lines)
 
     print("[{}] Report generated. {} characters.".format(datetime.now().strftime("%H:%M:%S"), len(report_text)))
 
@@ -699,17 +730,25 @@ def extract_bluf(text):
 
     for line in lines:
         stripped = line.strip()
-        if stripped.upper().startswith("BLUF") or stripped.upper().startswith("BOTTOM LINE UP FRONT"):
+        upper = stripped.upper()
+        if "BLUF" in upper or "BOTTOM LINE UP FRONT" in upper or "BOTTOM LINE" in upper:
             capture = True
             if ":" in stripped:
-                bluf_lines.append(stripped.split(":", 1)[1].strip())
+                after_colon = stripped.split(":", 1)[1].strip()
+                if after_colon:
+                    bluf_lines.append(after_colon)
             continue
         if capture:
-            if not stripped or stripped.startswith("#") or stripped.startswith("**") or stripped.upper().startswith("SECTION"):
+            if not stripped:
+                if bluf_lines:
+                    break
+                continue
+            if stripped.startswith("#") or stripped.startswith("---") or stripped.upper().startswith("SECTION") or stripped.upper().startswith("## SECTION"):
                 break
             bluf_lines.append(stripped)
 
-    return " ".join(bluf_lines).strip() if bluf_lines else "Assessment available in full report."
+    result = " ".join(bluf_lines).strip()
+    return result if result else "Assessment available in full report."
 
 
 def update_index(title, full_title, series, bluf, filename):
