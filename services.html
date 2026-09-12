@@ -22,9 +22,18 @@
 .service-hero{background:transparent !important;min-height:80vh;display:flex;align-items:center}
 .section-ivory{background:var(--ivory) !important;position:relative;z-index:1}
 .cta-section{background:rgba(13,27,42,0.5) !important;position:relative;z-index:1}
-.svc-hero-img{width:100%;height:280px;object-fit:cover;border-radius:12px;margin-bottom:32px;display:block}
-.svc-block{margin-bottom:48px}
-.svc-block.reverse{margin-bottom:48px}
+.svc-block{position:relative;background-size:cover;background-position:center;border-radius:12px;overflow:hidden;margin-bottom:32px;padding:0}
+.svc-block::before{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(7,17,26,0.92) 0%,rgba(7,17,26,0.85) 50%,rgba(7,17,26,0.6) 100%);z-index:1}
+.svc-block.reverse::before{background:linear-gradient(90deg,rgba(7,17,26,0.6) 0%,rgba(7,17,26,0.85) 50%,rgba(7,17,26,0.92) 100%)}
+.svc-block .svc-text,.svc-block .svc-card{position:relative;z-index:2}
+.svc-block .svc-text{padding:48px 44px}
+.svc-block .svc-card{background:rgba(255,255,255,0.06) !important;border:1px solid rgba(255,255,255,0.08);border-radius:12px;margin:48px 44px 48px 0;padding:32px 36px}
+.svc-block.reverse .svc-card{margin:48px 0 48px 44px}
+.svc-eyebrow{color:var(--teal-bright) !important}
+.svc-text h3{color:#fff !important}
+.svc-text p{color:rgba(255,255,255,0.75) !important}
+.card-label{color:var(--teal-bright) !important}
+.svc-card li{color:rgba(255,255,255,0.85) !important}
 </style>
 </head>
 <body>
@@ -57,8 +66,7 @@
 <section class="section-ivory">
   <div class="wrap">
 
-    <img src="svc-ep.webp" alt="Executive Protection" class="svc-hero-img" loading="lazy">
-    <div class="svc-block">
+    <div class="svc-block" style="background-image:url('svc-ep.webp')">
       <div class="svc-text">
         <div class="svc-eyebrow">Executive Protection · Mitigation</div>
         <h3>Close Protection Specialists</h3>
@@ -71,8 +79,7 @@
       </div>
     </div>
 
-    <img src="svc-tscm.webp" alt="TSCM & Technical Assurance" class="svc-hero-img" loading="lazy">
-    <div class="svc-block reverse">
+    <div class="svc-block reverse" style="background-image:url('svc-tscm.webp')">
       <div class="svc-text">
         <div class="svc-eyebrow">TSCM · Risk Identification · Mitigation</div>
         <h3>Technical Assurance &amp; Bug Sweeping</h3>
@@ -85,8 +92,7 @@
       </div>
     </div>
 
-    <img src="svc-intel.webp" alt="Protective Intelligence" class="svc-hero-img" loading="lazy">
-    <div class="svc-block">
+    <div class="svc-block" style="background-image:url('svc-intel.webp')">
       <div class="svc-text">
         <div class="svc-eyebrow">Protective Intelligence · Risk Identification · Continuous Improvement</div>
         <h3>Continuous Monitoring &amp; Analysis</h3>
@@ -99,8 +105,7 @@
       </div>
     </div>
 
-    <img src="svc-travel.webp" alt="Travel Security" class="svc-hero-img" loading="lazy">
-    <div class="svc-block reverse">
+    <div class="svc-block reverse" style="background-image:url('svc-travel.webp')">
       <div class="svc-text">
         <div class="svc-eyebrow">Travel Security · Risk Identification · Mitigation</div>
         <h3>Risk Is Everywhere. So Are We.</h3>
@@ -113,8 +118,7 @@
       </div>
     </div>
 
-    <img src="svc-osint.webp" alt="Due Diligence & OSINT" class="svc-hero-img" loading="lazy">
-    <div class="svc-block">
+    <div class="svc-block" style="background-image:url('svc-osint.webp')">
       <div class="svc-text">
         <div class="svc-eyebrow">Due Diligence · Asset Identification · Risk Identification</div>
         <h3>What the Background Check Missed</h3>
@@ -127,8 +131,7 @@
       </div>
     </div>
 
-    <img src="svc-investigations.webp" alt="Investigations" class="svc-hero-img" loading="lazy">
-    <div class="svc-block reverse">
+    <div class="svc-block reverse" style="background-image:url('svc-investigations.webp')">
       <div class="svc-text">
         <div class="svc-eyebrow">Investigations · Risk Identification · Continuous Improvement</div>
         <h3>Licensed Investigative Capability</h3>
@@ -141,8 +144,7 @@
       </div>
     </div>
 
-    <img src="svc-132.webp" alt="IRC §132 Security Study" class="svc-hero-img" loading="lazy">
-    <div class="svc-block">
+    <div class="svc-block" style="background-image:url('svc-132.webp')">
       <div class="svc-text">
         <div class="svc-eyebrow">IRC §132 · Asset Identification · Governance</div>
         <h3>Security Study &amp; Assessment</h3>
@@ -155,8 +157,7 @@
       </div>
     </div>
 
-    <img src="svc-training.webp" alt="Training & Certification" class="svc-hero-img" loading="lazy">
-    <div class="svc-block reverse">
+    <div class="svc-block reverse" style="background-image:url('svc-training.webp')">
       <div class="svc-text">
         <div class="svc-eyebrow">Training · Continuous Improvement</div>
         <h3>Practitioner Certifications</h3>
