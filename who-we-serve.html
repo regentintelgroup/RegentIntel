@@ -33,6 +33,13 @@
 .program-detail .editorial h2{color:#fff !important}
 .program-detail .editorial p{color:rgba(255,255,255,0.7) !important}
 .program-detail .editorial .eyebrow{color:var(--teal-bright) !important}
+.program-grid{gap:12px !important;background:transparent !important;border:none !important}
+.program-cell{position:relative;background-size:cover !important;background-position:center !important;border-radius:12px !important;overflow:hidden;min-height:320px;display:flex;flex-direction:column;justify-content:flex-end;border:none !important;box-shadow:none !important}
+.program-cell::before{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(7,17,26,0.2) 0%,rgba(7,17,26,0.8) 55%,rgba(7,17,26,0.92) 100%);z-index:1}
+.program-cell > *{position:relative;z-index:2}
+.program-cell .cell-tag{color:var(--teal-bright) !important}
+.program-cell h3{color:#fff !important}
+.program-cell p{color:rgba(255,255,255,0.72) !important}
 </style>
 </head>
 <body>
@@ -94,10 +101,10 @@
       </div>
     </div>
     <div class="program-grid">
-      <div class="program-cell"><span class="cell-tag">Principals</span><h3 data-hover-decode>A Shifting Threat Picture</h3><p>A wealth event, a lawsuit, a public role, or escalating attention. The exposure is new, or newly serious, and generic coverage no longer fits.</p></div>
-      <div class="program-cell"><span class="cell-tag">Family Offices</span><h3 data-hover-decode>Protecting More Than a Principal</h3><p>Estates, travel, family members, and the reputational surface area that comes with all of it. One standard applied across every environment.</p></div>
-      <div class="program-cell"><span class="cell-tag">Executives</span><h3 data-hover-decode>Who Cannot Afford to Look Protected</h3><p>Leadership visibility, travel, and public activity handled so the protection reads as staff, not security.</p></div>
-      <div class="program-cell"><span class="cell-tag">Advisors</span><h3 data-hover-decode>Acting on Behalf of Someone Else</h3><p>Attorneys, fiduciaries, and family office leaders who need a partner that briefs them clearly and handles the principal discreetly.</p></div>
+      <div class="program-cell" style="background-image:url('wws-principals.webp')"><span class="cell-tag">Principals</span><h3 data-hover-decode>A Shifting Threat Picture</h3><p>A wealth event, a lawsuit, a public role, or escalating attention. The exposure is new, or newly serious, and generic coverage no longer fits.</p></div>
+      <div class="program-cell" style="background-image:url('wws-family.webp')"><span class="cell-tag">Family Offices</span><h3 data-hover-decode>Protecting More Than a Principal</h3><p>Estates, travel, family members, and the reputational surface area that comes with all of it. One standard applied across every environment.</p></div>
+      <div class="program-cell" style="background-image:url('wws-executives.webp')"><span class="cell-tag">Executives</span><h3 data-hover-decode>Who Cannot Afford to Look Protected</h3><p>Leadership visibility, travel, and public activity handled so the protection reads as staff, not security.</p></div>
+      <div class="program-cell" style="background-image:url('wws-advisors.webp')"><span class="cell-tag">Advisors</span><h3 data-hover-decode>Acting on Behalf of Someone Else</h3><p>Attorneys, fiduciaries, and family office leaders who need a partner that briefs them clearly and handles the principal discreetly.</p></div>
     </div>
   </div>
 </section>
@@ -105,9 +112,8 @@
   <div class="wrap">
     <div class="editorial editorial-center">
       <div class="eyebrow">The First Conversation</div>
-      <h2>Nobody calls us with a perfect understanding of their own exposure. That's not a failure. That's the reason the assessment exists.</h2>
-      <p>You come to us with a priority. Protect my family. Vet this individual. Secure this trip. That priority is real. But the threat picture underneath it is usually broader, more specific, or more urgent than what prompted the call.</p>
-      <p>The assessment maps one to the other. What you're asking for, aligned to what the situation actually requires. That's where every engagement begins, and nothing is scoped, staffed, or executed until that picture is clear.</p>
+      <h2>You bring the concern. We validate it, scope the real exposure, and build the right solution around it.</h2>
+      <p>Sometimes that is a full program. Sometimes it is a single engagement. We will tell you which one your situation actually calls for.</p>
     </div>
   </div>
 </section>
