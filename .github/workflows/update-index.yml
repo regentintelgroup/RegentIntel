@@ -18,7 +18,6 @@ jobs:
         run: |
           python3 << 'EOF'
           import os, json, re
-          from datetime import datetime
 
           reports_dir = "reports"
           entries = []
@@ -27,45 +26,49 @@ jobs:
               if not f.endswith(".html") or f.startswith("."):
                   continue
 
-              # Extract series and number from filename
-              # Format: SITREP-EF-001-20260912.html or SIGACT-HF-001-20260912.html
-              match = re.match(r'(SITREP-EF|SIGACT-HF)-(\d+)-(\d{8})\.html', f)
-              if not match:
-                  continue
-
-              prefix = match.group(1)
-              number = match.group(2)
-              date_str = match.group(3)
-
-              report_id = "{}-{}".format(prefix, number)
-
-              if prefix == "SITREP-EF":
-                  series = "EF"
-                  title = "{}: Epic Fury Theater Assessment".format(report_id)
-              else:
-                  series = "HF"
-                  title = "{}: Homeland Focus Assessment".format(report_id)
-
-              # Parse date
-              try:
-                  date_iso = datetime.strptime(date_str, "%Y%m%d").strftime("%Y-%m-%d")
-              except:
-                  date_iso = date_str
-
-              # Extract BLUF from file
-              bluf = ""
               try:
                   with open(os.path.join(reports_dir, f), "r") as fh:
                       content = fh.read()
-                      # Look for BLUF content
-                      bluf_match = re.search(r'BOTTOM LINE UP FRONT</div>\s*<p>(.*?)</p>', content, re.DOTALL)
-                      if not bluf_match:
-                          bluf_match = re.search(r'BLUF</div>\s*<p>(.*?)</p>', content, re.DOTALL)
-                      if bluf_match:
-                          bluf = re.sub(r'<[^>]+>', '', bluf_match.group(1)).strip()[:300]
               except:
-                  pass
+                  continue
 
+              # Extract title from <h1> or <title>
+              title = ""
+              h1 = re.search(r'<h1[^>]*>(.*?)</h1>', content, re.DOTALL)
+              if h1:
+                  title = re.sub(r'<[^>]+>', '', h1.group(1)).strip()
+
+              if not title:
+                  continue
+
+              # Determine series
+              if "SITREP-EF" in title or "Epic Fury" in title:
+                  series = "EF"
+              elif "SIGACT-HF" in title or "Homeland Focus" in title:
+                  series = "HF"
+              else:
+                  series = "OTHER"
+
+              # Extract report ID
+              id_match = re.search(r'(SITREP-EF-\d+|SIGACT-HF-\d+)', title)
+              report_id = id_match.group(1) if id_match else f.replace('.html', '')
+
+              # Extract date from content
+              date_iso = ""
+              date_match = re.search(r'(\w+ \d{1,2}, \d{4})', content)
+              if date_match:
+                  try:
+                      from datetime import datetime
+                      dt = datetime.strptime(date_match.group(1), "%B %d, %Y")
+                      date_iso = dt.strftime("%Y-%m-%d")
+                  except:
+                      date_iso = ""
+
+              # Extract BLUF
+              bluf = ""
+              bluf_match = re.search(r'(?:BOTTOM LINE UP FRONT|BLUF)</div>\s*(?:<p>)?(.*?)(?:</p>|</div>)', content, re.DOTALL)
+              if bluf_match:
+                  bluf = re.sub(r'<[^>]+>', '', bluf_match.group(1)).strip()[:300]
               if not bluf:
                   bluf = "Assessment available in full report."
 
