@@ -1,0 +1,94 @@
+name: Update Reports Index
+
+on:
+  push:
+    paths:
+      - 'reports/**'
+
+permissions:
+  contents: write
+
+jobs:
+  update-index:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build reports.json from reports folder
+        run: |
+          python3 << 'EOF'
+          import os, json, re
+          from datetime import datetime
+
+          reports_dir = "reports"
+          entries = []
+
+          for f in sorted(os.listdir(reports_dir), reverse=True):
+              if not f.endswith(".html") or f.startswith("."):
+                  continue
+
+              # Extract series and number from filename
+              # Format: SITREP-EF-001-20260912.html or SIGACT-HF-001-20260912.html
+              match = re.match(r'(SITREP-EF|SIGACT-HF)-(\d+)-(\d{8})\.html', f)
+              if not match:
+                  continue
+
+              prefix = match.group(1)
+              number = match.group(2)
+              date_str = match.group(3)
+
+              report_id = "{}-{}".format(prefix, number)
+
+              if prefix == "SITREP-EF":
+                  series = "EF"
+                  title = "{}: Epic Fury Theater Assessment".format(report_id)
+              else:
+                  series = "HF"
+                  title = "{}: Homeland Focus Assessment".format(report_id)
+
+              # Parse date
+              try:
+                  date_iso = datetime.strptime(date_str, "%Y%m%d").strftime("%Y-%m-%d")
+              except:
+                  date_iso = date_str
+
+              # Extract BLUF from file
+              bluf = ""
+              try:
+                  with open(os.path.join(reports_dir, f), "r") as fh:
+                      content = fh.read()
+                      # Look for BLUF content
+                      bluf_match = re.search(r'BOTTOM LINE UP FRONT</div>\s*<p>(.*?)</p>', content, re.DOTALL)
+                      if not bluf_match:
+                          bluf_match = re.search(r'BLUF</div>\s*<p>(.*?)</p>', content, re.DOTALL)
+                      if bluf_match:
+                          bluf = re.sub(r'<[^>]+>', '', bluf_match.group(1)).strip()[:300]
+              except:
+                  pass
+
+              if not bluf:
+                  bluf = "Assessment available in full report."
+
+              entries.append({
+                  "id": report_id,
+                  "title": title,
+                  "series": series,
+                  "date": date_iso,
+                  "bluf": bluf,
+                  "filename": f,
+                  "classification": "UNCLASSIFIED"
+              })
+
+          with open("reports.json", "w") as f:
+              json.dump(entries, f, indent=2)
+
+          print("Updated reports.json with {} entries".format(len(entries)))
+          EOF
+
+      - name: Commit updated index
+        run: |
+          git config user.name "Regent Intelligence Group"
+          git config user.email "regentintelgroup@gmail.com"
+          git add reports.json
+          git diff --staged --quiet || git commit -m "Update reports index"
+          git push
