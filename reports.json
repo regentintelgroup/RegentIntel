@@ -1,11 +1,11 @@
 [
   {
-    "id": "SIGACT-HF-004",
-    "title": "SIGACT-HF-004: Homeland Focus Assessment",
-    "series": "HF",
-    "date": "2026-09-11",
-    "bluf": "BLUF</h2>",
-    "filename": "SIGACT-HF-004-20260911.html",
+    "id": "SITREP-EF-197",
+    "title": "SITREP-EF-197: Dual Chokepoint Crisis -- Houthi Red Sea Seizure, Saudi Pipeline Attack, Oil Above $104",
+    "series": "EF",
+    "date": "2026-09-12",
+    "bluf": "The Iran War reached a strategic inflection point on September 10-11, 2026, as Iran's proxy network executed coordinated operations that simultaneously threatened both major energy chokepoints flanking the Arabian Peninsula. Houthi forces completed seizure of Yemen's entire Red Sea coastline, includ",
+    "filename": "SITREP-EF-197-20260912.html",
     "classification": "UNCLASSIFIED"
   },
   {
@@ -13,62 +13,26 @@
     "title": "SITREP-EF-004: Epic Fury Theater Assessment",
     "series": "EF",
     "date": "2026-09-11",
-    "bluf": "#eef1f7; border:1px solid #2E5494; padding:14px; } table { border-collapse:collapse; width:100%; font-size:12.5px; margin:12px 0; } th { background:#1F3864; color:#ffffff; text-align:left; padding:7px; } td { border:1px solid #c8ccd4; padding:7px; vertical-align:top; } tr:nth-child(even) td { backgr",
+    "bluf": "Assessment available in full report.",
     "filename": "SITREP-EF-004-20260911.html",
     "classification": "UNCLASSIFIED"
   },
   {
-    "id": "SIGACT-HF-003",
-    "title": "SIGACT-HF-003: Homeland Focus Assessment",
+    "id": "SIGACT-HF-197",
+    "title": "SIGACT-HF-197: Homeland Threat Assessment -- IRGC Cyber Campaign, October 7 Anniversary Window, Dual Chokepoint Escalation",
     "series": "HF",
-    "date": "2026-09-11",
-    "bluf": "BLUF</h2>",
-    "filename": "SIGACT-HF-003-20260911.html",
+    "date": "2026-09-12",
+    "bluf": "The dual-chokepoint escalation of September 10-11, combined with sustained IRGC cyber operations targeting U.S. critical infrastructure and approaching anniversary-driven threat timelines (October 7), elevates the Homeland threat posture. The FBI's August 2026 indictment of 17 Iranians for IRGC cybe",
+    "filename": "SIGACT-HF-197-20260912.html",
     "classification": "UNCLASSIFIED"
   },
   {
-    "id": "SITREP-EF-003",
-    "title": "SITREP-EF-003: Epic Fury Theater Assessment",
-    "series": "EF",
-    "date": "2026-09-11",
-    "bluf": "#1F3864;\">SECTION 1: BOTTOM LINE UP FRONT (BLUF)</h2> <p>The U.S.-Iran conflict has re-entered sustained kinetic exchange after a period of relative dormancy, with a reciprocal maritime attrition cycle now the war's dominant operational feature: Iran states it attacked 10 ships near the Strait of Ho",
-    "filename": "SITREP-EF-003-20260911.html",
-    "classification": "UNCLASSIFIED"
-  },
-  {
-    "id": "SIGACT-HF-002",
-    "title": "SIGACT-HF-002: Homeland Focus Assessment",
-    "series": "HF",
-    "date": "2026-09-11",
-    "bluf": "BLUF</h2> <p>The dominant Homeland development of the reporting period is the issuance of a federal law enforcement bulletin in advance of the 25th anniversary of the September 11 attacks, warning that <span class=\"hi\">[E-HIGH]</span> foreign terrorist organizations \"continue to encourage attacks in",
-    "filename": "SIGACT-HF-002-20260911.html",
-    "classification": "UNCLASSIFIED"
-  },
-  {
-    "id": "SITREP-EF-002",
-    "title": "SITREP-EF-002: Epic Fury Theater Assessment",
-    "series": "EF",
-    "date": "2026-09-11",
-    "bluf": "#1F3864; border-bottom:2px solid #C00000; padding-bottom:4px;\">SECTION 1: BLUF</h2>",
-    "filename": "SITREP-EF-002-20260911.html",
-    "classification": "UNCLASSIFIED"
-  },
-  {
-    "id": "SIGACT-HF-001",
-    "title": "SIGACT-HF-001: Homeland Focus Assessment",
+    "id": "SIGACT-HF-004",
+    "title": "SIGACT-HF-004: Homeland Focus Assessment",
     "series": "HF",
     "date": "2026-09-11",
     "bluf": "Assessment available in full report.",
-    "filename": "SIGACT-HF-001-20260911.html",
-    "classification": "UNCLASSIFIED"
-  },
-  {
-    "id": "SITREP-EF-001",
-    "title": "SITREP-EF-001: Epic Fury Theater Assessment",
-    "series": "EF",
-    "date": "2026-09-11",
-    "bluf": "Assessment available in full report.",
-    "filename": "SITREP-EF-001-20260911.html",
+    "filename": "SIGACT-HF-004-20260911.html",
     "classification": "UNCLASSIFIED"
   }
 ]
