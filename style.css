@@ -178,7 +178,7 @@ section{padding:104px 0}
 .iso-note{font-family:var(--font-mono);font-size:12px;letter-spacing:0.04em;color:var(--ink-soft);margin-top:28px}
 
 /* CONFIDENCE BANNER */
-.confidence-banner{background:var(--navy);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:52px 0}
+.confidence-banner{background:var(--navy);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:28px 0}
 .confidence-banner .wrap{display:flex;align-items:flex-start;justify-content:space-between;gap:40px;flex-wrap:wrap}
 .confidence-banner .eyebrow{font-family:var(--font-mono);font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:var(--teal-bright);display:flex;align-items:center;gap:10px;margin-bottom:12px}
 .confidence-banner .eyebrow::before{display:none}

@@ -34,7 +34,7 @@ except ImportError:
 REPO_DIR = os.environ.get("REPO_DIR", os.path.expanduser("~/RegentIntel"))
 REPORTS_DIR = os.path.join(REPO_DIR, "reports")
 REPORTS_JSON = os.path.join(REPO_DIR, "reports.json")
-MODEL = "claude-opus-5"
+MODEL = "claude-opus-4-0"
 DTG = datetime.now(timezone.utc).strftime("%d%H%MZ %b %Y").upper()
 DATE_DISPLAY = datetime.now(timezone.utc).strftime("%B %d, %Y")
 DATE_FILE = datetime.now(timezone.utc).strftime("%Y%m%d")
@@ -293,203 +293,176 @@ REPORT_HTML_TEMPLATE = """<!DOCTYPE html>
         * {{ margin: 0; padding: 0; box-sizing: border-box; }}
         body {{
             font-family: Arial, Helvetica, sans-serif;
-            background: #fff;
-            color: #1a1a1a;
+            background: #0a0e14;
+            color: #c8cdd3;
             line-height: 1.7;
-            font-size: 10.5pt;
+            font-size: 15px;
         }}
         .classification-bar {{
-            background: #C00000;
+            background: #0D1B2A;
             text-align: center;
-            padding: 5px;
-            font-size: 9pt;
-            font-weight: 700;
+            padding: 6px;
+            font-size: 11px;
             letter-spacing: 2px;
-            color: #fff;
+            color: #4a9a6a;
+            border-bottom: 1px solid rgba(20,110,135,0.2);
         }}
         .report-header {{
-            background: #fff;
-            border-bottom: 3px solid #2E5494;
-            padding: 40px 40px 30px;
-            max-width: 850px;
-            margin: 0 auto;
+            background: #0D1B2A;
+            border-bottom: 2px solid #146E87;
+            padding: 40px 20px;
+            text-align: center;
         }}
         .report-header .org {{
-            font-size: 9pt;
+            font-size: 12px;
             letter-spacing: 2px;
-            color: #1F3864;
+            color: #146E87;
             text-transform: uppercase;
-            font-weight: 700;
-            margin-bottom: 2px;
+            margin-bottom: 4px;
         }}
         .report-header .tagline {{
-            font-size: 9pt;
+            font-size: 11px;
             font-style: italic;
             color: #146E87;
-            margin-bottom: 20px;
+            margin-bottom: 16px;
         }}
         .report-header h1 {{
-            font-size: 16pt;
-            color: #1F3864;
-            margin-bottom: 10px;
+            font-size: 22px;
+            color: #e8ecf0;
+            margin-bottom: 8px;
             font-weight: 700;
         }}
         .report-header .meta {{
-            font-size: 9pt;
-            color: #444;
+            font-size: 12px;
+            color: #7a8a9a;
             line-height: 1.8;
         }}
-        .report-header .header-class {{
-            font-size: 9pt;
-            font-weight: 700;
-            color: #C00000;
-            margin-top: 8px;
-            letter-spacing: 1px;
-        }}
         .report-body {{
-            max-width: 850px;
+            max-width: 760px;
             margin: 0 auto;
-            padding: 30px 40px 60px;
+            padding: 40px 20px 80px;
         }}
         .report-body h2 {{
-            font-size: 11pt;
-            letter-spacing: 1px;
+            font-size: 13px;
+            letter-spacing: 1.5px;
+            color: #1F3864;
             text-transform: uppercase;
-            margin-top: 30px;
-            margin-bottom: 10px;
-            padding-bottom: 4px;
+            margin-top: 36px;
+            margin-bottom: 12px;
+            padding-bottom: 6px;
             border-bottom: 2px solid #2E5494;
             font-weight: 700;
-            color: #1F3864;
+            color: #8aacdf;
         }}
         .report-body h3 {{
-            font-size: 10.5pt;
-            margin-top: 20px;
-            margin-bottom: 6px;
-            font-weight: 700;
+            font-size: 15px;
             color: #2E5494;
+            margin-top: 24px;
+            margin-bottom: 8px;
+            font-weight: 700;
+            color: #7a9fd4;
         }}
         .report-body p {{
-            margin-bottom: 12px;
-            color: #1a1a1a;
-            text-align: justify;
-        }}
-        .report-body strong {{
-            color: #1a1a1a;
+            margin-bottom: 14px;
         }}
         .report-body table {{
             width: 100%;
             border-collapse: collapse;
-            margin: 14px 0;
-            font-size: 9.5pt;
+            margin: 16px 0;
+            font-size: 13px;
         }}
         .report-body th {{
             background: #1F3864;
             color: #fff;
             font-weight: 700;
-            padding: 6px 10px;
+            padding: 8px 10px;
             text-align: left;
-            font-size: 9pt;
+            font-size: 11px;
             letter-spacing: 0.5px;
             text-transform: uppercase;
-            border: 1px solid #1F3864;
         }}
         .report-body td {{
-            padding: 6px 10px;
-            border: 1px solid #ccc;
-            color: #1a1a1a;
+            padding: 8px 10px;
+            border-bottom: 1px solid #1a2a3a;
         }}
         .report-body tr:nth-child(even) td {{
-            background: #F2F2F2;
+            background: rgba(255,255,255,0.02);
         }}
         .bluf {{
-            background: #f8f9fa;
-            border-left: 4px solid #1F3864;
-            padding: 16px 20px;
-            margin: 20px 0;
+            background: #0D1B2A;
+            border-left: 3px solid #146E87;
+            padding: 20px 24px;
+            margin: 24px 0;
             line-height: 1.8;
         }}
-        .bluf p {{
-            color: #1a1a1a;
-        }}
         .bluf-label {{
-            font-size: 9pt;
+            font-size: 11px;
             letter-spacing: 1.5px;
-            color: #1F3864;
-            margin-bottom: 6px;
+            color: #146E87;
+            margin-bottom: 8px;
             font-weight: 700;
-            text-transform: uppercase;
         }}
-        .disclaimer {{
-            font-size: 8pt;
-            color: #1F3864;
+        .osint-boilerplate {{
+            background: rgba(20,110,135,0.06);
+            border: 1px solid rgba(20,110,135,0.15);
+            padding: 16px 20px;
+            margin: 16px 0;
+            font-size: 12px;
+            color: #7a8a9a;
             line-height: 1.7;
-            padding: 14px 16px;
-            border: 1px solid #2E5494;
-            margin-bottom: 24px;
             font-style: italic;
-            background: #f8f9fa;
         }}
         .confidence-high {{ color: #1A5E1A; font-weight: 700; }}
         .confidence-moderate {{ color: #7B4F00; font-weight: 700; }}
         .confidence-low {{ color: #C00000; font-weight: 700; }}
-        .source-label {{ color: #1F3864; font-weight: 700; }}
+        .source-label {{ color: #8aacdf; font-weight: 700; }}
         blockquote {{
             border-left: 3px solid #2E5494;
-            padding: 10px 18px;
-            margin: 14px 0;
+            padding: 12px 20px;
+            margin: 16px 0;
             font-style: italic;
-            color: #333;
-            background: #f8f9fa;
+            color: #9aaabb;
         }}
         blockquote .attribution {{
             font-style: normal;
-            font-size: 9pt;
-            color: #666;
-            margin-top: 6px;
+            font-size: 12px;
+            color: #7a8a9a;
+            margin-top: 8px;
         }}
-        hr {{
-            border: none;
-            border-top: 1px solid #2E5494;
-            margin: 24px 0;
+        .disclaimer {{
+            font-size: 11px;
+            color: #5a6a7a;
+            line-height: 1.7;
+            padding: 20px 0;
+            border-top: 1px solid #1a2a3a;
+            margin-top: 40px;
+            font-style: italic;
         }}
         .report-footer {{
-            max-width: 850px;
+            max-width: 760px;
             margin: 0 auto;
-            padding: 24px 40px;
-            border-top: 2px solid #2E5494;
+            padding: 30px 20px;
+            border-top: 1px solid #1a2a3a;
             text-align: center;
         }}
-        .report-footer .prepared {{
-            font-size: 7pt;
-            color: #1F3864;
-            font-style: italic;
-            margin-bottom: 12px;
-        }}
         .report-footer a {{
-            color: #2E5494;
+            color: #146E87;
             text-decoration: none;
-            font-size: 10pt;
+            font-size: 13px;
         }}
         .report-footer a:hover {{ text-decoration: underline; }}
         .report-footer .back {{
             display: inline-block;
-            margin-top: 12px;
-            padding: 8px 20px;
-            border: 1px solid #1F3864;
-            color: #1F3864;
-            font-size: 9pt;
+            margin-top: 16px;
+            padding: 10px 24px;
+            border: 1px solid #146E87;
+            color: #146E87;
+            font-size: 13px;
             text-decoration: none;
-            font-weight: 700;
         }}
         .report-footer .back:hover {{
-            background: #1F3864;
-            color: #fff;
-        }}
-        @media print {{
-            .classification-bar {{ background: #C00000 !important; color: #fff !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }}
-            .report-footer .back {{ display: none; }}
-            body {{ font-size: 10pt; }}
+            background: #146E87;
+            color: #0D1B2A;
         }}
     </style>
 </head>
@@ -500,10 +473,10 @@ REPORT_HTML_TEMPLATE = """<!DOCTYPE html>
         <div class="tagline">Government Grade. Commercial Speed.</div>
         <h1>{title}</h1>
         <div class="meta">
-            Threat Development Analyst<br>
-            {date_display} | {dtg}
+            Threat Development Analyst | All-Source Analysis Division<br>
+            {date_display} | {dtg}<br>
+            UNCLASSIFIED // FOR PUBLIC RELEASE
         </div>
-        <div class="header-class">UNCLASSIFIED // FOR PUBLIC RELEASE</div>
     </div>
     <div class="report-body">
         <div class="disclaimer">
@@ -513,8 +486,9 @@ REPORT_HTML_TEMPLATE = """<!DOCTYPE html>
     </div>
     <div class="classification-bar">UNCLASSIFIED // FOR PUBLIC RELEASE</div>
     <div class="report-footer">
-        <div class="prepared">Prepared by Regent Intel Group | Authorized Recipients Only</div>
         <a href="https://regentintel.org/advisory" class="back">Return to Intelligence Feed</a>
+        <br><br>
+        <a href="https://regentintel.org">regentintel.org</a>
     </div>
 </body>
 </html>"""
@@ -578,34 +552,6 @@ def generate_report(series, dry_run=False):
     for block in response.content:
         if block.type == "text":
             report_text += block.text
-
-    # Strip web search status/thinking lines that leak into output
-    filtered_lines = []
-    skip_patterns = [
-        "I'll begin collection",
-        "Significant developments detected",
-        "Collection continuing",
-        "Collecting final",
-        "Final collection pass",
-        "Let me search",
-        "Let me now",
-        "I'll now",
-        "I'll search",
-        "Searching for",
-        "Now searching",
-        "Let me collect",
-        "Beginning collection",
-        "Continuing collection",
-        "I need to search",
-        "I will search",
-        "Let me check",
-        "Let me look",
-    ]
-    for line in report_text.split("\n"):
-        if any(line.strip().startswith(p) or line.strip().lower().startswith(p.lower()) for p in skip_patterns):
-            continue
-        filtered_lines.append(line)
-    report_text = "\n".join(filtered_lines)
 
     print("[{}] Report generated. {} characters.".format(datetime.now().strftime("%H:%M:%S"), len(report_text)))
 
@@ -753,25 +699,17 @@ def extract_bluf(text):
 
     for line in lines:
         stripped = line.strip()
-        upper = stripped.upper()
-        if "BLUF" in upper or "BOTTOM LINE UP FRONT" in upper or "BOTTOM LINE" in upper:
+        if stripped.upper().startswith("BLUF") or stripped.upper().startswith("BOTTOM LINE UP FRONT"):
             capture = True
             if ":" in stripped:
-                after_colon = stripped.split(":", 1)[1].strip()
-                if after_colon:
-                    bluf_lines.append(after_colon)
+                bluf_lines.append(stripped.split(":", 1)[1].strip())
             continue
         if capture:
-            if not stripped:
-                if bluf_lines:
-                    break
-                continue
-            if stripped.startswith("#") or stripped.startswith("---") or stripped.upper().startswith("SECTION") or stripped.upper().startswith("## SECTION"):
+            if not stripped or stripped.startswith("#") or stripped.startswith("**") or stripped.upper().startswith("SECTION"):
                 break
             bluf_lines.append(stripped)
 
-    result = " ".join(bluf_lines).strip()
-    return result if result else "Assessment available in full report."
+    return " ".join(bluf_lines).strip() if bluf_lines else "Assessment available in full report."
 
 
 def update_index(title, full_title, series, bluf, filename):
