@@ -1,11 +1,20 @@
 [
   {
-    "id": "SIGACT-HF-2026-SAMPLE",
-    "title": "Sample Homeland Focus Assessment",
+    "id": "SITREP-EF-002",
+    "title": "SITREP-EF-002: Unclaimed strike on an Iranian hull as Gulf ministers head to Salalah",
+    "series": "EF",
+    "date": "2026-09-13",
+    "bluf": "Assessment available in full report.",
+    "filename": "SITREP-EF-002.html",
+    "classification": "UNCLASSIFIED"
+  },
+  {
+    "id": "SIGACT-HF-002",
+    "title": "SIGACT-HF-002: Holiday window closes without incident; first Alien Terrorist Removal Court expulsion; China AI extraction advisory",
     "series": "HF",
-    "date": "2026-09-11",
-    "bluf": "This is a sample entry demonstrating the intelligence feed format. Replace with your first published report.",
-    "filename": "SIGACT-HF-2026-SAMPLE.html",
+    "date": "2026-09-13",
+    "bluf": "Assessment available in full report.",
+    "filename": "SIGACT-HF-002.html",
     "classification": "UNCLASSIFIED"
   }
 ]
