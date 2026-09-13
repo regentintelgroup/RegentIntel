@@ -1,1 +1,20 @@
-[]
+[
+  {
+    "id": "SITREP-EF-002",
+    "title": "SITREP-EF-002: Iranian merchant hull struck off Qeshm as Tehran holds fire before Salalah; Washington names Iran on Petroline and declines Riyadh on the Houthis",
+    "series": "EF",
+    "date": "2026-09-13",
+    "bluf": "Assessment available in full report.",
+    "filename": "SITREP-EF-002.html",
+    "classification": "UNCLASSIFIED"
+  },
+  {
+    "id": "SIGACT-HF-002",
+    "title": "SIGACT-HF-002: Rosh Hashanah closes without incident as Iran-affiliated cyber targeting widens to telecom and energy; Hamas anniversary plot charged in Germany",
+    "series": "HF",
+    "date": "2026-09-13",
+    "bluf": "Assessment available in full report.",
+    "filename": "SIGACT-HF-002.html",
+    "classification": "UNCLASSIFIED"
+  }
+]
