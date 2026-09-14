@@ -1,1 +1,20 @@
-[]
+[
+  {
+    "id": "SITREP-EF-002",
+    "title": "SITREP-EF-002: Salalah ministerial postponed hours before convening as an Iranian vessel burns off Qeshm and the fire pause enters a fifth day",
+    "series": "EF",
+    "date": "2026-09-13",
+    "bluf": "Assessment available in full report.",
+    "filename": "SITREP-EF-002.html",
+    "classification": "UNCLASSIFIED"
+  },
+  {
+    "id": "SIGACT-HF-002",
+    "title": "SIGACT-HF-002: Rosh Hashanah and the 9/11 anniversary close without incident; Iran cyber holds HIGH; state threat charge against a US Senate candidate enters the election window",
+    "series": "HF",
+    "date": "2026-09-13",
+    "bluf": "Assessment available in full report.",
+    "filename": "SIGACT-HF-002.html",
+    "classification": "UNCLASSIFIED"
+  }
+]
