@@ -1,11 +1,29 @@
 [
   {
+    "id": "SITREP-EF-004",
+    "title": "SITREP-EF-004: CENTCOM attributes the El Gaia strikes to Iran, Riyadh answers the Houthis from the air, and Treasury designates VTB as Brent closes at $108",
+    "series": "EF",
+    "date": "2026-09-15",
+    "bluf": "Assessment available in full report.",
+    "filename": "SITREP-EF-004.html",
+    "classification": "UNCLASSIFIED"
+  },
+  {
     "id": "SITREP-EF-002",
     "title": "SITREP-EF-002: Salalah ministerial postponed hours before convening as an Iranian vessel burns off Qeshm and the fire pause enters a fifth day",
     "series": "EF",
     "date": "2026-09-13",
     "bluf": "Assessment available in full report.",
     "filename": "SITREP-EF-002.html",
+    "classification": "UNCLASSIFIED"
+  },
+  {
+    "id": "SIGACT-HF-004",
+    "title": "SIGACT-HF-004: Iran physical baseline corrected to a charged 2026 proxy plot; no new Homeland incident; posture ELEVATED with Yom Kippur in 6 days",
+    "series": "HF",
+    "date": "2026-09-15",
+    "bluf": "Assessment available in full report.",
+    "filename": "SIGACT-HF-004.html",
     "classification": "UNCLASSIFIED"
   },
   {
