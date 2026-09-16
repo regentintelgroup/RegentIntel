@@ -1,5 +1,14 @@
 [
   {
+    "id": "SITREP-EF-005",
+    "title": "SITREP-EF-005: CENTCOM Confirms It Killed IRGC Boat Crews as Iran Holds Fire a Seventh Day; Yanbu Shut, Brent $108.75",
+    "series": "EF",
+    "date": "2026-09-16",
+    "bluf": "Assessment available in full report.",
+    "filename": "SITREP-EF-005.html",
+    "classification": "UNCLASSIFIED"
+  },
+  {
     "id": "SITREP-EF-004",
     "title": "SITREP-EF-004: CENTCOM attributes the El Gaia strikes to Iran, Riyadh answers the Houthis from the air, and Treasury designates VTB as Brent closes at $108",
     "series": "EF",
@@ -15,6 +24,15 @@
     "date": "2026-09-13",
     "bluf": "Assessment available in full report.",
     "filename": "SITREP-EF-002.html",
+    "classification": "UNCLASSIFIED"
+  },
+  {
+    "id": "SIGACT-HF-005",
+    "title": "SIGACT-HF-005: Russian Intelligence Assassination Network Charged With a Washington-Area Target; ISIS-Inspired Rifle Plot Disrupted in Pennsylvania",
+    "series": "HF",
+    "date": "2026-09-16",
+    "bluf": "Assessment available in full report.",
+    "filename": "SIGACT-HF-005.html",
     "classification": "UNCLASSIFIED"
   },
   {
