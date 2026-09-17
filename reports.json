@@ -1,5 +1,14 @@
 [
   {
+    "id": "SITREP-EF-006",
+    "title": "SITREP-EF-006: The Houthis publish video of a downed Saudi F-15, the President says the war is toward the end and that Washington deals with Tehran directly, the Fed raises rates for the first time since 2023, and the Security Council votes today on the Iran sanctions panel",
+    "series": "EF",
+    "date": "2026-09-17",
+    "bluf": "Assessment available in full report.",
+    "filename": "SITREP-EF-006.html",
+    "classification": "UNCLASSIFIED"
+  },
+  {
     "id": "SITREP-EF-005",
     "title": "SITREP-EF-005: CENTCOM confirms it destroyed two IRGC boats, a Houthi drone reaches Mecca's airspace and the movement claims Yanbu, and Saudi Red Sea loadings stop as Brent settles at $108.75",
     "series": "EF",
@@ -24,6 +33,15 @@
     "date": "2026-09-13",
     "bluf": "Assessment available in full report.",
     "filename": "SITREP-EF-002.html",
+    "classification": "UNCLASSIFIED"
+  },
+  {
+    "id": "SIGACT-HF-006",
+    "title": "SIGACT-HF-006: DHS warns that Iranian cyber actors are targeting the tank gauges of US fuel storage, an ISIS-K conspirator in the 2021 Kabul airport bombing gets 20 years, and Yom Kippur is three days out with no NTAS bulletin in force",
+    "series": "HF",
+    "date": "2026-09-17",
+    "bluf": "Assessment available in full report.",
+    "filename": "SIGACT-HF-006.html",
     "classification": "UNCLASSIFIED"
   },
   {
