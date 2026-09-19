@@ -34,6 +34,9 @@ except ImportError:
 REPO_DIR = os.environ.get("REPO_DIR", os.path.expanduser("~/RegentIntel"))
 REPORTS_DIR = os.path.join(REPO_DIR, "reports")
 REPORTS_JSON = os.path.join(REPO_DIR, "reports.json")
+ARCHIVE_HTML = os.path.join(REPO_DIR, "archive.html")
+SITEMAP_XML = os.path.join(REPO_DIR, "sitemap.xml")
+SITE_URL = "https://regentintel.org"
 MODEL = "claude-opus-4-0"
 DTG = datetime.now(timezone.utc).strftime("%d%H%MZ %b %Y").upper()
 DATE_DISPLAY = datetime.now(timezone.utc).strftime("%B %d, %Y")
@@ -737,6 +740,78 @@ def update_index(title, full_title, series, bluf, filename):
 
     with open(REPORTS_JSON, "w") as f:
         json.dump(reports, f, indent=2)
+
+    rebuild_static_seo(reports)
+
+
+def _esc(s):
+    return (str(s).replace("&", "&amp;").replace("<", "&lt;")
+            .replace(">", "&gt;").replace('"', "&quot;"))
+
+
+def _replace_between(text, start_marker, end_marker, replacement):
+    """Replace content between two marker comments, keeping the markers."""
+    pattern = re.compile(
+        re.escape(start_marker) + r".*?" + re.escape(end_marker), re.DOTALL)
+    if not pattern.search(text):
+        return None
+    return pattern.sub(start_marker + "\n" + replacement + "\n" + end_marker, text)
+
+
+def rebuild_static_seo(reports):
+    """Write report rows into archive.html and report URLs into sitemap.xml
+    as static content so search engines index everything without JS."""
+    reports = sorted(reports, key=lambda r: r.get("date", ""), reverse=True)
+
+    # --- archive.html static rows ---
+    if os.path.exists(ARCHIVE_HTML):
+        with open(ARCHIVE_HTML, "r") as f:
+            html = f.read()
+        for series, sm, em in (("EF", "<!-- EF-ROWS:START -->", "<!-- EF-ROWS:END -->"),
+                               ("HF", "<!-- HF-ROWS:START -->", "<!-- HF-ROWS:END -->")):
+            rows = [r for r in reports if r.get("series") == series]
+            if rows:
+                body = "".join(
+                    '<a class="report-row" href="/reports/{fn}">'
+                    '<span class="report-id">{rid}</span>'
+                    '<span class="report-title">{title}</span>'
+                    '<span class="report-date">{date}</span>'
+                    '<span class="report-bluf">{bluf}</span>'
+                    "</a>\n".format(
+                        fn=_esc(r["filename"]), rid=_esc(r["id"]),
+                        title=_esc(r["title"]), date=_esc(r["date"]),
+                        bluf=_esc(r.get("bluf", "")))
+                    for r in rows)
+            else:
+                body = '<div class="archive-empty">No published assessments yet.</div>'
+            updated = _replace_between(html, sm, em, body)
+            if updated:
+                html = updated
+        with open(ARCHIVE_HTML, "w") as f:
+            f.write(html)
+        print("[{}] Rebuilt archive.html static rows".format(
+            datetime.now().strftime("%H:%M:%S")))
+
+    # --- sitemap.xml report entries ---
+    if os.path.exists(SITEMAP_XML):
+        with open(SITEMAP_XML, "r") as f:
+            xml = f.read()
+        entries = "".join(
+            "  <url><loc>{u}/reports/{fn}</loc><lastmod>{d}</lastmod>"
+            "<priority>0.6</priority><changefreq>never</changefreq></url>\n".format(
+                u=SITE_URL, fn=_esc(r["filename"]), d=_esc(r["date"]))
+            for r in reports)
+        updated = _replace_between(
+            xml, "<!-- REPORTS:START -->", "<!-- REPORTS:END -->", entries.rstrip("\n"))
+        if updated:
+            # bump archive.html lastmod to today
+            updated = re.sub(
+                r"(<loc>{}/archive\.html</loc><lastmod>)[^<]+".format(re.escape(SITE_URL)),
+                r"\g<1>" + DATE_ISO, updated)
+            with open(SITEMAP_XML, "w") as f:
+                f.write(updated)
+            print("[{}] Rebuilt sitemap.xml report entries".format(
+                datetime.now().strftime("%H:%M:%S")))
 
 
 # ---------------------------------------------------------------------------
