@@ -771,6 +771,10 @@ def rebuild_static_seo(reports):
                                ("HF", "<!-- HF-ROWS:START -->", "<!-- HF-ROWS:END -->")):
             rows = [r for r in reports if r.get("series") == series]
             if rows:
+                def _t(r):
+                    t = r["title"]
+                    pfx = r["id"] + ": "
+                    return t[len(pfx):] if t.startswith(pfx) else t
                 body = "".join(
                     '<a class="report-row" href="/reports/{fn}">'
                     '<span class="report-id">{rid}</span>'
@@ -779,7 +783,7 @@ def rebuild_static_seo(reports):
                     '<span class="report-bluf">{bluf}</span>'
                     "</a>\n".format(
                         fn=_esc(r["filename"]), rid=_esc(r["id"]),
-                        title=_esc(r["title"]), date=_esc(r["date"]),
+                        title=_esc(_t(r)), date=_esc(r["date"]),
                         bluf=_esc(r.get("bluf", "")))
                     for r in rows)
             else:
