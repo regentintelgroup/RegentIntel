@@ -1,5 +1,23 @@
 [
   {
+    "id": "SITREP-EF-008",
+    "title": "SITREP-EF-008: The IRGC strikes a Togo-flagged tanker in Hormuz and a second tanker is hit by an unknown projectile as Saudi barrels flow out through the strait at 2.8 million a day, Brent falls a fourth session to $103.87, thousands rally for the Houthis in Sanaa, and Iran holds its fire an eleventh day before the General Assembly",
+    "series": "EF",
+    "date": "2026-09-19",
+    "bluf": "Assessment available in full report.",
+    "filename": "SITREP-EF-008.html",
+    "classification": "UNCLASSIFIED"
+  },
+  {
+    "id": "SITREP-EF-007",
+    "title": "SITREP-EF-007: The President says he faces a decision on whether to annihilate the Iranian regime and will hear the Gulf leaders Tuesday, Russia and China veto the sanctions panel, a UN mission finds US war crimes at Minab, and the Houthis kill their first person in Saudi Arabia this month",
+    "series": "EF",
+    "date": "2026-09-18",
+    "bluf": "Assessment available in full report.",
+    "filename": "SITREP-EF-007.html",
+    "classification": "UNCLASSIFIED"
+  },
+  {
     "id": "SITREP-EF-006",
     "title": "SITREP-EF-006: The Houthis publish video of a downed Saudi F-15, the President says the war is toward the end and that Washington deals with Tehran directly, the Fed raises rates for the first time since 2023, and the Security Council votes today on the Iran sanctions panel",
     "series": "EF",
@@ -33,6 +51,24 @@
     "date": "2026-09-13",
     "bluf": "Assessment available in full report.",
     "filename": "SITREP-EF-002.html",
+    "classification": "UNCLASSIFIED"
+  },
+  {
+    "id": "SIGACT-HF-008",
+    "title": "SIGACT-HF-008: Yom Kippur begins at sunset tomorrow after a synagogue arson attempt in Germany, the Kramer affidavit contains a general reference to synagogues, an Iranian delegation and a presidential decision on strikes converge on the General Assembly, and no NTAS bulletin is in force",
+    "series": "HF",
+    "date": "2026-09-19",
+    "bluf": "Assessment available in full report.",
+    "filename": "SIGACT-HF-008.html",
+    "classification": "UNCLASSIFIED"
+  },
+  {
+    "id": "SIGACT-HF-007",
+    "title": "SIGACT-HF-007: Yom Kippur is two days out with no NTAS bulletin in force, an Iranian delegation is confirmed for the General Assembly as the President weighs annihilating the regime, Sweden finds Iran used criminal networks against Jewish and Israeli targets, and US agencies track cyber threats to nearly 20 vessels",
+    "series": "HF",
+    "date": "2026-09-18",
+    "bluf": "Assessment available in full report.",
+    "filename": "SIGACT-HF-007.html",
     "classification": "UNCLASSIFIED"
   },
   {
