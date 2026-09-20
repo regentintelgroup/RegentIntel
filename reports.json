@@ -1,5 +1,14 @@
 [
   {
+    "id": "SITREP-EF-009",
+    "title": "SITREP-EF-009: The Houthis fire a ballistic missile at Riyadh and set a fuel depot burning at the capital's airport, Tehran delivers seven conditions through Qatar and warns of continuous and painful attacks on US bases if Washington resumes strikes with a regional green light, and the President meets six Gulf leaders in two days",
+    "series": "EF",
+    "date": "2026-09-20",
+    "bluf": "Assessment available in full report.",
+    "filename": "SITREP-EF-009.html",
+    "classification": "UNCLASSIFIED"
+  },
+  {
     "id": "SITREP-EF-008",
     "title": "SITREP-EF-008: The IRGC strikes a Togo-flagged tanker in Hormuz and a second tanker is hit by an unknown projectile as Saudi barrels flow out through the strait at 2.8 million a day, Brent falls a fourth session to $103.87, thousands rally for the Houthis in Sanaa, and Iran holds its fire an eleventh day before the General Assembly",
     "series": "EF",
@@ -51,6 +60,15 @@
     "date": "2026-09-13",
     "bluf": "Assessment available in full report.",
     "filename": "SITREP-EF-002.html",
+    "classification": "UNCLASSIFIED"
+  },
+  {
+    "id": "SIGACT-HF-009",
+    "title": "SIGACT-HF-009: The FBI affidavit shows Kramer wrote of injecting ricin or cyanide into food and drink at synagogues, published as Yom Kippur begins; the FBI Director reports a 100 percent rise in specific Iran-based threats to the Homeland; Tehran names US bases and interests in the region as targets if strikes resume",
+    "series": "HF",
+    "date": "2026-09-20",
+    "bluf": "Assessment available in full report.",
+    "filename": "SIGACT-HF-009.html",
     "classification": "UNCLASSIFIED"
   },
   {
