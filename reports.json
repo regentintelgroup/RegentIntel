@@ -1,5 +1,14 @@
 [
   {
+    "id": "SITREP-EF-010",
+    "title": "SITREP-EF-010: A tanker entering Hormuz is hit with two crew injured on the morning the General Assembly gathers, the IRGC says it is ready for a counteroffensive and Tehran promises weapons the world will be astonished by, Iranian MPs file an NPT withdrawal bill, and the President meets the Gulf leaders tomorrow with the pause on its thirteenth day",
+    "series": "EF",
+    "date": "2026-09-21",
+    "bluf": "Assessment available in full report.",
+    "filename": "SITREP-EF-010.html",
+    "classification": "UNCLASSIFIED"
+  },
+  {
     "id": "SITREP-EF-009",
     "title": "SITREP-EF-009: The Houthis fire a ballistic missile at Riyadh and set a fuel depot burning at the capital's airport, Tehran delivers seven conditions through Qatar and warns of continuous and painful attacks on US bases if Washington resumes strikes with a regional green light, and the President meets six Gulf leaders in two days",
     "series": "EF",
@@ -60,6 +69,15 @@
     "date": "2026-09-13",
     "bluf": "Assessment available in full report.",
     "filename": "SITREP-EF-002.html",
+    "classification": "UNCLASSIFIED"
+  },
+  {
+    "id": "SIGACT-HF-010",
+    "title": "SIGACT-HF-010: Yom Kippur passes its first night without a reported incident in the United States as Israel stands on alert, the General Assembly gathers with an Iranian delegation and a presidential strike decision pending, and Tehran widens its retaliation language to without limitations while naming no Homeland target",
+    "series": "HF",
+    "date": "2026-09-21",
+    "bluf": "Assessment available in full report.",
+    "filename": "SIGACT-HF-010.html",
     "classification": "UNCLASSIFIED"
   },
   {
