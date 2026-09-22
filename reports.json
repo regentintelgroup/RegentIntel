@@ -1,5 +1,14 @@
 [
   {
+    "id": "SITREP-EF-011",
+    "title": "SITREP-EF-011: The President addresses the General Assembly and meets the Gulf leaders today after reportedly deciding against striking the Houthis and saying he would probably meet Iran's president, Qatar confirms messages are passing, Brent settles at $100.34, Washington moves to ground every Iranian airline, and Iran holds its fire a fourteenth day",
+    "series": "EF",
+    "date": "2026-09-22",
+    "bluf": "Assessment available in full report.",
+    "filename": "SITREP-EF-011.html",
+    "classification": "UNCLASSIFIED"
+  },
+  {
     "id": "SITREP-EF-010",
     "title": "SITREP-EF-010: A tanker entering Hormuz is hit with two crew injured on the morning the General Assembly gathers, the IRGC says it is ready for a counteroffensive and Tehran promises weapons the world will be astonished by, Iranian MPs file an NPT withdrawal bill, and the President meets the Gulf leaders tomorrow with the pause on its thirteenth day",
     "series": "EF",
@@ -69,6 +78,15 @@
     "date": "2026-09-13",
     "bluf": "Assessment available in full report.",
     "filename": "SITREP-EF-002.html",
+    "classification": "UNCLASSIFIED"
+  },
+  {
+    "id": "SIGACT-HF-011",
+    "title": "SIGACT-HF-011: A gunman with a shotgun opened fire on the police officer guarding a synagogue in Belleville, Ontario, as 25 congregants sat down to Kol Nidre; the United States passed Yom Kippur with no reported incident; the General Assembly opens with an Iranian delegation in New York and Washington choosing diplomacy over strikes",
+    "series": "HF",
+    "date": "2026-09-22",
+    "bluf": "Assessment available in full report.",
+    "filename": "SIGACT-HF-011.html",
     "classification": "UNCLASSIFIED"
   },
   {
