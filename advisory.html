@@ -53,6 +53,19 @@
   "areaServed": "Worldwide"
 }
 </script>
+<style>
+#fractional-cso{background:linear-gradient(180deg,rgba(10,22,34,1) 0%,rgba(7,17,26,1) 100%);border-top:1px solid rgba(30,143,173,0.18);border-bottom:1px solid rgba(30,143,173,0.18)}
+.fcso-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:48px}
+.fcso-card{position:relative;background:rgba(13,27,42,0.55);border:1px solid rgba(255,255,255,0.07);border-top:2px solid var(--teal-bright);border-radius:12px;padding:32px 26px 28px}
+.fcso-num{font-family:var(--font-mono);font-size:11px;letter-spacing:0.14em;color:var(--teal-bright);margin-bottom:14px}
+.fcso-num span{display:inline-block;border:1px solid rgba(30,143,173,0.5);border-radius:3px;padding:3px 8px;margin-right:10px}
+.fcso-card h3{font-family:var(--font-display);font-size:19px;font-weight:600;text-transform:uppercase;letter-spacing:0.02em;color:#fff;margin-bottom:14px;line-height:1.25}
+.fcso-card p{font-size:14px;line-height:1.75;color:rgba(255,255,255,0.62)}
+.fcso-card:not(:last-child)::after{content:'\2192';position:absolute;right:-17px;top:44px;font-size:15px;color:rgba(30,143,173,0.7);z-index:1}
+.fcso-exit{margin-top:36px;padding:20px 26px;border-left:2px solid var(--teal-bright);background:rgba(30,143,173,0.06);font-family:var(--font-mono);font-size:12px;letter-spacing:0.04em;line-height:1.8;color:rgba(255,255,255,0.7)}
+.fcso-exit strong{color:#fff;font-weight:500}
+@media(max-width:900px){.fcso-grid{grid-template-columns:1fr}.fcso-card:not(:last-child)::after{content:'\2193';right:auto;left:26px;top:auto;bottom:-24px}}
+</style>
 </head>
 <body>
 <div class="page-fixed-bg"></div>
@@ -118,45 +131,12 @@
       <div class="track-card">
         <div class="track-tag">You don't have a security function</div>
         <h3>Becoming Your Security Professional</h3>
-        <p>Principals, family offices, executives, and smaller organizations without a dedicated security function. Regent Intel fills the entire Security Professional role: we identify the assets that matter most, assess the risks to those assets, present mitigation options with clear analysis, and execute and monitor the program you approve. You make the risk decisions. We do everything else.</p>
+        <p>Principals, family offices, executives, and smaller organizations without a dedicated security function. Regent Intel fills the entire Security Professional role: we identify the assets that matter most, assess the risks to those assets, present mitigation options with clear analysis, and execute and monitor the program you approve. You make the risk decisions. We do everything else. For organizations that ultimately want this function in-house, this track runs as a <a href="#fractional-cso" style="color:inherit;text-decoration:underline;text-underline-offset:3px;">fractional CSO engagement</a> with a defined transition to your permanent hire.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- FRACTIONAL CSO -->
-<section class="program-detail" id="fractional-cso">
-  <div class="wrap">
-    <div class="editorial">
-      <div class="eyebrow">Fractional Chief Security Officer</div>
-      <h2>The CSO seat, filled — until you're ready to fill it permanently.</h2>
-      <p>Some organizations know they need a Chief Security Officer but aren't ready to hire one. The programs don't exist yet, the requirements aren't defined, and hiring a permanent executive to build from zero is a bet most boards won't underwrite. Regent Intel steps into the seat on a fractional basis with a defined mandate and a defined exit: build the risk management foundation, then recruit the leader who inherits it.</p>
-    </div>
-    <div class="framework" style="border-top:1px solid rgba(255,255,255,0.08);">
-      <div class="framework-step">
-        <div class="step-label">Phase One</div>
-        <div>
-          <h3 data-hover-decode>Stand Up the ERM &amp; ESRM Framework</h3>
-          <p>We build the enterprise risk management structure your organization is missing: governance charter, risk appetite statement, asset and risk registers, escalation paths, and board reporting cadence. The ESRM layer translates that structure into security practice — protective intelligence, physical and technical security, travel risk, and insider threat programs designed around your actual risk profile, not a template.</p>
-        </div>
-      </div>
-      <div class="framework-step">
-        <div class="step-label">Phase Two</div>
-        <div>
-          <h3 data-hover-decode>Operate the Function</h3>
-          <p>Regent Intel runs the security function as your acting CSO: chairing the risk committee, owning vendor and program budgets, briefing leadership, and managing incidents. The organization gets executive-level security leadership from day one, at a fraction of a permanent executive's fully loaded cost, while the programs mature under real operational load.</p>
-        </div>
-      </div>
-      <div class="framework-step">
-        <div class="step-label">Phase Three</div>
-        <div>
-          <h3 data-hover-decode>Recruit &amp; Transition the Permanent CSO</h3>
-          <p>The engagement ends by design. We write the position description from the risk registers we built, define the competency requirements, source and vet candidates, sit in on final interviews, and run a structured handover. Your incoming CSO inherits a documented, board-endorsed program with a running operational tempo — not a blank page. We remain available as specialized capability behind them, on their terms.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
 <!-- THE ESRM CYCLE -->
 <section class="program-detail">
@@ -196,6 +176,34 @@
         </div>
       </div>
     </div>
+  </div>
+</section>
+<!-- FRACTIONAL CSO -->
+<section class="program-detail" id="fractional-cso">
+  <div class="wrap">
+    <div class="editorial">
+      <div class="eyebrow">Fractional Chief Security Officer</div>
+      <h2>The CSO seat, filled &mdash; until you're ready to fill it permanently.</h2>
+      <p>Some organizations know they need a Chief Security Officer but aren't ready to hire one. The programs don't exist yet, the requirements aren't defined, and hiring a permanent executive to build from zero is a bet most boards won't underwrite. Regent Intel steps into the seat on a fractional basis with a defined mandate and a defined exit: install the ESRM cycle above as your operating framework, run it, then recruit the leader who inherits it.</p>
+    </div>
+    <div class="fcso-grid">
+      <div class="fcso-card">
+        <div class="fcso-num"><span>01</span>Build</div>
+        <h3 data-hover-decode>Stand Up the ERM &amp; ESRM Framework</h3>
+        <p>We build the enterprise risk management structure your organization is missing: governance charter, risk appetite statement, asset and risk registers, escalation paths, and board reporting cadence. The ESRM layer translates that structure into security practice &mdash; protective intelligence, physical and technical security, travel risk, and insider threat programs designed around your actual risk profile, not a template.</p>
+      </div>
+      <div class="fcso-card">
+        <div class="fcso-num"><span>02</span>Operate</div>
+        <h3 data-hover-decode>Operate the Function</h3>
+        <p>Regent Intel runs the security function as your acting CSO: chairing the risk committee, owning vendor and program budgets, briefing leadership, and managing incidents. The organization gets executive-level security leadership from day one, at a fraction of a permanent executive's fully loaded cost, while the programs mature under real operational load.</p>
+      </div>
+      <div class="fcso-card">
+        <div class="fcso-num"><span>03</span>Transition</div>
+        <h3 data-hover-decode>Recruit &amp; Transition the Permanent CSO</h3>
+        <p>The engagement ends by design. We write the position description from the risk registers we built, define the competency requirements, source and vet candidates, sit in on final interviews, and run a structured handover. Your incoming CSO inherits a documented, board-endorsed program with a running operational tempo &mdash; not a blank page.</p>
+      </div>
+    </div>
+    <div class="fcso-exit"><strong>Defined exit, by design.</strong> The measure of this engagement is that it ends &mdash; with a permanent CSO in the seat and Regent Intel available behind them as specialized capability, on their terms.</div>
   </div>
 </section>
 
