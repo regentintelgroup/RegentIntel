@@ -1,5 +1,23 @@
 [
   {
+    "id": "SITREP-EF-015",
+    "title": "SITREP-EF-015: The President rejects Iran's seven-day plan, keeps the blockade, and by the Journal's account expects to resume bombing after the midterms; the Houthis end their lull with drones at Riyadh and a missile at Khamis Mushait; Brent settles at $104.32 with the Brent-WTI spread at its widest since May; the pause reaches eighteen days",
+    "series": "EF",
+    "date": "2026-09-26",
+    "bluf": "Assessment available in full report.",
+    "filename": "SITREP-EF-015.html",
+    "classification": "UNCLASSIFIED"
+  },
+  {
+    "id": "SITREP-EF-014",
+    "title": "SITREP-EF-014: Tehran puts a written road map on the table, a 60-day regionwide ceasefire and a phased reopening of Hormuz for the end of the blockade, with a four-to-five-day clock from Rezaei; Pezeshkian says Iran wants a deal before the midterms; Brent settles at $106.60 on the phased-deal report; Netanyahu tells the Assembly Iran's military was crushed as delegations walk out",
+    "series": "EF",
+    "date": "2026-09-25",
+    "bluf": "Assessment available in full report.",
+    "filename": "SITREP-EF-014.html",
+    "classification": "UNCLASSIFIED"
+  },
+  {
     "id": "SITREP-EF-013",
     "title": "SITREP-EF-013: Pezeshkian tells the Assembly Iran will never bow or bend the knee and will not open Hormuz while the blockade and sanctions stand, Rubio calls the talks a conversation and not a breakthrough with the June memorandum no longer on the table, Brent snaps five losing sessions at $103.08, and the pause reaches sixteen days",
     "series": "EF",
@@ -96,6 +114,24 @@
     "date": "2026-09-13",
     "bluf": "Assessment available in full report.",
     "filename": "SITREP-EF-002.html",
+    "classification": "UNCLASSIFIED"
+  },
+  {
+    "id": "SIGACT-HF-015",
+    "title": "SIGACT-HF-015: Belleville police declare the Yom Kippur shooting a deliberate, hate-motivated attempted mass-casualty attack on the Jewish community, correcting the series' record; Sukkot's first day and the Assembly's close pass without a US incident; the President rejects Iran's plan and the Guards promise punishment until their conditions are met",
+    "series": "HF",
+    "date": "2026-09-26",
+    "bluf": "Assessment available in full report.",
+    "filename": "SIGACT-HF-015.html",
+    "classification": "UNCLASSIFIED"
+  },
+  {
+    "id": "SIGACT-HF-014",
+    "title": "SIGACT-HF-014: More than 100 arrested outside the UN during Netanyahu's address with no casualty incident as the Assembly's third day passes, Sukkot begins tonight with the allied record at three cases, Xi's state visit closes, and Iran's president denies from New York that Tehran seeks to assassinate the President",
+    "series": "HF",
+    "date": "2026-09-25",
+    "bluf": "Assessment available in full report.",
+    "filename": "SIGACT-HF-014.html",
     "classification": "UNCLASSIFIED"
   },
   {
