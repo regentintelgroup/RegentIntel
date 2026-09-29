@@ -1,5 +1,32 @@
 [
   {
+    "id": "SITREP-EF-018",
+    "title": "SITREP-EF-018: A projectile sets a vessel afire in the strait and ends a seven-day maritime lull; Araghchi expects Washington's formal answer today through Qatar; Rubio says the Fairford plot involved the hands of a foreign actor as Britain bails the five; Yanbu loads again; the pause on host states reaches twenty-one days",
+    "series": "EF",
+    "date": "2026-09-29",
+    "bluf": "Assessment available in full report.",
+    "filename": "SITREP-EF-018.html",
+    "classification": "UNCLASSIFIED"
+  },
+  {
+    "id": "SITREP-EF-017",
+    "title": "SITREP-EF-017: British police arrest five men with three vans near the bomber base the United States has used against Iran, and the President says they were under investigation for a long time; Tehran denies any talks are planned as the President expects them this week and declines to rule out strikes before the midterms; Brent trades above $108; Riyadh reopens its schools a day after closing them",
+    "series": "EF",
+    "date": "2026-09-28",
+    "bluf": "Assessment available in full report.",
+    "filename": "SITREP-EF-017.html",
+    "classification": "UNCLASSIFIED"
+  },
+  {
+    "id": "SITREP-EF-016",
+    "title": "SITREP-EF-016: Tehran holds its offer and waits for a formal answer the White House says it is in no rush to give; Riyadh closes its schools for a week under near-daily Houthi fire; the Guards claim a captured US underwater drone; the pause reaches nineteen days",
+    "series": "EF",
+    "date": "2026-09-27",
+    "bluf": "Assessment available in full report.",
+    "filename": "SITREP-EF-016.html",
+    "classification": "UNCLASSIFIED"
+  },
+  {
     "id": "SITREP-EF-015",
     "title": "SITREP-EF-015: The President rejects Iran's seven-day plan, keeps the blockade, and by the Journal's account expects to resume bombing after the midterms; the Houthis end their lull with drones at Riyadh and a missile at Khamis Mushait; Brent settles at $104.32 with the Brent-WTI spread at its widest since May; the pause reaches eighteen days",
     "series": "EF",
@@ -114,6 +141,33 @@
     "date": "2026-09-13",
     "bluf": "Assessment available in full report.",
     "filename": "SITREP-EF-002.html",
+    "classification": "UNCLASSIFIED"
+  },
+  {
+    "id": "SIGACT-HF-018",
+    "title": "SIGACT-HF-018: Rubio says the Fairford plot involved the hands of a foreign actor as Britain releases the five on bail and names state proxies as a line of inquiry; the Homeland record stays clean through Sukkot's fourth day; fourteen days without a federal terrorism charge",
+    "series": "HF",
+    "date": "2026-09-29",
+    "bluf": "Assessment available in full report.",
+    "filename": "SIGACT-HF-018.html",
+    "classification": "UNCLASSIFIED"
+  },
+  {
+    "id": "SIGACT-HF-017",
+    "title": "SIGACT-HF-017: Five men with three vans are arrested near the British base the United States has used to bomb Iran, and the President says a US-British investigation had them under view; no attribution yet; the Homeland record stays clean through Sukkot's third day",
+    "series": "HF",
+    "date": "2026-09-28",
+    "bluf": "Assessment available in full report.",
+    "filename": "SIGACT-HF-017.html",
+    "classification": "UNCLASSIFIED"
+  },
+  {
+    "id": "SIGACT-HF-016",
+    "title": "SIGACT-HF-016: Sukkot's first two days pass without a US incident on the posture set after Belleville; Simchat Torah and October 7 are the next windows; Tehran waits for a formal answer and takes military action off the airline question",
+    "series": "HF",
+    "date": "2026-09-27",
+    "bluf": "Assessment available in full report.",
+    "filename": "SIGACT-HF-016.html",
     "classification": "UNCLASSIFIED"
   },
   {
