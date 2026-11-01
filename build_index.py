@@ -111,25 +111,48 @@ def find_bluf(html):
     return "Assessment available in full report."
 
 
+def meta(html, name):
+    m = re.search(r'<meta\s+name="%s"\s+content="([^"]*)"' % re.escape(name), html, re.I)
+    return m.group(1).strip() if m else ""
+
+
 def build_entry(filename):
     path = os.path.join(REPORTS_DIR, filename)
     with open(path, "r", encoding="utf-8", errors="replace") as fh:
         html = fh.read()
-    title = find_title(html, filename)
-    report_id = find_report_id(title, filename)
-    if report_id.startswith("SITREP-EF") or "Epic Fury" in title:
-        series = "EF"
-    elif report_id.startswith("SIGACT-HF") or "Homeland Focus" in title:
-        series = "HF"
-    else:
-        series = "OTHER"
+
+    # Standing Orders v3.1 products declare their index fields in <meta> tags.
+    # Older products are read heuristically.
+    report_id = meta(html, "report-id").upper() or None
+    title = meta(html, "report-title")
+    series = meta(html, "report-series").upper()
+    date = meta(html, "report-date")
+    bluf = meta(html, "description")
+
+    if not title:
+        title = find_title(html, filename)
+    if not report_id:
+        report_id = find_report_id(title, filename)
+    if report_id and title and not title.upper().startswith(report_id):
+        title = "%s: %s" % (report_id, title)
+    if series not in ("EF", "HF", "HZ", "IC", "STRAT", "FLASH"):
+        if report_id.startswith("SITREP-EF") or "Epic Fury" in title:
+            series = "EF"
+        elif report_id.startswith("SIGACT-HF") or "Homeland Focus" in title:
+            series = "HF"
+        else:
+            series = "OTHER"
+    if not re.match(r"^\d{4}-\d{2}-\d{2}$", date):
+        date = find_date(html, filename)
+    if len(bluf) < 40:
+        bluf = find_bluf(html)
     num_match = re.search(r"(\d+)$", report_id)
     return {
         "id": report_id,
         "title": title,
         "series": series,
-        "date": find_date(html, filename),
-        "bluf": find_bluf(html),
+        "date": date,
+        "bluf": bluf[:300],
         "filename": filename,
         "classification": "UNCLASSIFIED",
         "_num": int(num_match.group(1)) if num_match else 0,
