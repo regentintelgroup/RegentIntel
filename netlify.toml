@@ -1,6 +1,9 @@
 [build]
-  publish = "."
   base = "."
+  publish = "."
+  # Rebuild reports.json from the reports/ folder on every deploy.
+  # Publishing a report = uploading its HTML to reports/. Nothing else.
+  command = "python3 build_index.py"
 
 # Force HTTPS and non-www
 [[redirects]]
