@@ -94,11 +94,19 @@ def find_date(html, filename):
 
 
 def find_bluf(html):
-    m = re.search(r"(?:BOTTOM LINE UP FRONT|BLUF)\s*(?:</[^>]+>\s*)*(?:<p[^>]*>)?(.*?)(?:</p>|</div>|</section>)",
-                  html, re.S | re.I)
+    # Work on the body only; CSS class names like .box-bluf must never match.
+    body = re.sub(r"<(style|script)[^>]*>.*?</\1>", " ", html, flags=re.S | re.I)
+    # The BLUF heading, then the first block of text that follows it.
+    m = re.search(r"(?:BOTTOM LINE UP FRONT|Section 1:\s*BLUF|\bBLUF\b)\s*:?\s*(?:</[^>]+>\s*)*(?:<[^/][^>]*>\s*)*(.*?)(?:</p>|</div>|</section>|<h[1-6])",
+                  body, re.S)
     if m:
         text = strip_tags(m.group(1))
-        if text:
+        if len(text) > 40:
+            return text[:300]
+    # Fallback: first paragraph longer than 120 characters anywhere in the body.
+    for p in re.findall(r"<p[^>]*>(.*?)</p>", body, re.S):
+        text = strip_tags(p)
+        if len(text) > 120:
             return text[:300]
     return "Assessment available in full report."
 
