@@ -269,68 +269,20 @@
   }
 
   /* ─────────────────────────────
-     BAND 6 / PROVENANCE + STANDARDS (two equal halves)
+     BAND 6 / OPERATIONAL STANDARDS
   ───────────────────────────── */
   .band-bottom {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background: var(--line-dark);
-    gap: 1px;
+    background: var(--ivory);
   }
   .half {
     padding: 28px 36px;
   }
-  .half-dark { background: var(--navy); }
   .half-ivory { background: var(--ivory); }
-
-  .half-dark .band-label { color: var(--teal-bright); }
-  .half-dark .band-label::before { background: var(--teal-bright); }
-  .half-dark .band-label::after  { background: var(--line-dark); }
-  .half-dark .band-h2 { color: #fff; }
 
   .half-ivory .band-label { color: var(--teal); }
   .half-ivory .band-label::before { background: var(--teal); }
   .half-ivory .band-label::after  { background: var(--line); }
   .half-ivory .band-h2 { color: var(--ink); }
-
-  .prac-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2px;
-    background: var(--line-dark);
-    margin-bottom: 2px;
-  }
-  .prac-cell {
-    background: rgba(255,255,255,0.05);
-    padding: 14px 16px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  .prac-cell.full { grid-column: 1/-1; }
-  .prac-dot {
-    width: 7px; height: 7px;
-    background: var(--teal-bright);
-    border-radius: 50%;
-    flex-shrink: 0;
-  }
-  .prac-name {
-    font-family: 'Barlow Condensed', sans-serif;
-    font-weight: 700;
-    font-size: 13pt;
-    text-transform: uppercase;
-    color: #fff;
-    letter-spacing: 0.02em;
-  }
-  .prac-closer {
-    background: var(--teal);
-    padding: 14px 16px;
-    font-size: 9.5pt;
-    color: #fff;
-    line-height: 1.6;
-    font-weight: 500;
-  }
-  .prac-closer strong { font-weight: 700; }
 
   .std-list { display: flex; flex-direction: column; gap: 0; }
   .std-row {
@@ -542,40 +494,10 @@
   </div>
 </div>
 
-<!-- ── BAND 6: PROVENANCE + STANDARDS ── -->
+<!-- ── BAND 6: OPERATIONAL STANDARDS ── -->
 <div class="band-bottom">
 
-  <div class="half half-dark">
-    <div class="band-label">04 / Practitioner Provenance</div>
-    <div class="band-h2" style="margin-bottom:20px;">Built at the intersection<br>of five disciplines.</div>
-    <div class="prac-grid">
-      <div class="prac-cell">
-        <div class="prac-dot"></div>
-        <div class="prac-name">OGA Programs</div>
-      </div>
-      <div class="prac-cell">
-        <div class="prac-dot"></div>
-        <div class="prac-name">Army Intelligence</div>
-      </div>
-      <div class="prac-cell">
-        <div class="prac-dot"></div>
-        <div class="prac-name">Special Operations</div>
-      </div>
-      <div class="prac-cell">
-        <div class="prac-dot"></div>
-        <div class="prac-name">Treasury Financial</div>
-      </div>
-      <div class="prac-cell full">
-        <div class="prac-dot"></div>
-        <div class="prac-name">FBI Investigative Work</div>
-      </div>
-    </div>
-    <div class="prac-closer" style="margin-top:2px;">
-      No comparable firm has integrated all five disciplines. Most operate in a single lane. <strong>Regent Intel was built at the intersection of all of them.</strong>
-    </div>
-  </div>
-
-  <div class="half half-ivory">
+  <div class="half half-ivory" style="width:100%;max-width:100%">
     <div class="band-label">05 / Operational Standards</div>
     <div class="band-h2" style="margin-bottom:20px;">Three disciplines.<br>One standard of accountability.</div>
     <div class="std-list">
@@ -597,7 +519,7 @@
 <!-- ── BAND 7: FOOTER ── -->
 <div class="band-footer">
   <div class="footer-left">
-    <div class="footer-tagline">The Regent <span>Difference</span></div>
+    <div class="footer-tagline">Government Grade. <span>Commercial Speed.</span></div>
     <div class="footer-sub">Intelligence-driven. Doctrine-governed. Delivered by practitioners who built the standard / not those who borrowed it.</div>
   </div>
   <div class="footer-center">

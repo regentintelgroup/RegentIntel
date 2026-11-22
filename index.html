@@ -57,16 +57,6 @@
 .esrm-note p{font-size:16px;color:rgba(255,255,255,0.70);line-height:1.72}
 .esrm-note strong{color:#fff;font-weight:600}
 
-.band-provenance{background:rgba(255,255,255,0.97);position:relative;z-index:1;padding:80px 0;border-bottom:1px solid var(--line-light)}
-.provenance-inner{display:grid;grid-template-columns:360px 1fr;gap:80px;align-items:start}
-.provenance-label{font-family:var(--font-mono);font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:var(--teal);margin-bottom:20px}
-.provenance-headline{font-family:var(--font-display);font-weight:700;font-size:clamp(24px,3vw,40px);text-transform:uppercase;color:var(--navy);line-height:1.05;letter-spacing:-0.01em;margin-bottom:24px}
-.provenance-body{font-size:17px;color:var(--ink-soft);line-height:1.78}
-.provenance-body strong{color:var(--ink);font-weight:600}
-.provenance-list{list-style:none;padding:0;margin:0;border-top:2px solid var(--navy)}
-.provenance-list li{display:flex;align-items:baseline;gap:16px;padding:18px 0;border-bottom:1px solid var(--line-light)}
-.prov-name{font-family:var(--font-display);font-weight:700;font-size:22px;text-transform:uppercase;color:var(--navy);letter-spacing:0.01em}
-.prov-sub{font-family:var(--font-mono);font-size:10px;letter-spacing:0.06em;text-transform:uppercase;color:var(--muted);margin-left:auto;flex-shrink:0}
 
 .band-capabilities{background:rgba(247,245,242,0.97);position:relative;z-index:1;padding:80px 0}
 .cap-grid-compact{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:32px}
@@ -87,11 +77,8 @@
 
 @media(max-width:960px){
   .band-stats .wrap{grid-template-columns:1fr;gap:48px}
-  .provenance-inner{grid-template-columns:1fr;gap:40px}
   .esrm-cycle{grid-template-columns:1fr 1fr}
   .serve-strip{grid-template-columns:1fr 1fr}
-  .provenance-list li{flex-wrap:wrap}
-  .prov-sub{margin-left:40px;margin-top:4px}
 }
 @media(max-width:560px){
   .serve-strip{grid-template-columns:1fr}
@@ -161,7 +148,11 @@
           <a href="travel.html">Travel Security &amp; Country Risk</a>
           <a href="osint.html">Due Diligence &amp; OSINT</a>
           <a href="investigations.html">Investigations &amp; Asset Verification</a>
-          <a href="section132.html">IRC §132 Security Study</a>
+          <a href="insider-threat.html">Insider Threat Program</a>
+          <a href="counterintelligence.html">Counterintelligence Consulting</a>
+          <a href="section132.html">IRC &sect;132 Security Study</a>
+          <a href="govcon.html">GovCon Security Advisory</a>
+          <a href="fso.html">FSO &amp; Industrial Security</a>
           <a href="training.html">Training &amp; Certification</a>
         </div>
       </li>
@@ -227,27 +218,6 @@
   </div>
 </div>
 
-<!-- PROVENANCE -->
-<div class="band-provenance">
-  <div class="wrap">
-    <div class="provenance-inner">
-      <div>
-        <div class="provenance-label">Practitioner Provenance</div>
-        <div class="provenance-headline">Five disciplines. One doctrine.</div>
-        <p class="provenance-body">The practitioners who fill the Security Professional role at Regent Intel each came from a distinct discipline — bringing a separate collection framework, analytical standard, and operational background. <strong>Regent Intel was built by integrating all five into a single governed doctrine.</strong></p>
-      </div>
-      <div>
-        <ul class="provenance-list">
-          <li><span class="prov-name">OGA Programs</span><span class="prov-sub">Clandestine Operations</span></li>
-          <li><span class="prov-name">Army Intelligence</span><span class="prov-sub">Strategic Counterintelligence</span></li>
-          <li><span class="prov-name">Special Operations</span><span class="prov-sub">Domestic &amp; International</span></li>
-          <li><span class="prov-name">Treasury</span><span class="prov-sub">Financial Investigations</span></li>
-          <li><span class="prov-name">FBI</span><span class="prov-sub">Investigative Work</span></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
 
 <!-- CAPABILITIES: lighter, index-style -->
 <div class="band-capabilities">
@@ -421,7 +391,7 @@ fetch('/reports.json').then(function(r){return r.json()}).then(function(data){
       <span>Services</span><span class="mob-chevron">&#x203A;</span>
     </div>
     <div class="mob-sub" id="mob-services-sub">
-      <a href="ep.html">Executive Protection</a><a href="tscm.html">TSCM &amp; Technical Assurance</a><a href="intel.html">Protective Intelligence</a><a href="travel.html">Travel Security &amp; Country Risk</a><a href="osint.html">Due Diligence &amp; OSINT</a><a href="investigations.html">Investigations &amp; Asset Verification</a><a href="section132.html">IRC §132 Security Study</a><a href="training.html">Training &amp; Certification</a>
+      <a href="ep.html">Executive Protection</a><a href="tscm.html">TSCM &amp; Technical Assurance</a><a href="intel.html">Protective Intelligence</a><a href="travel.html">Travel Security &amp; Country Risk</a><a href="osint.html">Due Diligence &amp; OSINT</a><a href="investigations.html">Investigations &amp; Asset Verification</a><a href="insider-threat.html">Insider Threat Program</a><a href="counterintelligence.html">Counterintelligence Consulting</a><a href="section132.html">IRC &sect;132 Security Study</a><a href="govcon.html">GovCon Security Advisory</a><a href="fso.html">FSO &amp; Industrial Security</a><a href="training.html">Training &amp; Certification</a>
     </div>
     <a href="who-we-serve.html">Who We Serve</a>
     <a href="advisory.html">Advisory</a>
